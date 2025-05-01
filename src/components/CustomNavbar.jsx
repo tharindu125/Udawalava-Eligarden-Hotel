@@ -3,18 +3,17 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 
 function CustomNavbar() {
   return (
-    <Navbar bg="light" expand="lg" fixed="top">
+    <Navbar expand="lg" fixed="top" className="custom-navbar">
       <Container>
-        
+
         <Navbar.Brand href="/">
           <img
-            src="/logo.png" // Replace with your logo path
-            width="30"
-            height="30"
+            src="/src/assets/logo.png"
+            width="40" height="40"
             className="d-inline-block align-top"
-            alt="Logo"
+            alt="Udawalawa Elegarden Hotel"
           />{' '}
-          Udawalava Eligarden Hotel
+          Udawalawa Elegarden Hotel
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbar-nav" />
