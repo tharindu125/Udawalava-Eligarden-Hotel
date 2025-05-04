@@ -57,5 +57,114 @@
 }
 
 .carousel-caption {
-  bottom: 15rem !important;
+  bottom: 5rem !important;
+}
+
+/* Main carousel */
+.fullscreen-image {
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-caption {
+  bottom: 5%;
+  top: 15%;
+  padding: 3rem;
+  /* background: rgba(21, 0, 41, 0.172); */
+  color: #fff;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  flex-direction: column;
+}
+
+/* Styling for welcome and content sections */
+.welcome h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(255, 213, 0, 0.5);
+}
+
+.welcome p {
+  font-size: 1.1rem;
+}
+
+.why-box, .icon-box {
+  background: rgba(0, 0, 0, 0.561);
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 238, 0, 0.185);
+}
+
+.icon-box i,
+.icon-box svg {
+  color: #ffc107;
+  font-size: 2rem;
+}
+
+.more-btn {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.more-btn:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .welcome h2 {
+    font-size: 1.8rem;
+  }
+
+  .welcome p {
+    font-size: 0.95rem;
+  }
+
+  .icon-box i,
+  .icon-box svg {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    padding: 1.5rem;
+  }
+
+  .welcome h2 {
+    font-size: 1.5rem;
+  }
+
+  .welcome p {
+    font-size: 0.9rem;
+  }
+
+  .why-box, .icon-box {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .welcome h2 {
+    font-size: 1.3rem;
+  }
+
+  .welcome p {
+    font-size: 0.85rem;
+  }
+
+  .carousel-caption {
+    padding: 1rem;
+  }
+
+  .icon-box {
+    font-size: 0.9rem;
+  }
 }

@@ -1,5 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaFacebook, FaInstagram, FaTwitter, FaEnvelope, FaPhone } from 'react-icons/fa';
+import Contact from '../pages/contact';
 
 function Footer() {
   return (
@@ -7,7 +8,7 @@ function Footer() {
       <Container>
         <Row>
           {/* Logo & Company Info */}
-          <Col md={4} className="mb-4">
+          <Col md={3} className="mb-4">
             <div className="d-flex align-items-center mb-3">
               <img
                 src="/src/assets/logo.png"
@@ -22,7 +23,7 @@ function Footer() {
           </Col>
 
           {/* Useful Links */}
-          <Col md={4} className="mb-4">
+          <Col md={3} className="mb-4">
             <h5>Useful Links</h5>
             <ul className="list-unstyled">
               <li><a href="/" className="text-light">Home</a></li>
@@ -32,14 +33,18 @@ function Footer() {
           </Col>
 
           {/* Main Categories */}
-          <Col md={4} className="mb-4">
+          <Col md={3} className="mb-4">
             <h5>Main Categories</h5>
             <ul className="list-unstyled">
               <li>Luxury Rooms</li>
               <li>Safari Packages</li>
               <li>Local Cuisine</li>
             </ul>
-            <h6 className="mt-3">Contact</h6>
+          </Col>
+         
+         {/* Contact Details */}
+          <Col md={3} className="mb-4">
+            <h5>Contact Us</h5>
             <p><FaEnvelope /> info@eligardenhotel.com</p>
             <p><FaPhone /> +94 71 123 4567</p>
             <div>

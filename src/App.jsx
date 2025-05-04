@@ -9,7 +9,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/contact';
 import Footer from './components/Footer';
-
+import RoomDetails from './pages/Rooms';
+import Restaurant from './pages/Restaurant'
 
 function App() {
 
@@ -19,6 +20,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/RoomDetails" element={<RoomDetails />} />
+        <Route path="/Restaurant" element={<Restaurant />} />
       </Routes>
       <Footer />
     </>
