@@ -3,8 +3,8 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 
 function CustomNavbar() {
   return (
-    <Navbar expand="lg" fixed="top" className="custom-navbar">
-      <Container>
+    <Navbar expand="lg" fixed="top" className="custom-navbar" >
+      <Container >
 
         <Navbar.Brand href="/">
           <img
