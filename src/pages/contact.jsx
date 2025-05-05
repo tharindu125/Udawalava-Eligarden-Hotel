@@ -59,6 +59,7 @@ function Contact() {
             handleChange,
             handleSubmit,
             isValid,
+            setFieldValue
           }) => (
             <Form noValidate onSubmit={handleSubmit}>
               <Box component="main" sx={{ flexGrow: 1, py: 8 }}>
@@ -101,6 +102,11 @@ function Contact() {
                                   helperText={touched.Email && errors.Email}
                                 />
                               </Grid>
+
+
+
+
+                              
                               <Grid
                                 item
                                 xs={12}
@@ -113,34 +119,141 @@ function Contact() {
                               >
                                 <FormControl component="fieldset">
                                   <FormLabel component="legend">
-                                    Are you having
+                                    Do You Have Any Experience
                                   </FormLabel>
                                   <FormGroup row>
                                     <FormControlLabel
-                                      control={<Checkbox size="small" />}
+                                      control={
+                                        <Checkbox
+                                          size="small"
+                                          name="Experience"
+                                          value="Snorkeling Experience"
+                                          checked={values.Experience.includes(
+                                            "Snorkeling Experience"
+                                          )}
+                                          onChange={(e) => {
+                                            const { checked, value } = e.target;
+                                            let newValues = [
+                                              ...values.Experience,
+                                            ];
+
+                                            // If 'No Any Experience' is selected, uncheck it
+                                            if (
+                                              values.Experience.includes(
+                                                "No Any Experience"
+                                              )
+                                            ) {
+                                              newValues = newValues.filter(
+                                                (v) => v !== "No Any Experience"
+                                              );
+                                            }
+
+                                            if (checked) {
+                                              newValues.push(value);
+                                            } else {
+                                              newValues = newValues.filter(
+                                                (v) => v !== value
+                                              );
+                                            }
+
+                                            setFieldValue(
+                                              "Experience",
+                                              newValues
+                                            );
+                                          }}
+                                          disabled={values.Experience.includes(
+                                            "No Any Experience"
+                                          )}
+                                        />
+                                      }
                                       label="Snorkeling Experience"
-                                      name="Experience"
-                                      value="Snorkeling Experience"
-                                      onChange={handleChange}
                                     />
                                     <FormControlLabel
-                                      control={<Checkbox size="small" />}
+                                      control={
+                                        <Checkbox
+                                          size="small"
+                                          name="Experience"
+                                          value="Diving Experience"
+                                          checked={values.Experience.includes(
+                                            "Diving Experience"
+                                          )}
+                                          onChange={(e) => {
+                                            const { checked, value } = e.target;
+                                            let newValues = [
+                                              ...values.Experience,
+                                            ];
+
+                                            // If 'No Any Experience' is selected, uncheck it
+                                            if (
+                                              values.Experience.includes(
+                                                "No Any Experience"
+                                              )
+                                            ) {
+                                              newValues = newValues.filter(
+                                                (v) => v !== "No Any Experience"
+                                              );
+                                            }
+
+                                            if (checked) {
+                                              newValues.push(value);
+                                            } else {
+                                              newValues = newValues.filter(
+                                                (v) => v !== value
+                                              );
+                                            }
+
+                                            setFieldValue(
+                                              "Experience",
+                                              newValues
+                                            );
+                                          }}
+                                          disabled={values.Experience.includes(
+                                            "No Any Experience"
+                                          )}
+                                        />
+                                      }
                                       label="Diving Experience"
-                                      name="Experience"
-                                      value="Diving Experience"
-                                      onChange={handleChange}
                                     />
                                     <FormControlLabel
-                                      control={<Checkbox size="small" />}
+                                      control={
+                                        <Checkbox
+                                          size="small"
+                                          name="Experience"
+                                          value="No Any Experience"
+                                          checked={values.Experience.includes(
+                                            "No Any Experience"
+                                          )}
+                                          onChange={(e) => {
+                                            const { checked, value } = e.target;
+                                            let newValues = [];
+
+                                            if (checked) {
+                                              newValues = [value]; // Only allow this one
+                                            }
+
+                                            setFieldValue(
+                                              "Experience",
+                                              newValues
+                                            );
+                                          }}
+                                        />
+                                      }
                                       label="No Any Experience"
-                                      name="Experience"
-                                      value="No Any Experience"
-                                      onChange={handleChange}
                                     />
-                                    {/* Add more checkboxes as needed */}
                                   </FormGroup>
+                                  {touched.Experience && errors.Experience && (
+                                    <p style={{ color: "red", marginTop: 8 }}>
+                                      {errors.Experience}
+                                    </p>
+                                  )}
                                 </FormControl>
                               </Grid>
+
+
+
+
+
+
 
                               <Grid item>
                                 <Button
