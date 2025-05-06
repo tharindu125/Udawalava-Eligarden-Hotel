@@ -1,13 +1,16 @@
 // src/components/MainCarousel.jsx
 import { Carousel } from 'react-bootstrap';
 import { FaHome, FaUtensils, FaBed } from 'react-icons/fa';
+import slider1 from '../assets/slider1.jpg';
+import slider2 from '../assets/slider2.jpg';
+import slider3 from '../assets/slider3.avif';
 
 function MainCarousel() {
   return (
     <Carousel fade>
       {/* First Slide */}
       <Carousel.Item>
-        <img className="d-block w-100 fullscreen-image" src="/src/assets/slider1.jpg" alt="First slide" />
+        <img className="d-block w-100 fullscreen-image" src={slider1} alt="First slide" />
         <Carousel.Caption className="carousel-caption">
           <div className="container position-relative">
 
@@ -51,7 +54,7 @@ function MainCarousel() {
 
       {/* Second Slide */}
       <Carousel.Item>
-        <img className="d-block w-100 fullscreen-image" src="/src/assets/slider2.jpg" alt="Second slide" />
+        <img className="d-block w-100 fullscreen-image" src={slider2} alt="Second slide" />
         <Carousel.Caption className="carousel-caption">
           <div className="container position-relative">
             <div className="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
@@ -93,7 +96,7 @@ function MainCarousel() {
 
       {/* Third Slide */}
       <Carousel.Item>
-        <img className="d-block w-100 fullscreen-image" src="/src/assets/slider3.avif" alt="Third slide" />
+        <img className="d-block w-100 fullscreen-image" src={slider3} alt="Third slide" />
         <Carousel.Caption className="carousel-caption">
           <div className="container position-relative">
             <div className="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
