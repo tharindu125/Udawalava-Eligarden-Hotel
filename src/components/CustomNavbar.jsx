@@ -28,7 +28,7 @@ function CustomNavbar() {
             <Nav.Link href="/Gallery">Gallery</Nav.Link>
             {/* Button */}
             <div className="ms-3">
-              <a href="/booking" className="btn btn-primary"> Book Now </a>
+              <a href="/#book_now" className="btn btn-primary"> Book Now </a>
             </div>
           </Nav>
         </Navbar.Collapse>

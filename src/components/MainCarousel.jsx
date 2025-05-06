@@ -1,9 +1,9 @@
 // src/components/MainCarousel.jsx
 import { Carousel } from 'react-bootstrap';
 import { FaHome, FaUtensils, FaBed } from 'react-icons/fa';
-import slider1 from '../assets/slider1.jpg';
-import slider2 from '../assets/slider2.jpg';
-import slider3 from '../assets/slider3.avif';
+import slider2 from '../assets/Restaurent.jpg';
+import slider1 from '../assets/slider2.jpg';
+import slider3 from '../assets/sri-lanka-leopard-asian.jpg';
 
 function MainCarousel() {
   return (

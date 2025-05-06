@@ -1,7 +1,6 @@
 // src/pages/Home.jsx
 import CustomNavbar from '../components/CustomNavbar';
 import MainCarousel from '../components/MainCarousel';
-import welcomeImage from '../assets/slider2.jpg';
 import { Link } from 'react-router-dom';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import React, { useState } from 'react';
@@ -9,6 +8,10 @@ import DatePicker from 'react-datepicker';
 import Select from 'react-select';
 import 'react-datepicker/dist/react-datepicker.css';
 import emailjs from 'emailjs-com';
+
+import welcomeImage from '../assets/slider2.jpg';
+import welcomeImage2 from '../assets/sri-lanka-leopard-asian.jpg';
+import welcomeImage3 from '../assets/Restaurent.jpg';
 
 function Home() {
   const nearbyAttractions = [
@@ -162,7 +165,7 @@ function Home() {
       </section>
 
       {/* REstuarent */}
-      <section className='container py-5 bg-light' style={{ boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' }}>
+      <section className='container py-5 bg-light' style={{ boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)' }}>
         <div className='row align-items-center'>
           {/* Image */}
           <div className='col-md-6'>
@@ -220,7 +223,7 @@ function Home() {
           {/* Image */}
           <div className='col-md-6'>
             <img
-              src={welcomeImage}
+              src={welcomeImage2}
               alt='Wildlife Adventures : Udawalawe Safari Tours'
               className='img-fluid rounded shadow'
               data-aos='fade-up'
@@ -232,7 +235,7 @@ function Home() {
       </section>
 
       {/* Near Places */}
-      <section className='container py-5 my-4 bg-light near_places' style={{ boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' }}>
+      <section className='container py-5 my-4 bg-light near_places' style={{ boxShadow: '0 0px 8px rgba(0, 0, 0, 0.2)' }}>
         <div className='container manual_text_center'>
           <h2 className='h3 fw-bold mb-3 text-dark'>Explore Nearby Attractions</h2>
           <p className='text-muted mb-3'>
@@ -258,7 +261,7 @@ function Home() {
       </section>
 
       {/* Book Now */}
-      <section className='container py-5 my-4'>
+      <section className='container py-5 my-4' id='book_now'>
         <div className='manual_text_center'>
           <h2 className='h3 fw-bold mb-3 text-dark'>Ready to Book Your Package</h2>
           <p className='text-muted mb-4 mx-3'>

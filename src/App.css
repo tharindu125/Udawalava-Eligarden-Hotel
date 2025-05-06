@@ -45,6 +45,7 @@
   color: #888;
 }
 
+/* Main carousel */
 .fullscreen-image {
   width: 100vw;
   height: 100vh;
@@ -53,6 +54,7 @@
   padding: 0;
   display: block;
   overflow: hidden;
+  object-position: center;
 }
 
 .custom-navbar {
@@ -64,11 +66,19 @@
   bottom: 5rem !important;
 }
 
-/* Main carousel */
-.fullscreen-image {
-  height: 100vh;
+/* Sub Carousel */
+.fullscreen-image-sub {
+  height: 60vh;
   object-fit: cover;
   object-position: center;
+}
+
+@media (max-width: 992px) {
+  .fullscreen-image {
+    height: 115vh;
+    object-fit: cover;
+    object-position: center;
+  }
 }
 
 .carousel-caption {
@@ -181,4 +191,127 @@
   text-shadow: 2px 2px 4px rgba(255, 213, 0, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
   border: 1px solid hsla(0, 0%, 100%, 0.62);
+}
+
+/* Contact Page */
+.contact-container {
+  padding: 40px 0;
+}
+
+.map-container {
+  margin-bottom: 30px;
+}
+
+.contact-details .contact-card {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+  margin-bottom: 15px;
+}
+
+.contact-info h5 {
+  font-weight: bold;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons Button {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-details .contact-card {
+    margin-top: 20px;
+  }
+}
+
+/* Gallery */
+.gallery-container {
+  padding: 40px 0;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+h1 {
+  margin-bottom: 40px;
+  font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* About */
+.about-hero-section {
+  position: relative;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+h1, p {
+  margin: 0;
+}
+
+.about-content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.cta-section {
+  background-color: #f8f9fa;
+  padding: 30px 0;
+  margin-top: 50px;
+  border-radius: 8px;
+}
+
+.cta-section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.hero-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }

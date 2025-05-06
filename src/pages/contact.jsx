@@ -1,290 +1,262 @@
-import React from "react";
-import { Formik, Form } from "formik";
-import * as Yup from "yup";
-import {
-  Box,
-  Button,
-  Card,
-  CardContent,
-  CardHeader,
-  Container,
-  Divider,
-  Grid,
-  Stack,
-  TextField,
-  Checkbox,
-  FormControl,
-  FormControlLabel,
-  FormGroup,
-  FormLabel,
-} from "@mui/material";
-import CustomNavbar from "../components/CustomNavbar";
+import CustomNavbar from '../components/CustomNavbar';
+import slider1 from '../assets/slider1.jpg';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { FaFacebook, FaInstagram, FaTwitter, FaPhone, FaEnvelope } from 'react-icons/fa';
+import React, { useState } from 'react';
+import DatePicker from 'react-datepicker';
+import Select from 'react-select';
+import 'react-datepicker/dist/react-datepicker.css';
+import emailjs from 'emailjs-com';
 
 function Contact() {
-  const initialValues = {
-    Name: "",
-    Email: "",
-    Experience: [],
-  };
-
-  const validationSchema = Yup.object().shape({
-    Name: Yup.string().required("Name is required"),
-    Email: Yup.string().required("Email Address is required"),
-    Experience: Yup.array().min(1, "Select Your Experience"),
-  });
-
-  const handleCreating = (values) => {
-    console.log("Submitted values:", values);
-  };
+    const [formData, setFormData] = useState({
+      name: '',
+      email: '',
+      phone: '',
+      country: '',
+      checkIn: null,
+      checkOut: null,
+      packages: [],
+      specialRequests: '',
+    });
+  
+    const [errors, setErrors] = useState({});
+  
+    const packageOptions = [
+      { value: 'Single Room', label: 'Single Room' },
+      { value: 'Double Room', label: 'Double Room' },
+      { value: 'Triple Room', label: 'Triple Room' },
+    ];
+    
+    const validate = () => {
+      let temp = {};
+      temp.name = formData.name ? '' : 'Name is required';
+      temp.email = /\S+@\S+\.\S+/.test(formData.email) ? '' : 'Valid email is required';
+      temp.phone = formData.phone ? '' : 'Mobile number is required';
+      temp.country = formData.country ? '' : 'Country is required';
+      temp.checkIn = formData.checkIn ? '' : 'Check-in date is required';
+      setErrors(temp);
+      return Object.values(temp).every(x => x === '');
+    };
+  
+    const [message, setMessage] = useState({ type: '', text: '' });
+    const [loading, setLoading] = useState(false);
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      if (!validate()) return;
+  
+      setLoading(true); // show loading
+      setMessage({ type: '', text: '' }); // reset message
+    
+      const templateParams = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        country: formData.country,
+        checkin: formData.checkIn?.toLocaleDateString(),
+        checkout: formData.checkOut?.toLocaleDateString(),
+        packages: formData.packages.map(p => p.label).join(', '),
+        specialRequests: formData.specialRequests || 'None',
+      };
+    
+      emailjs
+        .send('service_yfik5ye', 'template_sk997no', templateParams, 'Gm6ruTC-Zjw_QKJ3N')
+        .then(() => {
+          setMessage({ type: 'success', text: 'Booking submitted successfully!' });
+          setFormData({
+            name: '', email: '', phone: '', country: '', checkIn: null, checkOut: null, packages: [], specialRequests: '',
+          });
+          setTimeout(() => {
+            setMessage({ type: '', text: '' });
+          }, 3000);
+          setErrors({});
+        })
+        .catch((error) => {
+          console.error('Email sending failed:', error);
+          setMessage({ type: 'error', text: 'Failed to send email. Please try again later.' });
+        })
+        .finally(() => {
+          setLoading(false); // hide loading after response
+        });
+    };
 
   return (
     <>
       <CustomNavbar />
-      <div style={{ paddingTop: "70px" }}>
-        <h1>Contact Page</h1>
+      {/* Hero Section */}
+      <div className="about-hero-section" style={{ position: 'relative', height: '400px', background: `url(${slider1}) no-repeat center center/cover` }}>
+        <div className="hero-overlay">
+          <h1 className="text-center text-white">Contact Us</h1>
+          <p className="text-center text-white">Learn more about our journey and services</p>
+        </div>
       </div>
 
-      <>
-        <Formik
-          initialValues={initialValues}
-          validationSchema={validationSchema}
-          onSubmit={handleCreating}
-        >
-          {({
-            errors,
-            touched,
-            values,
-            isSubmitting,
-            handleBlur,
-            handleChange,
-            handleSubmit,
-            isValid,
-            setFieldValue
-          }) => (
-            <Form noValidate onSubmit={handleSubmit}>
-              <Box component="main" sx={{ flexGrow: 1, py: 8 }}>
-                <Container maxWidth="xl" sx={{ padding: 4 }}>
-                  <Stack spacing={2}>
-                    <Grid container spacing={2} justifyContent="center">
-                      <Grid item xs={12} md={10}>
-                        {" "}
-                        {/* Increased from md={8} to md={10} */}
-                        <Card
-                          sx={{ borderRadius: 6, padding: 6 }}
-                          elevation={10}
-                        >
-                          <CardHeader title="Contact Form" />
-                          <Divider sx={{ mx: 2 }} />
-                          <CardContent>
-                            <Grid container direction="column" spacing={2}>
-                              <Grid item xs={12} sm={6} md={6} padding={1}>
-                                <TextField
-                                  fullWidth
-                                  label="Name"
-                                  name="Name"
-                                  value={values.Name}
-                                  onBlur={handleBlur}
-                                  onChange={handleChange}
-                                  error={touched.Name && Boolean(errors.Name)}
-                                  helperText={touched.Name && errors.Name}
-                                />
-                              </Grid>
+      <div className="contact-container" style={{ paddingTop: '70px' }}>
+        <Container>
+          <Row>
+            {/* Google Map Section */}
+            <Col xs={12} md={6}>
+              <div className="map-container">
+                <iframe
+                  title="Google Map Location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.1531425375417!2d80.86786452843538!3d6.443766399595056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae425f45c42cc33%3A0xe513b492b06eaa4a!2sElegarden%20Hotel!5e0!3m2!1sen!2slk!4v1746526882578!5m2!1sen!2slk"
+                  width="100%"
+                  height="370"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </Col>
 
-                              <Grid item xs={12} sm={6} md={6} padding={1}>
-                                <TextField
-                                  fullWidth
-                                  label="Email Address"
-                                  name="Email"
-                                  value={values.Email}
-                                  onBlur={handleBlur}
-                                  onChange={handleChange}
-                                  error={touched.Email && Boolean(errors.Email)}
-                                  helperText={touched.Email && errors.Email}
-                                />
-                              </Grid>
+            {/* Contact Details Section */}
+            <Col xs={12} md={6}>
+              <div className="contact-details">
+                <Card className="contact-card">
+                  <Card.Body>
+                    
+                    {/* Address */}
+                    <div className="contact-info">
+                      <h5>Address:</h5>
+                      <p>Udawalawa Elegarden Hotel, Udawalawa, Sri Lanka</p>
+                    </div>
 
+                    {/* Phone */}
+                    <div className="contact-info">
+                      <h5>Phone:</h5>
+                      <div className='d-flex gap-5'>
+                        <p><FaPhone /> +94 123 456 789</p>
+                        <p><FaPhone /> +94 123 456 789</p>
+                      </div>
+                    </div>
 
+                    {/* Email */}
+                    <div className="contact-info">
+                      <h5>Email:</h5>
+                      <p><FaEnvelope /> info@udawalawaelegarden.com</p>
+                    </div>
 
+                    {/* Social Media Links */}
+                    <div className="social-icons">
+                      <h5>Follow Us:</h5>
+                      <Button href="https://www.facebook.com" target="_blank" variant="link">
+                        <FaFacebook size={30} />
+                      </Button>
+                      <Button href="https://www.instagram.com" target="_blank" variant="link">
+                        <FaInstagram size={30} />
+                      </Button>
+                      <Button href="https://www.twitter.com" target="_blank" variant="link">
+                        <FaTwitter size={30} />
+                      </Button>
+                    </div>
+                  </Card.Body>
+                </Card>
+              </div>
+            </Col>
+          </Row>
+        </Container>
 
-                              
-                              <Grid
-                                item
-                                xs={12}
-                                padding={1}
-                                sx={{
-                                  display: "flex",
-                                  justifyContent: "center",
-                                  alignItems: "center",
-                                }}
-                              >
-                                <FormControl component="fieldset">
-                                  <FormLabel component="legend">
-                                    Do You Have Any Experience
-                                  </FormLabel>
-                                  <FormGroup row>
-                                    <FormControlLabel
-                                      control={
-                                        <Checkbox
-                                          size="small"
-                                          name="Experience"
-                                          value="Snorkeling Experience"
-                                          checked={values.Experience.includes(
-                                            "Snorkeling Experience"
-                                          )}
-                                          onChange={(e) => {
-                                            const { checked, value } = e.target;
-                                            let newValues = [
-                                              ...values.Experience,
-                                            ];
-
-                                            // If 'No Any Experience' is selected, uncheck it
-                                            if (
-                                              values.Experience.includes(
-                                                "No Any Experience"
-                                              )
-                                            ) {
-                                              newValues = newValues.filter(
-                                                (v) => v !== "No Any Experience"
-                                              );
-                                            }
-
-                                            if (checked) {
-                                              newValues.push(value);
-                                            } else {
-                                              newValues = newValues.filter(
-                                                (v) => v !== value
-                                              );
-                                            }
-
-                                            setFieldValue(
-                                              "Experience",
-                                              newValues
-                                            );
-                                          }}
-                                          disabled={values.Experience.includes(
-                                            "No Any Experience"
-                                          )}
-                                        />
-                                      }
-                                      label="Snorkeling Experience"
-                                    />
-                                    <FormControlLabel
-                                      control={
-                                        <Checkbox
-                                          size="small"
-                                          name="Experience"
-                                          value="Diving Experience"
-                                          checked={values.Experience.includes(
-                                            "Diving Experience"
-                                          )}
-                                          onChange={(e) => {
-                                            const { checked, value } = e.target;
-                                            let newValues = [
-                                              ...values.Experience,
-                                            ];
-
-                                            // If 'No Any Experience' is selected, uncheck it
-                                            if (
-                                              values.Experience.includes(
-                                                "No Any Experience"
-                                              )
-                                            ) {
-                                              newValues = newValues.filter(
-                                                (v) => v !== "No Any Experience"
-                                              );
-                                            }
-
-                                            if (checked) {
-                                              newValues.push(value);
-                                            } else {
-                                              newValues = newValues.filter(
-                                                (v) => v !== value
-                                              );
-                                            }
-
-                                            setFieldValue(
-                                              "Experience",
-                                              newValues
-                                            );
-                                          }}
-                                          disabled={values.Experience.includes(
-                                            "No Any Experience"
-                                          )}
-                                        />
-                                      }
-                                      label="Diving Experience"
-                                    />
-                                    <FormControlLabel
-                                      control={
-                                        <Checkbox
-                                          size="small"
-                                          name="Experience"
-                                          value="No Any Experience"
-                                          checked={values.Experience.includes(
-                                            "No Any Experience"
-                                          )}
-                                          onChange={(e) => {
-                                            const { checked, value } = e.target;
-                                            let newValues = [];
-
-                                            if (checked) {
-                                              newValues = [value]; // Only allow this one
-                                            }
-
-                                            setFieldValue(
-                                              "Experience",
-                                              newValues
-                                            );
-                                          }}
-                                        />
-                                      }
-                                      label="No Any Experience"
-                                    />
-                                  </FormGroup>
-                                  {touched.Experience && errors.Experience && (
-                                    <p style={{ color: "red", marginTop: 8 }}>
-                                      {errors.Experience}
-                                    </p>
-                                  )}
-                                </FormControl>
-                              </Grid>
-
-
-
-
-
-
-
-                              <Grid item>
-                                <Button
-                                  type="submit"
-                                  variant="contained"
-                                  disabled={!isValid || isSubmitting}
-                                  sx={{
-                                    borderRadius: 3,
-                                    backgroundColor: "rgb(18, 104, 18)",
-                                    display: "block",
-                                    margin: "0 auto",
-                                    paddingX: 4,
-                                    paddingY: 1.5,
-                                    fontSize: "1rem",
-                                  }}
-                                >
-                                  Create Profile
-                                </Button>
-                              </Grid>
-                            </Grid>
-                          </CardContent>
-                        </Card>
-                      </Grid>
-                    </Grid>
-                  </Stack>
-                </Container>
-              </Box>
-            </Form>
-          )}
-        </Formik>
-      </>
+        <section className='container py-5 my-4 bg-light' id='book_now' style={{ boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)' }}>
+          <div className='manual_text_center'>
+            <h2 className='h3 fw-bold mb-3 text-dark'>Ready to Book Your Package</h2>
+            <p className='text-muted mb-4 mx-3'>
+              Experience the beauty of Udawalawa with us. Book your stay today and enjoy exclusive offers.
+            </p>
+          </div>
+  
+          <form className='row g-3 mx-3' onSubmit={handleSubmit}>
+            <div className='col-md-6'>
+              <label className='form-label'>Name *</label>
+              <input type='text' className='form-control' value={formData.name}
+                onChange={e => setFormData({ ...formData, name: e.target.value })} placeholder='e.g. John Due' required/>
+              <small className='text-danger'>{errors.name}</small>
+            </div>
+  
+            <div className='col-md-6'>
+              <label className='form-label'>Email Address *</label>
+              <input type='email' className='form-control' value={formData.email}
+                onChange={e => setFormData({ ...formData, email: e.target.value })} placeholder='e.g. johndue@gmail.com' required/>
+              <small className='text-danger'>{errors.email}</small>
+            </div>
+  
+            <div className='col-md-6'>
+              <label className='form-label'>Mobile Number *</label>
+              <input type='text' className='form-control' value={formData.phone}
+                onChange={e => setFormData({ ...formData, phone: e.target.value })} placeholder='e.g. +94712345678' required/>
+              <small className='text-danger'>{errors.phone}</small>
+            </div>
+  
+            <div className='col-md-6'>
+              <label className='form-label'>Country *</label>
+              <input type='text' className='form-control' value={formData.country}
+                onChange={e => setFormData({ ...formData, country: e.target.value })} placeholder='e.g. Sri Lanka' required/>
+              <small className='text-danger'>{errors.country}</small>
+            </div>
+  
+            <div className='col-6'>
+              <label className='form-label'>Select Packages *</label>
+              <Select
+                isMulti
+                options={packageOptions}
+                value={formData.packages}
+                onChange={selectedOptions => setFormData({ ...formData, packages: selectedOptions })}
+                className='basic-multi-select'
+                classNamePrefix='select'
+                required
+              />
+            </div>
+  
+            <div className='col-md-3'>
+              <label className='form-label'>Check In Date *</label>
+              <DatePicker
+                selected={formData.checkIn}
+                onChange={date => setFormData({ ...formData, checkIn: date })}
+                className='form-control'
+                placeholderText='Select date'
+                minDate={new Date()}
+                required
+              />
+              <small className='text-danger'>{errors.checkIn}</small>
+            </div>
+  
+            <div className='col-md-3'>
+              <label className='form-label'>Check Out Date</label>
+              <DatePicker
+                selected={formData.checkOut}
+                onChange={date => setFormData({ ...formData, checkOut: date })}
+                className='form-control'
+                placeholderText='Select date'
+                minDate={formData.checkIn} // ✅ disables dates before check-in
+                disabled={!formData.checkIn} // Optional: disable until check-in is selected
+              />
+            </div>
+  
+            <div className='col-md-12'>
+              <label className='form-label'>Special Remark</label>
+              <textarea className='form-control' rows='3' value={formData.specialRequests}
+                onChange={e => setFormData({ ...formData, specialRequests: e.target.value })}></textarea>
+            </div>
+  
+            {loading && (
+              <div className='mt-3 alert alert-info' role='alert'>
+                Processing your booking... Please wait.
+              </div>
+            )}
+  
+            {!loading && message.text && (
+              <div className={`mt-3 alert ${message.type === 'success' ? 'alert-success' : 'alert-danger'}`} role='alert'>
+                {message.text}
+              </div>
+            )}
+  
+            <div className='col-12'>
+              <button type='submit' className='btn btn-primary'>Submit</button>
+            </div>
+  
+          </form>
+        </section>
+      </div>
     </>
   );
 }

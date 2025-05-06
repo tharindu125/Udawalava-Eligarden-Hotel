@@ -4,7 +4,7 @@ import Contact from '../pages/contact';
 
 function Footer() {
   return (
-    <footer className="bg-dark text-light pt-5 pb-4">
+    <footer className="bg-dark text-light pt-5 pb-4 manual_text_center">
       <Container>
         <Row>
           {/* Logo & Company Info */}

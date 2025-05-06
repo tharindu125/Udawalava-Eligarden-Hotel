@@ -1,6 +1,6 @@
 import React from 'react';
 import CustomNavbar from '../components/CustomNavbar';
-import MainCarousel from '../components/MainCarousel';
+import slider1 from '../assets/slider1.jpg';
 import {
   FaWifi,
   FaFan,
@@ -20,9 +20,14 @@ const RoomsSection = () => {
   return (
     <>
         <CustomNavbar />
-        {/* <div>
-            <MainCarousel />
-        </div> */}
+        {/* Hero Section */}
+        <div className="about-hero-section" style={{ position: 'relative', height: '400px', background: `url(${slider1}) no-repeat center center/cover` }}>
+            <div className="hero-overlay">
+            <h1 className="text-center text-white">Room Features & Amenities</h1>
+            <p className="text-center text-white">Enjoy free laundry and room service with no extra fees – because your comfort is always our priority.</p>
+            </div>
+        </div>
+
         <section className="container mt-5 mb-5 py-5 bg-light" style={{ boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' }}>
             <div className="text-center mb-5">
                 <h2 className="fw-bold">Rooms & Guest House</h2>
