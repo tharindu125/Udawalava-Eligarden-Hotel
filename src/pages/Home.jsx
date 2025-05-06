@@ -11,47 +11,51 @@ import emailjs from 'emailjs-com';
 
 import welcomeImage from '../assets/slider2.jpg';
 import welcomeImage2 from '../assets/sri-lanka-leopard-asian.jpg';
-import welcomeImage3 from '../assets/Restaurent.jpg';
+import nearPlace1 from '../assets/slider1.jpg'
+import nearPlace2 from '../assets/Maduwanwela-Walawwa.jpg'
+import nearPlace3 from '../assets/Sankapala.jpg'
+import nearPlace4 from '../assets/elephant_transit.webp'
+import nearPlace5 from '../assets/wavulpone.webp'
 
 function Home() {
   const nearbyAttractions = [
     {
       title: 'Udawalawa National Park',
-      distance: '0.5 km',
+      distance: '2.3 km',
       description: 'Experience the rich biodiversity and stunning landscapes of this national park.',
-      image: welcomeImage,
+      image: nearPlace1,
     },
     {
       title: 'Maduwanwela Walawwa',
-      distance: '0.5 km',
+      distance: '43 km',
       description: 'Explore the historic mansion with colonial architecture and rich history.',
-      image: welcomeImage,
+      image: nearPlace2,
     },
     {
-      title: 'Surathali Ella Waterfall',
-      distance: '0.5 km',
+      title: 'Katupila wewa',
+      distance: '8.5 km',
       description: 'A scenic waterfall surrounded by lush forest — perfect for a short trek.',
       image: welcomeImage,
     },
     {
-      title: 'Udawalawa National Park',
-      distance: '0.5 km',
-      description: 'Experience the rich biodiversity and stunning landscapes of this national park.',
-      image: welcomeImage,
+      title: 'Sankhapala Ancient Historical Temple',
+      distance: '15 km',
+      description: 'An ancient Buddhist temple nestled in the hills with beautiful views.',
+      image: nearPlace3,
     },
     {
-      title: 'Maduwanwela Walawwa',
-      distance: '0.5 km',
-      description: 'Explore the historic mansion with colonial architecture and rich history.',
-      image: welcomeImage,
+      title: 'Elephant Transit Home',
+      distance: '6.6 km',
+      description: 'See baby elephants being rehabilitated before they return to the wild.',
+      image: nearPlace4,
     },
     {
-      title: 'Surathali Ella Waterfall',
-      distance: '0.5 km',
-      description: 'A scenic waterfall surrounded by lush forest — perfect for a short trek.',
-      image: welcomeImage,
-    },
-  ];
+      title: 'Wawulpane Limestone Cave',
+      distance: '21 km',
+      description: 'A prehistoric limestone cave with a flowing stream and bat colonies.',
+      image: nearPlace5 ,
+    }
+  ];  
 
   const [formData, setFormData] = useState({
     name: '',
@@ -165,7 +169,7 @@ function Home() {
       </section>
 
       {/* REstuarent */}
-      <section className='container py-5 bg-light' style={{ boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)' }}>
+      <section className='container py-5' style={{ boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)' }}>
         <div className='row align-items-center'>
           {/* Image */}
           <div className='col-md-6'>
@@ -235,7 +239,7 @@ function Home() {
       </section>
 
       {/* Near Places */}
-      <section className='container py-5 my-4 bg-light near_places' style={{ boxShadow: '0 0px 8px rgba(0, 0, 0, 0.2)' }}>
+      <section className='container py-5 my-4 near_places' >
         <div className='container manual_text_center'>
           <h2 className='h3 fw-bold mb-3 text-dark'>Explore Nearby Attractions</h2>
           <p className='text-muted mb-3'>
@@ -261,7 +265,7 @@ function Home() {
       </section>
 
       {/* Book Now */}
-      <section className='container py-5 my-4' id='book_now'>
+      <section className='container py-5 my-4 bg-light' id='book_now' style={{ boxShadow: '0 0px 8px rgba(0, 0, 0, 0.2)' }}>
         <div className='manual_text_center'>
           <h2 className='h3 fw-bold mb-3 text-dark'>Ready to Book Your Package</h2>
           <p className='text-muted mb-4 mx-3'>
