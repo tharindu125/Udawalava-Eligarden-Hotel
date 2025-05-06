@@ -11,17 +11,17 @@ function About() {
       {/* Hero Section */}
       <div className="about-hero-section" style={{ position: 'relative', height: '400px', background: `url(${slider1}) no-repeat center center/cover` }}>
         <div className="hero-overlay">
-          <h1 className="text-center text-white">About Us</h1>
-          <p className="text-center text-white">Learn more about our journey and services</p>
+          <h1 className="text-center text-white fw-bold">About Us</h1>
+          <p className="text-center text-white">Nestled near the heart of Udawalawe, our hotel blends comfort, charm, and nature to create unforgettable stays for every guest.</p>
         </div>
       </div>
 
       {/* About Content */}
       <div className="about-content" style={{ paddingTop: '50px', paddingBottom: '50px' }}>
         <Container>
-          <Row className="mb-4">
+          <Row className="mb-4 manual_text_center">
             <Col xs={12} md={6}>
-              <h2>About Udawalawa Elegarden Hotel</h2>
+              <h2 className='fw-bold text-primary-emphasis'>About Udawalawa Elegarden Hotel</h2>
               <p>
                 Nestled in the heart of nature, Udawalawa Elegarden Hotel offers the perfect blend of comfort, convenience, and adventure. Whether you're here 
                 to relax or explore, our hotel is your ideal getaway.
@@ -43,7 +43,7 @@ function About() {
               <Card className="text-center">
                 <Card.Body>
                   <FaCheckCircle size={50} color="#007BFF" />
-                  <Card.Title>Quality Service</Card.Title>
+                  <Card.Title className='text-primary-emphasis'>Quality Service</Card.Title>
                   <Card.Text>
                     We prioritize quality in everything we do to ensure our customers have the best experience.
                   </Card.Text>
@@ -54,7 +54,7 @@ function About() {
               <Card className="text-center">
                 <Card.Body>
                   <FaInfoCircle size={50} color="#28A745" />
-                  <Card.Title>Experienced Team</Card.Title>
+                  <Card.Title className='text-primary-emphasis'>Experienced Team</Card.Title>
                   <Card.Text>
                     Our team has years of experience, ensuring your every need is met with expertise and care.
                   </Card.Text>
@@ -65,7 +65,7 @@ function About() {
               <Card className="text-center">
                 <Card.Body>
                   <FaRegStar size={50} color="#FFC107" />
-                  <Card.Title>Customer Satisfaction</Card.Title>
+                  <Card.Title className='text-primary-emphasis'>Customer Satisfaction</Card.Title>
                   <Card.Text>
                     We are committed to providing exceptional service and ensuring every customer is satisfied.
                   </Card.Text>
@@ -76,7 +76,7 @@ function About() {
 
           {/* Call to Action */}
           <div className="cta-section text-center">
-            <h3>Ready to Experience the Best?</h3>
+            <h3 className='fw-bold text-warning-emphasis'>Ready to Experience the Best?</h3>
             <p>Join us for an unforgettable experience. Book a tour with us today!</p>
             <Button variant="primary" href="/contact#book_now">Book Now</Button>
           </div>

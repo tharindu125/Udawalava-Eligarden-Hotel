@@ -137,11 +137,11 @@ function Home() {
       </div>
 
       {/* Guest House */}
-      <section className='container py-5'>
+      <section className='container py-5 main-topic'>
         <div className='row align-items-center'>
           {/* Text Content */}
-          <div className='col-md-6 mb-4 mb-md-0 manual_text_center'>
-            <h2 className='h3 fw-bold mb-3 text-dark'>Room Features & Amenities</h2>
+          <div className='col-md-6 mb-4 mb-md-0 manual_text_center content'>
+            <h2 className='h3 fw-bold mb-3 text-warning-emphasis'>Room Features & Amenities</h2>
             <p className='text-muted mb-3'>
               At Udawalawa Elegarden Hotel, we offer a peaceful stay with nature just outside your window. Whether you're traveling alone, as a couple, or with 
               family, our Single, Double, and Triple rooms are designed to match your needs with comfort and privacy.
@@ -155,7 +155,7 @@ function Home() {
           </div>
 
           {/* Image */}
-          <div className='col-md-6'>
+          <div className='col-md-6 image'>
             <img
               src={welcomeImage}
               alt='Room Features & Amenities'
@@ -169,10 +169,10 @@ function Home() {
       </section>
 
       {/* REstuarent */}
-      <section className='container py-5' style={{ boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)' }}>
+      <section className='container py-5 main-topic' style={{ boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)' }}>
         <div className='row align-items-center'>
           {/* Image */}
-          <div className='col-md-6'>
+          <div className='col-md-6 image'>
             <img
               src={welcomeImage}
               alt='Delicious Local & International Restaurant'
@@ -183,8 +183,8 @@ function Home() {
             />
           </div>
           {/* Text Content */}
-          <div className='col-md-6 mb-4 mb-md-0 manual_text_center'>
-            <h2 className='h3 fw-bold mb-3 text-dark'>Delicious Local & International Restaurant</h2>
+          <div className='col-md-6 mb-4 mb-md-0 manual_text_center content'>
+            <h2 className='h3 fw-bold mb-3 text-warning-emphasis'>Delicious Local & International Restaurant</h2>
             <p className='text-muted mb-3'>
               Start your day with a hearty breakfast, relax with a satisfying lunch, or unwind with a flavorful dinner — all freshly prepared by our 
               skilled chefs using local ingredients. Whether you prefer to dine in and enjoy the serene atmosphere or grab a quick takeaway, we cater to your needs.
@@ -201,11 +201,11 @@ function Home() {
       </section>
 
       {/* Wild Life & Safari Tours */}
-      <section className='container py-5'>
+      <section className='container py-5 main-topic'>
         <div className='row align-items-center'>
           {/* Text Content */}
-          <div className='col-md-6 mb-4 mb-md-0 manual_text_center'>
-            <h2 className='h3 fw-bold mb-3 text-dark'>Wildlife Adventures : Udawalawe Safari Tours</h2>
+          <div className='col-md-6 mb-4 mb-md-0 manual_text_center content'>
+            <h2 className='h3 fw-bold mb-3 text-warning-emphasis'>Wildlife Adventures : Udawalawe Safari Tours</h2>
             <p className='text-muted mb-3'>
               Embark on an unforgettable journey with our Udawalawe Safari Tours the perfect way to experience Sri Lanka’s wild beauty. Home to a thriving population 
               of Asian elephants.
@@ -225,7 +225,7 @@ function Home() {
           </div>
 
           {/* Image */}
-          <div className='col-md-6'>
+          <div className='col-md-6 image'>
             <img
               src={welcomeImage2}
               alt='Wildlife Adventures : Udawalawe Safari Tours'
@@ -241,7 +241,7 @@ function Home() {
       {/* Near Places */}
       <section className='container py-5 my-4 near_places' >
         <div className='container manual_text_center'>
-          <h2 className='h3 fw-bold mb-3 text-dark'>Explore Nearby Attractions</h2>
+          <h2 className='h3 fw-bold mb-3 text-warning-emphasis'>Explore Nearby Attractions</h2>
           <p className='text-muted mb-3'>
             Discover the beauty of Udawalawa and its surroundings. From stunning waterfalls to ancient temples, there's so much to explore.
           </p>
@@ -254,7 +254,7 @@ function Home() {
                   </div>
                   <img src={item.image} className='card-img-top' alt={item.title} />
                   <div className='card-body'>
-                    <h5 className='card-title'>{item.title}</h5>
+                    <h5 className='card-title fw-bold text-primary-emphasis'>{item.title}</h5>
                     <p className='card-text'>{item.description}</p>
                   </div>
                 </div>
@@ -267,7 +267,7 @@ function Home() {
       {/* Book Now */}
       <section className='container py-5 my-4 bg-light' id='book_now' style={{ boxShadow: '0 0px 8px rgba(0, 0, 0, 0.2)' }}>
         <div className='manual_text_center'>
-          <h2 className='h3 fw-bold mb-3 text-dark'>Ready to Book Your Package</h2>
+          <h2 className='h3 fw-bold mb-3 text-warning-emphasis'>Ready to Book Your Package</h2>
           <p className='text-muted mb-4 mx-3'>
             Experience the beauty of Udawalawa with us. Book your stay today and enjoy exclusive offers.
           </p>

@@ -19,8 +19,8 @@ function Gallery() {
       {/* Hero Section */}
       <div className="about-hero-section" style={{ position: 'relative', height: '400px', background: `url(${slider1}) no-repeat center center/cover` }}>
         <div className="hero-overlay">
-          <h1 className="text-center text-white">Gallery</h1>
-          <p className="text-center text-white">Explore our beautiful hotel through our gallery.</p>
+          <h1 className="text-center text-white fw-bold">Gallery</h1>
+          <p className="text-center text-white">Explore stunning moments from our hotel, surroundings, and guest experiences — a glimpse into your next unforgettable stay.</p>
         </div>
       </div>
 

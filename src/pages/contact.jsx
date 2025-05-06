@@ -87,8 +87,8 @@ function Contact() {
       {/* Hero Section */}
       <div className="about-hero-section" style={{ position: 'relative', height: '400px', background: `url(${slider1}) no-repeat center center/cover` }}>
         <div className="hero-overlay">
-          <h1 className="text-center text-white">Contact Us</h1>
-          <p className="text-center text-white">Learn more about our journey and services</p>
+          <h1 className="text-center text-white fw-bold">Contact Us</h1>
+          <p className="text-center text-white">Reach out to us for reservations, inquiries, or any assistance — our team is always ready to make your stay smooth and memorable.</p>
         </div>
       </div>
 
@@ -118,14 +118,14 @@ function Contact() {
                     
                     {/* Address */}
                     <div className="contact-info">
-                      <h5>Address:</h5>
+                      <h5 className='text-primary-emphasis'>Address:</h5>
                       <p>Udawalawa Elegarden Hotel, Udawalawa, Sri Lanka</p>
                     </div>
 
                     {/* Phone */}
                     <div className="contact-info">
-                      <h5>Phone:</h5>
-                      <div className='d-flex gap-5'>
+                      <h5 className='text-primary-emphasis'>Phone:</h5>
+                      <div className='d-flex gap-5 mobile_no'>
                         <p><FaPhone /> +94 123 456 789</p>
                         <p><FaPhone /> +94 123 456 789</p>
                       </div>
@@ -133,13 +133,13 @@ function Contact() {
 
                     {/* Email */}
                     <div className="contact-info">
-                      <h5>Email:</h5>
+                      <h5 className='text-primary-emphasis'>Email:</h5>
                       <p><FaEnvelope /> info@udawalawaelegarden.com</p>
                     </div>
 
                     {/* Social Media Links */}
                     <div className="social-icons">
-                      <h5>Follow Us:</h5>
+                      <h5 className='text-primary-emphasis'>Follow Us:</h5>
                       <Button href="https://www.facebook.com" target="_blank" variant="link">
                         <FaFacebook size={30} />
                       </Button>
@@ -159,7 +159,7 @@ function Contact() {
 
         <section className='container py-5 my-4 bg-light' id='book_now' style={{ boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)' }}>
           <div className='manual_text_center'>
-            <h2 className='h3 fw-bold mb-3 text-dark'>Ready to Book Your Package</h2>
+            <h2 className='h3 fw-bold mb-3 text-warning-emphasis'>Ready to Book Your Package</h2>
             <p className='text-muted mb-4 mx-3'>
               Experience the beauty of Udawalawa with us. Book your stay today and enjoy exclusive offers.
             </p>

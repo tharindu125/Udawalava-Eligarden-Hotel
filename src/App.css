@@ -62,10 +62,6 @@
   backdrop-filter: blur(5px);
 }
 
-.carousel-caption {
-  bottom: 5rem !important;
-}
-
 /* Sub Carousel */
 .fullscreen-image-sub {
   height: 60vh;
@@ -75,7 +71,7 @@
 
 @media (max-width: 992px) {
   .fullscreen-image {
-    height: 115vh;
+    height: 100vh;
     object-fit: cover;
     object-position: center;
   }
@@ -85,13 +81,23 @@
   bottom: 5%;
   top: 15%;
   padding: 3rem;
-  /* background: rgba(21, 0, 41, 0.172); */
   color: #fff;
-  /* display: flex; */
   align-items: center;
   justify-content: center;
   text-align: left;
   flex-direction: column;
+  bottom: 5rem !important;
+}
+
+@media (max-width: 550px) {
+  .carousel-caption {
+    bottom: 5%;
+    top: 10%;
+    left: 8% !important;
+    right: 8% !important;
+    padding: 1.5rem;
+    text-align: center;
+  }
 }
 
 /* Styling for welcome and content sections */
@@ -131,6 +137,8 @@
   text-decoration: underline;
 }
 
+
+
 /* Responsive Adjustments */
 @media (max-width: 992px) {
   .welcome h2 {
@@ -148,6 +156,7 @@
 }
 
 @media (max-width: 768px) {
+
   .carousel-caption {
     padding: 1.5rem;
   }
@@ -163,11 +172,24 @@
   .why-box, .icon-box {
     padding: 15px;
   }
+
+  .main-topic .image {
+    order: 0;
+    margin-bottom: 15px;
+  }
+
+  .main-topic .content {
+    order: 1;
+  }
+
+  .main-topic {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
 }
 
 @media (max-width: 576px) {
   .welcome h2 {
-    font-size: 1.3rem;
+    font-size: 23px;
   }
 
   .welcome p {
@@ -191,6 +213,10 @@
   text-shadow: 2px 2px 4px rgba(255, 213, 0, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
   border: 1px solid hsla(0, 0%, 100%, 0.62);
+}
+
+.near_places .card {
+  padding: 10px;
 }
 
 /* Contact Page */
@@ -231,6 +257,10 @@
 
   .contact-details .contact-card {
     margin-top: 20px;
+  }
+
+  .contact-info .mobile_no {
+    gap: 8px !important;
   }
 }
 
