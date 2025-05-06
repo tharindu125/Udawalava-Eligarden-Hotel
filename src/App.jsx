@@ -11,6 +11,7 @@ import Contact from './pages/contact';
 import Footer from './components/Footer';
 import RoomDetails from './pages/Rooms';
 import Restaurant from './pages/Restaurant'
+import Gallery from './pages/Gallery';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/RoomDetails" element={<RoomDetails />} />
         <Route path="/Restaurant" element={<Restaurant />} />
+        <Route path="/Gallery" element={<Gallery />} />
       </Routes>
       <Footer />
     </>

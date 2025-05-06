@@ -2,6 +2,10 @@
   /* max-width: 1280px; */
   margin: 0 auto;
   /* padding: 2rem; */
+  /* text-align: center; */
+}
+
+.manual_text_center {
   text-align: center;
 }
 
@@ -167,4 +171,14 @@
   .icon-box {
     font-size: 0.9rem;
   }
+}
+
+/* Near Place */
+.near_places .price {
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #4e3c01cf;
+  text-shadow: 2px 2px 4px rgba(255, 213, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+  border: 1px solid hsla(0, 0%, 100%, 0.62);
 }

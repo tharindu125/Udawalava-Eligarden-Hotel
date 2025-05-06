@@ -3,8 +3,125 @@ import CustomNavbar from '../components/CustomNavbar';
 import MainCarousel from '../components/MainCarousel';
 import welcomeImage from '../assets/slider2.jpg';
 import { Link } from 'react-router-dom';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import React, { useState } from 'react';
+import DatePicker from 'react-datepicker';
+import Select from 'react-select';
+import 'react-datepicker/dist/react-datepicker.css';
+import emailjs from 'emailjs-com';
 
 function Home() {
+  const nearbyAttractions = [
+    {
+      title: 'Udawalawa National Park',
+      distance: '0.5 km',
+      description: 'Experience the rich biodiversity and stunning landscapes of this national park.',
+      image: welcomeImage,
+    },
+    {
+      title: 'Maduwanwela Walawwa',
+      distance: '0.5 km',
+      description: 'Explore the historic mansion with colonial architecture and rich history.',
+      image: welcomeImage,
+    },
+    {
+      title: 'Surathali Ella Waterfall',
+      distance: '0.5 km',
+      description: 'A scenic waterfall surrounded by lush forest — perfect for a short trek.',
+      image: welcomeImage,
+    },
+    {
+      title: 'Udawalawa National Park',
+      distance: '0.5 km',
+      description: 'Experience the rich biodiversity and stunning landscapes of this national park.',
+      image: welcomeImage,
+    },
+    {
+      title: 'Maduwanwela Walawwa',
+      distance: '0.5 km',
+      description: 'Explore the historic mansion with colonial architecture and rich history.',
+      image: welcomeImage,
+    },
+    {
+      title: 'Surathali Ella Waterfall',
+      distance: '0.5 km',
+      description: 'A scenic waterfall surrounded by lush forest — perfect for a short trek.',
+      image: welcomeImage,
+    },
+  ];
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    country: '',
+    checkIn: null,
+    checkOut: null,
+    packages: [],
+    specialRequests: '',
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const packageOptions = [
+    { value: 'Single Room', label: 'Single Room' },
+    { value: 'Double Room', label: 'Double Room' },
+    { value: 'Triple Room', label: 'Triple Room' },
+  ];
+  
+  const validate = () => {
+    let temp = {};
+    temp.name = formData.name ? '' : 'Name is required';
+    temp.email = /\S+@\S+\.\S+/.test(formData.email) ? '' : 'Valid email is required';
+    temp.phone = formData.phone ? '' : 'Mobile number is required';
+    temp.country = formData.country ? '' : 'Country is required';
+    temp.checkIn = formData.checkIn ? '' : 'Check-in date is required';
+    setErrors(temp);
+    return Object.values(temp).every(x => x === '');
+  };
+
+  const [message, setMessage] = useState({ type: '', text: '' });
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!validate()) return;
+
+    setLoading(true); // show loading
+    setMessage({ type: '', text: '' }); // reset message
+  
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      country: formData.country,
+      checkin: formData.checkIn?.toLocaleDateString(),
+      checkout: formData.checkOut?.toLocaleDateString(),
+      packages: formData.packages.map(p => p.label).join(', '),
+      specialRequests: formData.specialRequests || 'None',
+    };
+  
+    emailjs
+      .send('service_yfik5ye', 'template_sk997no', templateParams, 'Gm6ruTC-Zjw_QKJ3N')
+      .then(() => {
+        setMessage({ type: 'success', text: 'Booking submitted successfully!' });
+        setFormData({
+          name: '', email: '', phone: '', country: '', checkIn: null, checkOut: null, packages: [], specialRequests: '',
+        });
+        setTimeout(() => {
+          setMessage({ type: '', text: '' });
+        }, 3000);
+        setErrors({});
+      })
+      .catch((error) => {
+        console.error('Email sending failed:', error);
+        setMessage({ type: 'error', text: 'Failed to send email. Please try again later.' });
+      })
+      .finally(() => {
+        setLoading(false); // hide loading after response
+      });
+  };
+  
   return (
     <>
       <CustomNavbar />
@@ -16,7 +133,7 @@ function Home() {
       <section className='container py-5'>
         <div className='row align-items-center'>
           {/* Text Content */}
-          <div className='col-md-6 mb-4 mb-md-0'>
+          <div className='col-md-6 mb-4 mb-md-0 manual_text_center'>
             <h2 className='h3 fw-bold mb-3 text-dark'>Room Features & Amenities</h2>
             <p className='text-muted mb-3'>
               At Udawalawa Elegarden Hotel, we offer a peaceful stay with nature just outside your window. Whether you're traveling alone, as a couple, or with 
@@ -44,7 +161,7 @@ function Home() {
         </div>
       </section>
 
-      {/* Guest House */}
+      {/* REstuarent */}
       <section className='container py-5 bg-light' style={{ boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' }}>
         <div className='row align-items-center'>
           {/* Image */}
@@ -59,7 +176,7 @@ function Home() {
             />
           </div>
           {/* Text Content */}
-          <div className='col-md-6 mb-4 mb-md-0'>
+          <div className='col-md-6 mb-4 mb-md-0 manual_text_center'>
             <h2 className='h3 fw-bold mb-3 text-dark'>Delicious Local & International Restaurant</h2>
             <p className='text-muted mb-3'>
               Start your day with a hearty breakfast, relax with a satisfying lunch, or unwind with a flavorful dinner — all freshly prepared by our 
@@ -76,11 +193,11 @@ function Home() {
         </div>
       </section>
 
-      {/* Guest House */}
+      {/* Wild Life & Safari Tours */}
       <section className='container py-5'>
         <div className='row align-items-center'>
           {/* Text Content */}
-          <div className='col-md-6 mb-4 mb-md-0'>
+          <div className='col-md-6 mb-4 mb-md-0 manual_text_center'>
             <h2 className='h3 fw-bold mb-3 text-dark'>Wildlife Adventures : Udawalawe Safari Tours</h2>
             <p className='text-muted mb-3'>
               Embark on an unforgettable journey with our Udawalawe Safari Tours the perfect way to experience Sri Lanka’s wild beauty. Home to a thriving population 
@@ -113,6 +230,134 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* Near Places */}
+      <section className='container py-5 my-4 bg-light near_places' style={{ boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' }}>
+        <div className='container manual_text_center'>
+          <h2 className='h3 fw-bold mb-3 text-dark'>Explore Nearby Attractions</h2>
+          <p className='text-muted mb-3'>
+            Discover the beauty of Udawalawa and its surroundings. From stunning waterfalls to ancient temples, there's so much to explore.
+          </p>
+          <div className='row'>
+            {nearbyAttractions.map((item, index) => (
+              <div className='col-md-4 mb-4' key={index}>
+                <div className='card h-100 shadow-sm position-relative overflow-hidden'>
+                  <div className="position-absolute top-5 start-5 m-2 text-white px-2 py-1 rounded price">
+                    <i className="bi bi-geo-alt-fill"></i> {item.distance}
+                  </div>
+                  <img src={item.image} className='card-img-top' alt={item.title} />
+                  <div className='card-body'>
+                    <h5 className='card-title'>{item.title}</h5>
+                    <p className='card-text'>{item.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Book Now */}
+      <section className='container py-5 my-4'>
+        <div className='manual_text_center'>
+          <h2 className='h3 fw-bold mb-3 text-dark'>Ready to Book Your Package</h2>
+          <p className='text-muted mb-4 mx-3'>
+            Experience the beauty of Udawalawa with us. Book your stay today and enjoy exclusive offers.
+          </p>
+        </div>
+
+        <form className='row g-3 mx-3' onSubmit={handleSubmit}>
+          <div className='col-md-6'>
+            <label className='form-label'>Name *</label>
+            <input type='text' className='form-control' value={formData.name}
+              onChange={e => setFormData({ ...formData, name: e.target.value })} placeholder='e.g. John Due' required/>
+            <small className='text-danger'>{errors.name}</small>
+          </div>
+
+          <div className='col-md-6'>
+            <label className='form-label'>Email Address *</label>
+            <input type='email' className='form-control' value={formData.email}
+              onChange={e => setFormData({ ...formData, email: e.target.value })} placeholder='e.g. johndue@gmail.com' required/>
+            <small className='text-danger'>{errors.email}</small>
+          </div>
+
+          <div className='col-md-6'>
+            <label className='form-label'>Mobile Number *</label>
+            <input type='text' className='form-control' value={formData.phone}
+              onChange={e => setFormData({ ...formData, phone: e.target.value })} placeholder='e.g. +94712345678' required/>
+            <small className='text-danger'>{errors.phone}</small>
+          </div>
+
+          <div className='col-md-6'>
+            <label className='form-label'>Country *</label>
+            <input type='text' className='form-control' value={formData.country}
+              onChange={e => setFormData({ ...formData, country: e.target.value })} placeholder='e.g. Sri Lanka' required/>
+            <small className='text-danger'>{errors.country}</small>
+          </div>
+
+          <div className='col-6'>
+            <label className='form-label'>Select Packages *</label>
+            <Select
+              isMulti
+              options={packageOptions}
+              value={formData.packages}
+              onChange={selectedOptions => setFormData({ ...formData, packages: selectedOptions })}
+              className='basic-multi-select'
+              classNamePrefix='select'
+              required
+            />
+          </div>
+
+          <div className='col-md-3'>
+            <label className='form-label'>Check In Date *</label>
+            <DatePicker
+              selected={formData.checkIn}
+              onChange={date => setFormData({ ...formData, checkIn: date })}
+              className='form-control'
+              placeholderText='Select date'
+              minDate={new Date()}
+              required
+            />
+            <small className='text-danger'>{errors.checkIn}</small>
+          </div>
+
+          <div className='col-md-3'>
+            <label className='form-label'>Check Out Date</label>
+            <DatePicker
+              selected={formData.checkOut}
+              onChange={date => setFormData({ ...formData, checkOut: date })}
+              className='form-control'
+              placeholderText='Select date'
+              minDate={formData.checkIn} // ✅ disables dates before check-in
+              disabled={!formData.checkIn} // Optional: disable until check-in is selected
+            />
+          </div>
+
+          <div className='col-md-12'>
+            <label className='form-label'>Special Remark</label>
+            <textarea className='form-control' rows='3' value={formData.specialRequests}
+              onChange={e => setFormData({ ...formData, specialRequests: e.target.value })}></textarea>
+          </div>
+
+          {loading && (
+            <div className='mt-3 alert alert-info' role='alert'>
+              Processing your booking... Please wait.
+            </div>
+          )}
+
+          {!loading && message.text && (
+            <div className={`mt-3 alert ${message.type === 'success' ? 'alert-success' : 'alert-danger'}`} role='alert'>
+              {message.text}
+            </div>
+          )}
+
+          <div className='col-12'>
+            <button type='submit' className='btn btn-primary'>Submit</button>
+          </div>
+
+        </form>
+      </section>
+
     </>
   );
 }

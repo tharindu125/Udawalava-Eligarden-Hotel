@@ -19,12 +19,17 @@ function CustomNavbar() {
         <Navbar.Toggle aria-controls="navbar-nav" />
 
         <Navbar.Collapse id="navbar-nav">
-          <Nav className="ms-auto">
+          <Nav className="ms-auto align-items-center">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
             <Nav.Link href="/RoomDetails">Room Details</Nav.Link>
             <Nav.Link href="/Restaurant">Restaurant</Nav.Link>
+            <Nav.Link href="/Gallery">Gallery</Nav.Link>
+            {/* Button */}
+            <div className="ms-3">
+              <a href="/booking" className="btn btn-primary"> Book Now </a>
+            </div>
           </Nav>
         </Navbar.Collapse>
 
