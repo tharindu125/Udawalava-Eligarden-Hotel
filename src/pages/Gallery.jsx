@@ -2,6 +2,9 @@ import CustomNavbar from "../components/CustomNavbar";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
+
 
 // Importing images
 import slider1 from "../assets/slider1.jpg";
@@ -67,6 +70,10 @@ const itemData = [
 function Gallery() {
   const images = [slider1, slider2, slider3, slider4, slider5, slider6];
 
+  
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   return (
     <>
       <CustomNavbar />
@@ -106,30 +113,31 @@ function Gallery() {
           </Row>
           </Container>
 
-        <Container fluid className="d-flex justify-content-center">
-  <ImageList
-    sx={{
-      width: '100%',
-      maxWidth: '1200px', // Optional: controls max width
-      height: 'auto',
-    }}
-    variant="woven"
-    cols={3}
-    gap={8}
-  >
-    {itemData.map((item) => (
-      <ImageListItem key={item.img}>
-        <img
-          srcSet={`${item.img}?w=300&fit=crop&auto=format&dpr=2 2x`}
-          src={`${item.img}?w=300&fit=crop&auto=format`}
-          alt={item.title}
-          loading="lazy"
-          style={{ width: '100%', height: 'auto' }}
-        />
-      </ImageListItem>
-    ))}
-  </ImageList>
-</Container>
+          <Container fluid className="d-flex justify-content-center">
+      <ImageList
+        sx={{
+          width: '100%',
+          maxWidth: '1200px',
+          height: 'auto',
+        }}
+        variant="woven"
+        cols={isMobile ? 1 : 3} // 👈 Responsive columns
+        gap={8}
+      >
+        {itemData.map((item) => (
+          <ImageListItem key={item.img}>
+            <img
+              srcSet={`${item.img}?w=600&fit=crop&auto=format&dpr=2 2x`}
+              src={`${item.img}?w=600&fit=crop&auto=format`}
+              alt={item.title}
+              loading="lazy"
+              style={{ width: '100%', height: 'auto', borderRadius:'12px' }}
+              
+            />
+          </ImageListItem>
+        ))}
+      </ImageList>
+    </Container>
 
         
       </div>
