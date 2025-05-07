@@ -10,8 +10,6 @@ import slider1 from "../assets/slider1.jpg";
 import slider2 from "../assets/slider2.jpg";
 import slider3 from "../assets/slider2.jpg";
 import slider4 from "../assets/slider1.jpg";
-import slider5 from "../assets/slider2.jpg";
-import slider6 from "../assets/slider2.jpg";
 
 const itemData = [
   {
@@ -65,7 +63,7 @@ const itemData = [
 ];
 
 function Gallery() {
-  const images = [slider1, slider2, slider3, slider4, slider5, slider6];
+  const images = [slider1, slider2, slider3, slider4];
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));

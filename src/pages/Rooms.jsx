@@ -24,25 +24,29 @@ const RoomsSection = () => {
         single: {
             title: 'Single Room',
             description: 'Perfect for solo travelers looking for peace and privacy.',
+            price: '4500 LKR',
         },
         double: {
             title: 'Double Room',
             description: 'Ideal for couples or friends, offering a cozy and spacious atmosphere.',
+            price: '6500 LKR',
         },
         triple: {
             title: 'Triple Room',
             description: 'Great for families or small groups, providing enough space and comfort for everyone.',
+            price: '9000 LKR',
         },
     };
   
     const renderTabContent = () => {
-        const { title, description } = roomDetails[activeTab];
+        const { title, description, price } = roomDetails[activeTab];
         return (
             <>
-            <FaBed size={30} className="mb-2 text-primary" />
-            <h5 className="card-title">{title}</h5>
-            <p className="card-text">{description}</p>
-            <a href="/contact" className="btn btn-primary">Book Now</a>
+                <FaBed size={30} className="mb-2 text-primary" />
+                <h5 className="card-title">{title}</h5>
+                <p className="card-text">{description}</p>
+                <p className='card-price'>{price} ( Per Night)</p>
+                <a href="/contact#book_now" className="btn btn-primary">Book Now</a>
             </>
         );
     };

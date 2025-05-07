@@ -2,7 +2,8 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
-import { Button } from 'react-bootstrap';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import { Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
@@ -15,6 +16,18 @@ import Gallery from './pages/Gallery';
 
 function App() {
 
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.querySelector(location.hash);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }, 100); // slight delay ensures page renders
+      }
+    }
+  }, [location]);
   return (
     <>
       <Routes>
