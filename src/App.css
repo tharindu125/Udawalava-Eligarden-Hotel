@@ -345,3 +345,14 @@ h1, p {
   align-items: center;
   height: 100%;
 }
+
+.hover-effect:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.481);
+}
+
+@media (max-width: 576px) {
+  .hover-effect {
+    padding-bottom: 80px;
+  }
+}
+
