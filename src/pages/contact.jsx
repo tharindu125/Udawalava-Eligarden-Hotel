@@ -114,7 +114,7 @@ function Contact() {
             <Col xs={12} md={6}>
               <div className="contact-details">
                 <Card className="contact-card">
-                  <Card.Body>
+                  <Card.Body className='card_body'>
                     
                     {/* Address */}
                     <div className="contact-info">

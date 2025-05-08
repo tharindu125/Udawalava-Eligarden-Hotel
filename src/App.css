@@ -203,6 +203,10 @@
   .icon-box {
     font-size: 0.9rem;
   }
+
+  .card_body {
+    padding: 0 !important;
+  }
 }
 
 /* Near Place */
@@ -221,7 +225,7 @@
 
 /* Contact Page */
 .contact-container {
-  padding: 40px 0;
+  /* padding: 40px 0; */
 }
 
 .map-container {
