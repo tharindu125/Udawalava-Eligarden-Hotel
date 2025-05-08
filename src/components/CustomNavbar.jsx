@@ -1,6 +1,7 @@
 // src/components/CustomNavbar.jsx
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { useLocation } from 'react-router-dom';
+import logo from '../assets/logo - 1.png'; 
 
 function CustomNavbar() {
   const location = useLocation();
@@ -15,7 +16,7 @@ function CustomNavbar() {
 
         <Navbar.Brand href="/">
           <img
-            src="/src/assets/logo.png"
+            src={logo}
             width="40"
             height="40"
             className="d-inline-block align-top"

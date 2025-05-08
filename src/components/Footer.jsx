@@ -1,40 +1,43 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaFacebook, FaInstagram, FaTwitter, FaEnvelope, FaPhone } from 'react-icons/fa';
-import Contact from '../pages/contact';
+import logo from '../assets/logo.png';
 
 function Footer() {
   return (
-    <footer className="bg-dark text-light pt-5 pb-4 manual_text_center">
+    <footer className="text-light pt-5 pb-4 manual_text_center" style={{ backgroundColor: 'rgb(0, 5, 27) ' }}>
       <Container>
         <Row>
           {/* Logo & Company Info */}
           <Col md={3} className="mb-4">
-            <div className="d-flex align-items-center mb-3">
+            <div className="align-items-center mb-3 ">
               <img
-                src="/src/assets/logo.png"
+                src={logo}
                 alt="Logo"
-                width="40"
-                height="40"
+                width="100"
+                height="100"
                 className="me-2"
               />
-              <h5 className="mb-0">Udawalawa Eligarden Hotel</h5>
+              {/* <h5 className="mb-0">Udawalawa Eligarden Hotel</h5> */}
             </div>
             <p>Experience nature and comfort in the heart of Udawalawe. Perfect for your safari adventure and peaceful stay.</p>
           </Col>
 
           {/* Useful Links */}
           <Col md={3} className="mb-4">
-            <h5>Useful Links</h5>
+            <h5 className='text-warning-emphasis'>Useful Links</h5>
             <ul className="list-unstyled">
-              <li><a href="/" className="text-light">Home</a></li>
-              <li><a href="/about" className="text-light">About Us</a></li>
-              <li><a href="/contact" className="text-light">Contact</a></li>
+              <li><a href="/" className="text-light text-decoration-none">Home</a></li>
+              <li><a href="/about" className="text-light text-decoration-none">About Us</a></li>
+              <li><a href="/contact" className="text-light text-decoration-none">Contact</a></li>
+              <li><a href="/RoomDetails" className="text-light text-decoration-none">Room Details</a></li>
+              <li><a href="/Restaurant" className="text-light text-decoration-none">Restaurant</a></li>
+              <li><a href="/Gallery" className="text-light text-decoration-none">Gallery</a></li>
             </ul>
           </Col>
 
           {/* Main Categories */}
           <Col md={3} className="mb-4">
-            <h5>Main Categories</h5>
+            <h5 className='text-warning-emphasis'>Main Categories</h5>
             <ul className="list-unstyled">
               <li>Luxury Rooms</li>
               <li>Safari Packages</li>
@@ -44,7 +47,7 @@ function Footer() {
          
          {/* Contact Details */}
           <Col md={3} className="mb-4">
-            <h5>Contact Us</h5>
+            <h5 className='text-warning-emphasis'>Contact Us</h5>
             <p><FaEnvelope /> info@eligardenhotel.com</p>
             <p><FaPhone /> +94 71 123 4567</p>
             <div>
