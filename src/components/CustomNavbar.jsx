@@ -34,6 +34,7 @@ function CustomNavbar() {
             <Nav.Link href="/contact" className={getNavLinkClass('/contact')}>Contact</Nav.Link>
             <Nav.Link href="/RoomDetails" className={getNavLinkClass('/RoomDetails')}>Room Details</Nav.Link>
             <Nav.Link href="/Restaurant" className={getNavLinkClass('/Restaurant')}>Restaurant</Nav.Link>
+            <Nav.Link href="/SafariTours" className={getNavLinkClass('/SafariTours')}>Safari Tours</Nav.Link>
             <Nav.Link href="/Gallery" className={getNavLinkClass('/Gallery')}>Gallery</Nav.Link>
 
             <div className="ms-3">

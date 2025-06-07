@@ -13,6 +13,8 @@ import Footer from './components/Footer';
 import RoomDetails from './pages/Rooms';
 import Restaurant from './pages/Restaurant'
 import Gallery from './pages/Gallery';
+import FloatingButtons from './components/FloatingButtons';
+import SafariTours from './pages/SafariTours'
 
 function App() {
 
@@ -36,8 +38,10 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/RoomDetails" element={<RoomDetails />} />
         <Route path="/Restaurant" element={<Restaurant />} />
+        <Route path="/SafariTours" element={<SafariTours />} />
         <Route path="/Gallery" element={<Gallery />} />
       </Routes>
+      <FloatingButtons />
       <Footer />
     </>
   )

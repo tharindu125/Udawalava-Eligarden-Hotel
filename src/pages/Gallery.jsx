@@ -1,72 +1,44 @@
-import CustomNavbar from "../components/CustomNavbar";
-import { Container, Row, Col, Card } from "react-bootstrap";
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
-import { useTheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import React, { useState } from 'react';
+import Masonry from 'react-masonry-css';
+import {Button, Container } from 'react-bootstrap';
 
-// Importing images
-import slider1 from "../assets/slider1.jpg";
-import slider2 from "../assets/slider2.jpg";
-import slider3 from "../assets/slider2.jpg";
-import slider4 from "../assets/slider1.jpg";
+import CustomNavbar from '../components/CustomNavbar';
 
-const itemData = [
-  {
-    img: "https://images.unsplash.com/photo-1549388604-817d15aa0110",
-    title: "Bed",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1563298723-dcfebaa392e3",
-    title: "Kitchen",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-    title: "Sink",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1525097487452-6278ff080c31",
-    title: "Books",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1574180045827-681f8a1a9622",
-    title: "Chairs",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62",
-    title: "Candle",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1530731141654-5993c3016c77",
-    title: "Laptop",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1481277542470-605612bd2d61",
-    title: "Doors",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7",
-    title: "Coffee",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee",
-    title: "Storage",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4",
-    title: "Coffee table",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1588436706487-9d55d73a39e3",
-    title: "Blinds",
-  },
+import image01 from '../assets/sri-lanka-leopard-asian.jpg';
+import image02 from '../assets/Restaurent.jpg';
+import slider1 from '../assets/slider1.jpg';
+
+const categories = ['All', 'Room & Hotel', 'Restaurant', 'Safari Tours'];
+
+const images = [
+  { id: 1, url: image01, category: 'Room & Hotel' },
+  { id: 2, url: image02, category: 'Restaurant' },
+  { id: 3, url: image01, category: 'Safari Tours' },
+  { id: 4, url: image02, category: 'Room & Hotel' },
+  { id: 5, url: image02, category: 'Restaurant' },
+  { id: 6, url: image01, category: 'Safari Tours' },
+  { id: 7, url: image02, category: 'Room & Hotel' },
+  { id: 8, url: image01, category: 'Restaurant' },
+  { id: 9, url: image01, category: 'Safari Tours' },
 ];
 
-function Gallery() {
-  const images = [slider1, slider2, slider3, slider4];
+const Gallery = () => {
+  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [modalImage, setModalImage] = useState(null);
 
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const filteredImages =
+    selectedCategory === 'All'
+      ? images
+      : images.filter((img) => img.category === selectedCategory);
+
+  const breakpointColumnsObj = {
+    default: 4,
+    1100: 4,
+    700: 3,
+    500: 3,
+    400: 2,
+    300: 1,
+  };
 
   return (
     <>
@@ -82,65 +54,78 @@ function Gallery() {
         }}
       >
         <div className="hero-overlay">
-          <h1 className="text-center text-white fw-bold">Gallery</h1>
-          <p className="text-center text-white">
+          <h1 className="text-center text-white fw-bold" data-aos="fade-up" data-aos-delay="200">Gallery</h1>
+          <p className="text-center text-white" data-aos="fade-up" data-aos-delay="300">
             Explore stunning moments from our hotel, surroundings, and guest
             experiences — a glimpse into your next unforgettable stay.
           </p>
         </div>
       </div>
 
-      <div className="gallery-container" style={{ paddingTop: "70px" }}>
-        <Container>
-          <Row className="mt-4">
-            {images.map((image, index) => (
-              <Col xs={12} sm={6} md={4} lg={3} key={index} className="mb-4">
-                <Card className="p-0">
-                  <Card.Img
-                    variant="top"
-                    src={image}
-                    alt={`Gallery Image ${index + 1}`}
-                  />
-                </Card>
-              </Col>
+      <section className="gallery-section bg-white">
+        <div className="container">
+          <div className="d-flex justify-content-center gap-3 flex-wrap mb-4" data-aos="zoom-out" data-aos-delay="400">
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => setSelectedCategory(category)}
+                className={`filter-btn ${
+                  selectedCategory === category ? 'active' : ''
+                }`}
+              >
+                {category}
+              </button>
             ))}
-          </Row>
-        </Container>
+          </div>
 
-        <Container fluid className="d-flex justify-content-center">
-          <ImageList
-            sx={{
-              width: "100%",
-              maxWidth: "1200px",
-              height: "auto",
-            }}
-            variant="woven"
-            cols={isMobile ? 1 : 3} // 👈 Responsive columns
-            gap={8}
+          <h3 className="text-left fw-bold" data-aos="zoom-out" data-aos-delay="200">{selectedCategory}</h3>
+          <hr className='mb-4 mt-0 w-25 border-2 border-dark fade-in-load delay-1' data-aos="zoom-out" data-aos-delay="200"/>
+
+          <Masonry
+            breakpointCols={breakpointColumnsObj}
+            className="my-masonry-grid"
+            columnClassName="my-masonry-grid_column"
           >
-            {itemData.map((item) => (
-              <ImageListItem key={item.img}>
+            {filteredImages.map((img) => (
+              <div
+                key={img.id}
+                className="gallery-img-wrapper"
+                onClick={() => setModalImage(img.url)}
+                style={{ cursor: 'pointer' }}
+              >
                 <img
-                  srcSet={`${item.img}?w=600&fit=crop&auto=format&dpr=2 2x`}
-                  src={`${item.img}?w=600&fit=crop&auto=format`}
-                  alt={item.title}
-                  loading="lazy"
-                  style={{
-                    width: "100%",
-                    height: "auto",
-                    borderRadius: "12px",
-                    transition: "0.3s",
-                   
-                  }}
-                  className="hover-effect"
+                  src={img.url}
+                  alt={img.category}
+                  className="img-fluid rounded shadow-lg"
+                  data-aos="fade-up" data-aos-delay="200"
                 />
-              </ImageListItem>
+              </div>
             ))}
-          </ImageList>
-        </Container>
-      </div>
+          </Masonry>
+        </div>
+      </section>
+
+      {/* Modal */}
+      {modalImage && (
+        <div className="modal-overlay" onClick={() => setModalImage(null)} data-aos="zoom-in" data-aos-delay="200">
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <img src={modalImage} alt="Full view" className="modal-img" />
+            <button className="modal-close" onClick={() => setModalImage(null)}>X</button>
+          </div>
+        </div>
+      )}
+
+      <Container className="py-3">
+        {/* Call to Action */}
+        <div className="cta-section text-center mb-3 shadow">
+          <h3 className='fw-bold text-warning-emphasis' data-aos="fade-up" data-aos-delay="200">Ready to Experience the Best?</h3>
+          <p data-aos="fade-up" data-aos-delay="400">Join us for an unforgettable experience. Book a tour with us today!</p>
+          <Button variant="primary" href="/contact#book_now" data-aos="fade-up" data-aos-delay="600">Book Now</Button>
+        </div>
+      </Container>
+    
     </>
   );
-}
+};
 
 export default Gallery;

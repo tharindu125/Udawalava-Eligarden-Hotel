@@ -21,7 +21,7 @@ function MainCarousel() {
 
             <div className="content row gy-4">
               <div className="col-lg-4 d-flex align-items-stretch">
-                <div className="why-box" data-aos="zoom-out" data-aos-delay="200">
+                <div className="why-box" data-aos="zoom-in" data-aos-delay="200">
                   <h3>Why Choose Us</h3>
                   <p>
                     Unwind in our thoughtfully designed rooms that offer a perfect blend of comfort and tranquility. Whether you're here to explore or relax, our clean and 
@@ -35,7 +35,7 @@ function MainCarousel() {
                   <div className="row gy-4">
 
                     <div className="d-flex align-items-stretch">
-                      <div className="icon-box" data-aos="zoom-out" data-aos-delay="300">
+                      <div className="icon-box" data-aos="zoom-in" data-aos-delay="300">
                         <FaHome className="mb-2" size={24} />
                         <h4>Rooms & Guest House</h4>
                         <p>Experience true comfort in our well-appointed rooms designed with a blend of modern convenience and natural charm. Whether you're here for 
@@ -64,7 +64,7 @@ function MainCarousel() {
 
             <div className="content row gy-4">
               <div className="col-lg-4 d-flex align-items-stretch">
-                <div className="why-box" data-aos="zoom-out" data-aos-delay="200">
+                <div className="why-box" data-aos="zoom-in" data-aos-delay="200">
                   <h3>Why Choose Us</h3>
                   <p>
                     Our on-site restaurant serves a variety of mouthwatering Sri Lankan and international dishes, freshly prepared with local ingredients. 
@@ -78,7 +78,7 @@ function MainCarousel() {
                   <div className="row gy-4">
 
                     <div className="d-flex align-items-stretch">
-                      <div className="icon-box" data-aos="zoom-out" data-aos-delay="400">
+                      <div className="icon-box" data-aos="zoom-in" data-aos-delay="400">
                         <FaUtensils className="mb-2" size={24} />
                         <h4>Restaurant</h4>
                         <p>Savor the taste of Sri Lanka and beyond at our in-house restaurant. From authentic local dishes to international favorites, every meal is freshly 
@@ -106,7 +106,7 @@ function MainCarousel() {
 
             <div className="content row gy-4">
               <div className="col-lg-4 d-flex align-items-stretch">
-                <div className="why-box" data-aos="zoom-out" data-aos-delay="200">
+                <div className="why-box" data-aos="zoom-in" data-aos-delay="200">
                   <h3>Why Choose Us</h3>
                   <p>We offer guided safari tours to the famous Udawalawa National Park, where you can witness elephants, wild animals, and birds in their natural habitat.</p>
                 </div>
@@ -117,7 +117,7 @@ function MainCarousel() {
                   <div className="row gy-4">
 
                     <div className="d-flex align-items-stretch">
-                      <div className="icon-box" data-aos="zoom-out" data-aos-delay="500">
+                      <div className="icon-box" data-aos="zoom-in" data-aos-delay="500">
                         <FaBed className="mb-2" size={24} />
                         <h4>Udawalawa Safari Tours</h4>
                         <p>Embark on an unforgettable journey through Udawalawa National Park with our guided safari tours. Spot elephants, leopards, birds, 

@@ -9,7 +9,7 @@ function Footer() {
         <Row>
           {/* Logo & Company Info */}
           <Col md={3} className="mb-4">
-            <div className="align-items-center mb-3 ">
+            <div className="align-items-center mb-3 " data-aos="zoom-in" data-aos-delay="200">
               <img
                 src={logo}
                 alt="Logo"
@@ -19,46 +19,46 @@ function Footer() {
               />
               {/* <h5 className="mb-0">Udawalawa Eligarden Hotel</h5> */}
             </div>
-            <p>Experience nature and comfort in the heart of Udawalawe. Perfect for your safari adventure and peaceful stay.</p>
+            <p data-aos="fade-up" data-aos-delay="200">Experience nature and comfort in the heart of Udawalawe. Perfect for your safari adventure and peaceful stay.</p>
           </Col>
 
           {/* Useful Links */}
           <Col md={3} className="mb-4">
-            <h5 className='text-warning-emphasis'>Useful Links</h5>
+            <h5 className='text-warning-emphasis' data-aos="fade-up" data-aos-delay="200">Useful Links</h5>
             <ul className="list-unstyled">
-              <li><a href="/" className="text-light text-decoration-none">Home</a></li>
-              <li><a href="/about" className="text-light text-decoration-none">About Us</a></li>
-              <li><a href="/contact" className="text-light text-decoration-none">Contact</a></li>
-              <li><a href="/RoomDetails" className="text-light text-decoration-none">Room Details</a></li>
-              <li><a href="/Restaurant" className="text-light text-decoration-none">Restaurant</a></li>
-              <li><a href="/Gallery" className="text-light text-decoration-none">Gallery</a></li>
+              <li data-aos="fade-up" data-aos-delay="300"><a href="/about" className="text-light text-decoration-none">About Us</a></li>
+              <li data-aos="fade-up" data-aos-delay="400"><a href="/contact" className="text-light text-decoration-none">Contact</a></li>
+              <li data-aos="fade-up" data-aos-delay="500"><a href="/RoomDetails" className="text-light text-decoration-none">Room Details</a></li>
+              <li data-aos="fade-up" data-aos-delay="600"><a href="/Restaurant" className="text-light text-decoration-none">Restaurant</a></li>
+              <li data-aos="fade-up" data-aos-delay="700"><a href="/SafariTours" className="text-light text-decoration-none">Safari Tours</a></li>
+              <li data-aos="fade-up" data-aos-delay="800"><a href="/Gallery" className="text-light text-decoration-none">Gallery</a></li>
             </ul>
           </Col>
 
           {/* Main Categories */}
           <Col md={3} className="mb-4">
-            <h5 className='text-warning-emphasis'>Main Categories</h5>
+            <h5 className='text-warning-emphasis' data-aos="fade-up" data-aos-delay="200">Main Categories</h5>
             <ul className="list-unstyled">
-              <li>Luxury Rooms</li>
-              <li>Safari Packages</li>
-              <li>Local Cuisine</li>
+              <li data-aos="fade-up" data-aos-delay="300">Luxury Rooms</li>
+              <li data-aos="fade-up" data-aos-delay="400">Safari Packages</li>
+              <li data-aos="fade-up" data-aos-delay="500">Local Cuisine</li>
             </ul>
           </Col>
          
          {/* Contact Details */}
           <Col md={3} className="mb-4">
-            <h5 className='text-warning-emphasis'>Contact Us</h5>
-            <p><FaEnvelope /> info@eligardenhotel.com</p>
-            <p><FaPhone /> +94 71 123 4567</p>
-            <div>
+            <h5 className='text-warning-emphasis' data-aos="fade-up" data-aos-delay="200">Contact Us</h5>
+            <p data-aos="fade-up" data-aos-delay="300"><FaEnvelope /> info@eligardenhotel.com</p>
+            <p data-aos="fade-up" data-aos-delay="400"><FaPhone /> +94 71 123 4567</p>
+            <div data-aos="fade-up" data-aos-delay="500">
               <a href="#" className="text-light me-3"><FaFacebook /></a>
               <a href="#" className="text-light me-3"><FaInstagram /></a>
               <a href="#" className="text-light"><FaTwitter /></a>
             </div>
           </Col>
         </Row>
-        <hr className="border-light" />
-        <p className="text-center">© {new Date().getFullYear()} Udawalawa Eligarden Hotel. All rights reserved.</p>
+        <hr className="border-light"/>
+        <p className="text-center" data-aos="flip-up" data-aos-delay="200">© {new Date().getFullYear()} Udawalawa Eligarden Hotel. All rights reserved.</p>
       </Container>
     </footer>
   );
