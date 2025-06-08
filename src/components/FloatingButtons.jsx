@@ -31,7 +31,7 @@ const FloatingButtons = () => {
           bottom: '20px',
           width: '40px',
           height: '40px',
-          backgroundColor: '#000',
+          backgroundColor: 'var(--bs-warning-text-emphasis)',
           color: '#fff',
           borderRadius: '50%',
           fontSize: '24px',

@@ -57,15 +57,17 @@ const RoomsSection = () => {
             {/* Hero Section */}
             <div className="about-hero-section" style={{ position: 'relative', height: '400px', background: `url(${slider1}) no-repeat center center/cover` }}>
                 <div className="hero-overlay">
-                <h1 className="text-center text-white fw-bold">Room Features & Amenities</h1>
-                <p className="text-center text-white">Enjoy free laundry and room service with no extra fees – because your comfort is always our priority.</p>
+                <h1 className="text-center text-white fw-bold" data-aos="fade-up" data-aos-delay="200">Room Features & Amenities</h1>
+                <p className="text-center text-white" data-aos="fade-up" data-aos-delay="300">
+                    Enjoy free laundry and room service with no extra fees – because your comfort is always our priority.
+                </p>
                 </div>
             </div>
 
             <section className="container mt-5 mb-5 py-5 bg-light" style={{ boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)' }}>
                 <div className="text-center mb-5">
-                    <h2 className="fw-bold text-warning-emphasis">Rooms & Guest House</h2>
-                    <p className="text-muted">
+                    <h2 className="fw-bold text-warning-emphasis" data-aos="zoom-in" data-aos-delay="200">Rooms & Guest House</h2>
+                    <p className="text-muted" data-aos="flip-up" data-aos-delay="300">
                     Experience a relaxing stay at Udawalawa Elegarden Hotel, where comfort meets nature. Whether you're traveling solo, as a couple, or with family, we have the perfect room for you.
                     </p>
                 </div>

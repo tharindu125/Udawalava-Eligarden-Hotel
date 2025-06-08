@@ -275,42 +275,42 @@ function Home() {
       {/* Book Now */}
       <section className='container py-5 my-4 bg-light' id='book_now' style={{ boxShadow: '0 0px 8px rgba(0, 0, 0, 0.2)' }}>
         <div className='manual_text_center'>
-          <h2 className='h3 fw-bold mb-3 text-warning-emphasis'>Ready to Book Your Package</h2>
-          <p className='text-muted mb-4 mx-3'>
+          <h2 className='h3 fw-bold mb-3 text-warning-emphasis' data-aos="zoom-in" data-aos-delay="200">Ready to Book Your Package</h2>
+          <p className='text-muted mb-4 mx-3' data-aos="flip-up" data-aos-delay="300">
             Experience the beauty of Udawalawa with us. Book your stay today and enjoy exclusive offers.
           </p>
         </div>
 
         <form className='row g-3 mx-3' onSubmit={handleSubmit}>
-          <div className='col-md-6'>
+          <div className='col-md-6' data-aos="flip-right" data-aos-delay="300">
             <label className='form-label'>Name *</label>
             <input type='text' className='form-control' value={formData.name}
               onChange={e => setFormData({ ...formData, name: e.target.value })} placeholder='e.g. John Due' required/>
             <small className='text-danger'>{errors.name}</small>
           </div>
 
-          <div className='col-md-6'>
+          <div className='col-md-6' data-aos="flip-left" data-aos-delay="400">
             <label className='form-label'>Email Address *</label>
             <input type='email' className='form-control' value={formData.email}
               onChange={e => setFormData({ ...formData, email: e.target.value })} placeholder='e.g. johndue@gmail.com' required/>
             <small className='text-danger'>{errors.email}</small>
           </div>
 
-          <div className='col-md-6'>
+          <div className='col-md-6' data-aos="flip-right" data-aos-delay="500">
             <label className='form-label'>Mobile Number *</label>
             <input type='text' className='form-control' value={formData.phone}
               onChange={e => setFormData({ ...formData, phone: e.target.value })} placeholder='e.g. +94712345678' required/>
             <small className='text-danger'>{errors.phone}</small>
           </div>
 
-          <div className='col-md-6'>
+          <div className='col-md-6' data-aos="flip-left" data-aos-delay="600">
             <label className='form-label'>Country *</label>
             <input type='text' className='form-control' value={formData.country}
               onChange={e => setFormData({ ...formData, country: e.target.value })} placeholder='e.g. Sri Lanka' required/>
             <small className='text-danger'>{errors.country}</small>
           </div>
 
-          <div className='col-6'>
+          <div className='col-6' data-aos="flip-right" data-aos-delay="700">
             <label className='form-label'>Select Packages *</label>
             <Select
               isMulti
@@ -323,7 +323,7 @@ function Home() {
             />
           </div>
 
-          <div className='col-md-3'>
+          <div className='col-md-3' data-aos="flip-left" data-aos-delay="800">
             <label className='form-label'>Check In Date *</label>
             <DatePicker
               selected={formData.checkIn}
@@ -336,7 +336,7 @@ function Home() {
             <small className='text-danger'>{errors.checkIn}</small>
           </div>
 
-          <div className='col-md-3'>
+          <div className='col-md-3' data-aos="flip-left" data-aos-delay="800">
             <label className='form-label'>Check Out Date</label>
             <DatePicker
               selected={formData.checkOut}
@@ -348,7 +348,7 @@ function Home() {
             />
           </div>
 
-          <div className='col-md-12'>
+          <div className='col-md-12' data-aos="flip-right" data-aos-delay="900">
             <label className='form-label'>Special Remark</label>
             <textarea className='form-control' rows='3' value={formData.specialRequests}
               onChange={e => setFormData({ ...formData, specialRequests: e.target.value })}></textarea>
@@ -366,7 +366,7 @@ function Home() {
             </div>
           )}
 
-          <div className='col-12'>
+          <div className='col-12' data-aos="flip-up" data-aos-delay="1000">
             <button type='submit' className='btn btn-primary'>Submit</button>
           </div>
 

@@ -45,6 +45,11 @@
   color: #888;
 }
 
+.text-shadow {
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+}
+
+
 /* Main carousel */
 .fullscreen-image {
   width: 100vw;

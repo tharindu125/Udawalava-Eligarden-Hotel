@@ -11,8 +11,10 @@ function About() {
       {/* Hero Section */}
       <div className="about-hero-section" style={{ position: 'relative', height: '400px', background: `url(${slider1}) no-repeat center center/cover` }}>
         <div className="hero-overlay">
-          <h1 className="text-center text-white fw-bold">About Us</h1>
-          <p className="text-center text-white">Nestled near the heart of Udawalawe, our hotel blends comfort, charm, and nature to create unforgettable stays for every guest.</p>
+          <h1 className="text-center text-white fw-bold" data-aos="fade-up" data-aos-delay="200">About Us</h1>
+          <p className="text-center text-white" data-aos="fade-up" data-aos-delay="300">
+            Nestled near the heart of Udawalawe, our hotel blends comfort, charm, and nature to create unforgettable stays for every guest.
+          </p>
         </div>
       </div>
 
@@ -21,25 +23,27 @@ function About() {
         <Container>
           <Row className="mb-4 manual_text_center">
             <Col xs={12} md={6}>
-              <h2 className='fw-bold text-primary-emphasis'>About Udawalawa Elegarden Hotel</h2>
-              <p>
+              <h2 className='fw-bold text-primary-emphasis' data-aos="zoom-in" data-aos-delay="200">About Udawalawa Elegarden Hotel</h2>
+              <p data-aos="flip-up" data-aos-delay="300">
                 Nestled in the heart of nature, Udawalawa Elegarden Hotel offers the perfect blend of comfort, convenience, and adventure. Whether you're here 
                 to relax or explore, our hotel is your ideal getaway.
               </p>
-              <p>
+              <p data-aos="flip-up" data-aos-delay="400">
                 Enjoy our spacious and comfortable rooms, thoughtfully designed to make you feel at home. Savor delicious local and international cuisine at our 
                 in-house restaurant, where every meal is crafted with care. For wildlife lovers, we offer guided Udawalawa Safari Tours, providing an unforgettable 
                 chance to witness elephants and exotic animals in their natural habitat.
               </p>
-              <p>At Udawalawa Elegarden Hotel, your experience is our passion. Come as a guest—leave as family.</p>
+              <p data-aos="flip-up" data-aos-delay="500">
+                At Udawalawa Elegarden Hotel, your experience is our passion. Come as a guest—leave as family.
+              </p>
             </Col>
-            <Col xs={12} md={6}>
+            <Col xs={12} md={6} data-aos="fade-up" data-aos-delay="200">
               <img src={slider1} alt="About Us" className="img-fluid rounded" />
             </Col>
           </Row>
 
           <Row className="mb-4">
-            <Col xs={12} md={4}>
+            <Col xs={12} md={4} data-aos="fade-up" data-aos-delay="200">
               <Card className="text-center">
                 <Card.Body>
                   <FaCheckCircle size={50} color="#007BFF" />
@@ -50,7 +54,7 @@ function About() {
                 </Card.Body>
               </Card>
             </Col>
-            <Col xs={12} md={4}>
+            <Col xs={12} md={4} data-aos="fade-up" data-aos-delay="400">
               <Card className="text-center">
                 <Card.Body>
                   <FaInfoCircle size={50} color="#28A745" />
@@ -61,7 +65,7 @@ function About() {
                 </Card.Body>
               </Card>
             </Col>
-            <Col xs={12} md={4}>
+            <Col xs={12} md={4} data-aos="fade-up" data-aos-delay="600">
               <Card className="text-center">
                 <Card.Body>
                   <FaRegStar size={50} color="#FFC107" />
@@ -76,9 +80,9 @@ function About() {
 
           {/* Call to Action */}
           <div className="cta-section text-center">
-            <h3 className='fw-bold text-warning-emphasis'>Ready to Experience the Best?</h3>
-            <p>Join us for an unforgettable experience. Book a tour with us today!</p>
-            <Button variant="primary" href="/contact#book_now">Book Now</Button>
+            <h3 className='fw-bold text-warning-emphasis' data-aos="fade-up" data-aos-delay="200">Ready to Experience the Best?</h3>
+            <p data-aos="fade-up" data-aos-delay="400">Join us for an unforgettable experience. Book a tour with us today!</p>
+            <Button variant="primary" href="/contact#book_now" data-aos="fade-up" data-aos-delay="600">Book Now</Button>
           </div>
         </Container>
       </div>

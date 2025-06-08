@@ -87,8 +87,10 @@ function Contact() {
       {/* Hero Section */}
       <div className="about-hero-section" style={{ position: 'relative', height: '400px', background: `url(${slider1}) no-repeat center center/cover` }}>
         <div className="hero-overlay">
-          <h1 className="text-center text-white fw-bold">Contact Us</h1>
-          <p className="text-center text-white">Reach out to us for reservations, inquiries, or any assistance — our team is always ready to make your stay smooth and memorable.</p>
+          <h1 className="text-center text-white fw-bold" data-aos="fade-up" data-aos-delay="200">Contact Us</h1>
+          <p className="text-center text-white" data-aos="fade-up" data-aos-delay="300">
+            Reach out to us for reservations, inquiries, or any assistance — our team is always ready to make your stay smooth and memorable.
+          </p>
         </div>
       </div>
 
@@ -96,7 +98,7 @@ function Contact() {
         <Container>
           <Row>
             {/* Google Map Section */}
-            <Col xs={12} md={6}>
+            <Col xs={12} md={6} data-aos="fade-up" data-aos-delay="200">
               <div className="map-container">
                 <iframe
                   title="Google Map Location"
@@ -117,13 +119,13 @@ function Contact() {
                   <Card.Body className='card_body'>
                     
                     {/* Address */}
-                    <div className="contact-info">
+                    <div className="contact-info" data-aos="fade-up" data-aos-delay="200">
                       <h5 className='text-primary-emphasis'>Address:</h5>
                       <p>Udawalawa Elegarden Hotel, Udawalawa, Sri Lanka</p>
                     </div>
 
                     {/* Phone */}
-                    <div className="contact-info">
+                    <div className="contact-info" data-aos="fade-up" data-aos-delay="200">
                       <h5 className='text-primary-emphasis'>Phone:</h5>
                       <div className='d-flex gap-5 mobile_no'>
                         <p><FaPhone /> +94 123 456 789</p>
@@ -132,13 +134,13 @@ function Contact() {
                     </div>
 
                     {/* Email */}
-                    <div className="contact-info">
+                    <div className="contact-info" data-aos="fade-up" data-aos-delay="200">
                       <h5 className='text-primary-emphasis'>Email:</h5>
                       <p><FaEnvelope /> info@udawalawaelegarden.com</p>
                     </div>
 
                     {/* Social Media Links */}
-                    <div className="social-icons">
+                    <div className="social-icons" data-aos="fade-up" data-aos-delay="200">
                       <h5 className='text-primary-emphasis'>Follow Us:</h5>
                       <Button href="https://www.facebook.com" target="_blank" variant="link">
                         <FaFacebook size={30} />

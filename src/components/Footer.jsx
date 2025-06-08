@@ -58,7 +58,7 @@ function Footer() {
           </Col>
         </Row>
         <hr className="border-light"/>
-        <p className="text-center" data-aos="flip-up" data-aos-delay="200">© {new Date().getFullYear()} Udawalawa Eligarden Hotel. All rights reserved.</p>
+        <p className="text-center">© {new Date().getFullYear()} Udawalawa Eligarden Hotel. All rights reserved.</p>
       </Container>
     </footer>
   );

@@ -20,20 +20,23 @@ function Restaurant() {
       {/* Hero Section */}
       <div className="about-hero-section" style={{ position: 'relative', height: '400px', background: `url(${slider1}) no-repeat center center/cover` }}>
         <div className="hero-overlay">
-          <h1 className="text-center text-white fw-bold">Delicious Local & International Restaurant</h1>
-          <p className="text-center text-white">Looking for something cool and sweet? Treat yourself to a selection of ice creams and refreshing beverages, perfect for a hot Udawalawa afternoon.</p>
+          <h1 className="text-center text-white fw-bold" data-aos="fade-up" data-aos-delay="200">Delicious Local & International Restaurant</h1>
+          <p className="text-center text-white" data-aos="fade-up" data-aos-delay="300">
+            Looking for something cool and sweet? Treat yourself to a selection of ice creams and refreshing beverages, perfect for a hot Udawalawa afternoon.
+          </p>
         </div>
       </div>
 
       <div style={{ paddingTop: '70px' }}>
         <Container className="py-3">
-          <h2 className="text-center mb-3 fw-bold display-6 text-warning-emphasis">Experience Taste & Quality in Every Bite</h2>
-          <p className="text-center text-muted mb-5 px-3">
-            Whether you're dining in or taking away, we serve freshly prepared meals with no MSG or artificial flavors — all packed in eco-friendly containers. Enjoy delicious food that’s kind to your body and the planet.
+          <h2 className="text-center mb-3 fw-bold display-6 text-warning-emphasis" data-aos="zoom-in" data-aos-delay="200">Experience Taste & Quality in Every Bite</h2>
+          <p className="text-center text-muted mb-5 px-3" data-aos="flip-up" data-aos-delay="300">
+            Whether you're dining in or taking away, we serve freshly prepared meals with no MSG or artificial flavors — all packed in eco-friendly containers. 
+            Enjoy delicious food that’s kind to your body and the planet.
           </p>
           <Row className="g-4">
             {Object.keys(foodMenus).map((category, idx) => (
-              <Col xs={12} md={6} key={idx}>
+              <Col xs={12} md={6} key={idx} data-aos="fade-up" data-aos-delay="200">
                 <Card className="shadow-sm p-0 bg-light">
                   <Card.Body className='pb-5'>
                   <div className="position-relative">
@@ -67,9 +70,9 @@ function Restaurant() {
 
           {/* Call to Action */}
           <div className="cta-section text-center mb-3 shadow">
-            <h3 className='fw-bold text-warning-emphasis'>Ready to Experience the Best?</h3>
-            <p>Join us for an unforgettable experience. Book a tour with us today!</p>
-            <Button variant="primary" href="/contact#book_now">Book Now</Button>
+            <h3 className='fw-bold text-warning-emphasis' data-aos="fade-up" data-aos-delay="200">Ready to Experience the Best?</h3>
+            <p data-aos="fade-up" data-aos-delay="400">Join us for an unforgettable experience. Book a tour with us today!</p>
+            <Button variant="primary" href="/contact#book_now" data-aos="fade-up" data-aos-delay="600">Book Now</Button>
           </div>
         </Container>
       </div>
