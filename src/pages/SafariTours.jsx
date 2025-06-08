@@ -1,30 +1,23 @@
 
+
+import { useState } from "react";
+import { Accordion, Card, Button, ListGroup, Row, Col } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
+
 import CustomNavbar from '../components/CustomNavbar';
+
 import slider1 from '../assets/slider1.jpg';
 import image from '../assets/sri-lanka-leopard-asian.jpg'
-// import { useState } from "react";
-import { Accordion, Card, Button, ListGroup, Row, Col } from "react-bootstrap";
 
 function SafariTours() {
-    // const safariData = [
-    //     {
-    //         title: "Udawalawe Safari",
-    //         description: "Home of the gentle giants",
-    //         subPackages: [
-    //         { name: "Morning Safari", price: "$35", details: "Best time to spot elephants" },
-    //         { name: "Evening Safari", price: "$35", details: "Sunset view included" },
-    //         ],
+    const [showModal, setShowModal] = useState(false);
+    const [selectedPackage, setSelectedPackage] = useState(null);
 
-    //     },
-    //     {
-    //         title: "Yala Safari",
-    //         description: "Explore the wild side of Sri Lanka",
-    //         subPackages: [
-    //         { name: "Half-Day Safari", price: "$40", details: "Morning or Evening Safari" },
-    //         { name: "Full-Day Safari", price: "$70", details: "Includes lunch + guide" },
-    //         ],
-    //     },
-    // ];
+    const handlePackageClick = (pkg) => {
+        setSelectedPackage(pkg);
+        setShowModal(true);
+    };
+
     return (
         <>
             <CustomNavbar />
@@ -44,31 +37,7 @@ function SafariTours() {
                 <p className='text-center mb-5' data-aos="flip-up" data-aos-delay="200">
                     Embark on an unforgettable journey through Udawalawa National Park with our guided safari tours. Spot elephants, leopards, birds, and more while enjoying safe, knowledgeable service and breathtaking views of nature.
                 </p>
-                {/* <Accordion defaultActiveKey="0">
-                    {safariData.map((pkg, index) => (
-                    <Accordion.Item eventKey={index.toString()} key={index}>
-                        <Accordion.Header>{pkg.title}</Accordion.Header>
-                        <Accordion.Body>
-                        <p>{pkg.description}</p>
-                        <ListGroup>
-                            {pkg.subPackages.map((sub, i) => (
-                            <ListGroup.Item key={i}>
-                                <div className="d-flex justify-content-between">
-                                <div>
-                                    <strong>{sub.name}</strong> — {sub.details}
-                                </div>
-                                <span>{sub.price}</span>
-                                </div>
-                            </ListGroup.Item>
-                            ))}
-                        </ListGroup>
-                        <div className="mt-3 text-end">
-                            <Button variant="success">Book This Tour</Button>
-                        </div>
-                        </Accordion.Body>
-                    </Accordion.Item>
-                    ))}
-                </Accordion> */}
+
                 <Accordion defaultActiveKey="0">
                     <Accordion.Item eventKey="0">
                         <Accordion.Header data-aos="flip-up" data-aos-delay="200">Udawalawe Safari</Accordion.Header>
@@ -95,7 +64,13 @@ function SafariTours() {
 
                             <ListGroup>
                                 <p className='mb-1 text-warning-emphasis fw-semibold text-center'>Please click below packeges for more details</p>
-                                <ListGroup.Item className='py-3'>
+                                <ListGroup.Item className='py-3' onClick={() => handlePackageClick({
+                                    title: "Normal Safari Tours",
+                                    duration: "3hr",
+                                    capacity: "6 Persons",
+                                    description: "Perfect for a quick elephant viewing experience."
+                                    })} style={{ cursor: 'pointer' }}
+                                >
                                     <div className="d-flex justify-content-between">
                                         <div>
                                             <strong>Normal Safari Tours</strong> ( 3hr / 6 Persons )
@@ -120,6 +95,23 @@ function SafariTours() {
                                     </div>
                                 </ListGroup.Item>
                             </ListGroup>
+                            <Row className="mt-4">
+                                <div className="mt-4" data-aos="fade-up" data-aos-delay="300">
+                                    <h5 className="text-success fw-bold mb-2 text-center">Included Facilities (All Tours)</h5>
+                                    <ListGroup variant="flush">
+                                    <ListGroup.Item>✅ Water & Snacks</ListGroup.Item>
+                                    <ListGroup.Item>✅ Experienced Driver (Over 10 years of experience)</ListGroup.Item>
+                                    <ListGroup.Item>✅ Guide Service</ListGroup.Item>
+                                    <ListGroup.Item>✅ Comfortable Jeep (Max 6 persons)<br />
+                                        <small className="text-muted">*Jeep price is fixed and does not vary based on the number of persons*</small>
+                                    </ListGroup.Item>
+                                    <ListGroup.Item>✅ Binocular Service</ListGroup.Item>
+                                    <ListGroup.Item>✅ Optional Jungle Breakfast<br />
+                                        <small className="text-muted">*On request, we can arrange breakfast facilities inside the jungle*</small>
+                                    </ListGroup.Item>
+                                    </ListGroup>
+                                </div>
+                            </Row>
                             <div className="mt-3 text-end">
                                 <Button variant="success">Book Your Tour</Button>
                             </div>
@@ -154,6 +146,25 @@ function SafariTours() {
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
+
+                <Modal show={showModal} onHide={() => setShowModal(false)} centered>
+                    <Modal.Header closeButton>
+                        <Modal.Title>{selectedPackage?.title}</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <p><strong>Duration:</strong> {selectedPackage?.duration}</p>
+                        <p><strong>Capacity:</strong> {selectedPackage?.capacity}</p>
+                        <p>{selectedPackage?.description}</p>
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="secondary" onClick={() => setShowModal(false)}>
+                        Close
+                        </Button>
+                        <Button variant="success">
+                        Book Now
+                        </Button>
+                    </Modal.Footer>
+                </Modal>
 
             </div>
 

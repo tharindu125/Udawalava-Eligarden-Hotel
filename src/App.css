@@ -49,6 +49,9 @@
   text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
 }
 
+.accordion-collapse {
+  transition: height 1s ease !important; /* Adjust duration and easing as needed */
+}
 
 /* Main carousel */
 .fullscreen-image {
