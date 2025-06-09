@@ -16,6 +16,9 @@ import nearPlace2 from '../assets/Maduwanwela-Walawwa.jpg'
 import nearPlace3 from '../assets/Sankapala.jpg'
 import nearPlace4 from '../assets/elephant_transit.webp'
 import nearPlace5 from '../assets/wavulpone.webp'
+import roomsImage from '../assets/Udawalava-Eligarden-Hotel-rooms.jpg'
+import restaurantimage from '../assets/Udawalava-Eligarden-Hotel-restaurants.jpg';
+
 
 function Home() {
   const nearbyAttractions = [
@@ -165,7 +168,7 @@ function Home() {
           {/* Image */}
           <div className='col-md-6 image'>
             <img
-              src={welcomeImage}
+              src={roomsImage}
               alt='Room Features & Amenities'
               className='img-fluid rounded shadow'
               data-aos='fade-up'
@@ -182,7 +185,7 @@ function Home() {
           {/* Image */}
           <div className='col-md-6 image'>
             <img
-              src={welcomeImage}
+              src={restaurantimage}
               alt='Delicious Local & International Restaurant'
               className='img-fluid rounded shadow'
               data-aos='fade-up'

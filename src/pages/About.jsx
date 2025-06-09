@@ -1,7 +1,8 @@
 import CustomNavbar from '../components/CustomNavbar';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { FaCheckCircle, FaInfoCircle, FaRegStar } from 'react-icons/fa'; // Icons for section
-import slider1 from '../assets/slider1.jpg';
+import aboutImage from '../assets/about-Udawalawa-Elegarden-Hotel.jpg';
+import slider1 from '../assets/about-Udawalawa-Elegarden-Hotel-Hero.jpg'
 
 function About() {
   return (
@@ -38,7 +39,7 @@ function About() {
               </p>
             </Col>
             <Col xs={12} md={6} data-aos="fade-up" data-aos-delay="200">
-              <img src={slider1} alt="About Us" className="img-fluid rounded" />
+              <img src={aboutImage} alt="About Us" className="img-fluid rounded" />
             </Col>
           </Row>
 

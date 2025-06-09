@@ -7,7 +7,7 @@ import { Modal } from "react-bootstrap";
 import CustomNavbar from '../components/CustomNavbar';
 
 import slider1 from '../assets/slider1.jpg';
-import image from '../assets/sri-lanka-leopard-asian.jpg'
+import image from '../assets/sri-lanka-wild-life.jpg'
 
 function SafariTours() {
     const [showModal, setShowModal] = useState(false);
