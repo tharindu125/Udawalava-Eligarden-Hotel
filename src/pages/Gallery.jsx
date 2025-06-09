@@ -4,8 +4,10 @@ import {Button, Container } from 'react-bootstrap';
 
 import CustomNavbar from '../components/CustomNavbar';
 
-import image01 from '../assets/sri-lanka-leopard-asian.jpg';
-import image02 from '../assets/Restaurent.jpg';
+import image01 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image01.jpg';
+import image02 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image02.jpg';
+import image03 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image03.jpg';
+import image04 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image04.jpg';
 import slider1 from '../assets/slider1.jpg';
 
 const categories = ['All', 'Room & Hotel', 'Restaurant', 'Safari Tours'];
@@ -13,8 +15,8 @@ const categories = ['All', 'Room & Hotel', 'Restaurant', 'Safari Tours'];
 const images = [
   { id: 1, url: image01, category: 'Room & Hotel' },
   { id: 2, url: image02, category: 'Restaurant' },
-  { id: 3, url: image01, category: 'Safari Tours' },
-  { id: 4, url: image02, category: 'Room & Hotel' },
+  { id: 3, url: image03, category: 'Safari Tours' },
+  { id: 4, url: image04, category: 'Room & Hotel' },
   { id: 5, url: image02, category: 'Restaurant' },
   { id: 6, url: image01, category: 'Safari Tours' },
   { id: 7, url: image02, category: 'Room & Hotel' },
