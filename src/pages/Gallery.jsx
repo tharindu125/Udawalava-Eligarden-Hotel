@@ -8,20 +8,28 @@ import image01 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image01.jpg';
 import image02 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image02.jpg';
 import image03 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image03.jpg';
 import image04 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image04.jpg';
+import image05 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image05.jpg';
+import image06 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image06.jpg';
+import image07 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image07.jpg';
+import image08 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image08.jpg';
+import image09 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image09.jpg';
+import image10 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image10.jpg';
+
 import slider1 from '../assets/slider1.jpg';
 
 const categories = ['All', 'Room & Hotel', 'Restaurant', 'Safari Tours'];
 
 const images = [
   { id: 1, url: image01, category: 'Room & Hotel' },
-  { id: 2, url: image02, category: 'Restaurant' },
+  { id: 2, url: image02, category: 'Room & Hotel' },
   { id: 3, url: image03, category: 'Safari Tours' },
-  { id: 4, url: image04, category: 'Room & Hotel' },
-  { id: 5, url: image02, category: 'Restaurant' },
-  { id: 6, url: image01, category: 'Safari Tours' },
-  { id: 7, url: image02, category: 'Room & Hotel' },
-  { id: 8, url: image01, category: 'Restaurant' },
-  { id: 9, url: image01, category: 'Safari Tours' },
+  { id: 4, url: image04, category: 'Restaurant' },
+  { id: 5, url: image05, category: 'Restaurant' },
+  { id: 6, url: image06, category: 'Safari Tours' },
+  { id: 7, url: image07, category: 'Room & Hotel' },
+  { id: 8, url: image08, category: 'Restaurant' },
+  { id: 9, url: image09, category: 'Safari Tours' },
+  { id: 10, url: image10, category: 'Restaurant' },
 ];
 
 const Gallery = () => {
