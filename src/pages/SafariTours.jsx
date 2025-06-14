@@ -32,7 +32,7 @@ function SafariTours() {
                 </div>
             </div>
 
-            <div className="container py-5">
+            <div className="container py-5 safari_tours">
                 <h2 className="text-center mb-4 fw-bold display-6 text-warning-emphasis" data-aos="zoom-in" data-aos-delay="200">Safari Tour Packages</h2>
                 <p className='text-center mb-5' data-aos="flip-up" data-aos-delay="200">
                     Embark on an unforgettable journey through Udawalawa National Park with our guided safari tours. Spot elephants, leopards, birds, and more while enjoying safe, knowledgeable service and breathtaking views of nature.
@@ -68,30 +68,46 @@ function SafariTours() {
                                     title: "Normal Safari Tours",
                                     duration: "3hr",
                                     capacity: "6 Persons",
+                                    price: "12000",
                                     description: "Perfect for a quick elephant viewing experience."
                                     })} style={{ cursor: 'pointer' }}
                                 >
                                     <div className="d-flex justify-content-between">
-                                        <div>
-                                            <strong>Normal Safari Tours</strong> ( 3hr / 6 Persons )
+                                        <div className="packege_details">
+                                            <strong>Normal Safari Tours</strong> ( 3hr )
+                                            
                                         </div>
-                                        {/* <span>Rs:12000</span> */}
+                                        <Button>More Info</Button>
                                     </div>
                                 </ListGroup.Item>
-                                <ListGroup.Item className='py-3'>
+                                <ListGroup.Item className='py-3' onClick={() => handlePackageClick({
+                                    title: "Half Day Safari Tours",
+                                    duration: "6hr",
+                                    capacity: "6 Persons",
+                                    price: "20000",
+                                    description: "Perfect for a quick elephant viewing experience."
+                                    })} style={{ cursor: 'pointer' }}
+                                >
                                     <div className="d-flex justify-content-between">
-                                        <div>
-                                            <strong>Half Day Safari Tours</strong> ( 6hr / 6 Persons )
+                                        <div className="packege_details">
+                                            <strong>Half Day Safari Tours</strong> ( 6hr )
                                         </div>
-                                        {/* <span>Rs:20000</span> */}
+                                        <Button>More Info</Button>
                                     </div>
                                 </ListGroup.Item>
-                                <ListGroup.Item className='py-3'>
+                                <ListGroup.Item className='py-3' onClick={() => handlePackageClick({
+                                    title: "Full Day Safari Tours",
+                                    duration: "12hr",
+                                    capacity: "6 Persons",
+                                    price: "35000",
+                                    description: "Perfect for a quick elephant viewing experience."
+                                    })} style={{ cursor: 'pointer' }}
+                                >
                                     <div className="d-flex justify-content-between">
-                                        <div>
-                                            <strong>Full Day Safari Tours</strong> ( 12hr / 6 Persons )
+                                        <div className="packege_details">
+                                            <strong>Full Day Safari Tours</strong> ( 12hr )
                                         </div>
-                                        {/* <span>Rs:35000</span> */}
+                                        <Button>More Info</Button>
                                     </div>
                                 </ListGroup.Item>
                             </ListGroup>
@@ -100,6 +116,7 @@ function SafariTours() {
                                     <h5 className="text-success fw-bold mb-2 text-center">Included Facilities (All Tours)</h5>
                                     <ListGroup variant="flush">
                                     <ListGroup.Item>✅ Water & Snacks</ListGroup.Item>
+                                    <ListGroup.Item>✅ Comfortable Jeep for 6 Persons</ListGroup.Item>
                                     <ListGroup.Item>✅ Experienced Driver (Over 10 years of experience)</ListGroup.Item>
                                     <ListGroup.Item>✅ Guide Service</ListGroup.Item>
                                     <ListGroup.Item>✅ Comfortable Jeep (Max 6 persons)<br />
@@ -119,7 +136,7 @@ function SafariTours() {
                     </Accordion.Item>
 
                     <Accordion.Item eventKey="1">
-                        <Accordion.Header>seasonal Tours</Accordion.Header>
+                        <Accordion.Header>Seasonal Tours</Accordion.Header>
                         <Accordion.Body>
                             <p>Explore the wild side of Sri Lanka</p>
                             <ListGroup>
@@ -149,19 +166,20 @@ function SafariTours() {
 
                 <Modal show={showModal} onHide={() => setShowModal(false)} centered>
                     <Modal.Header closeButton>
-                        <Modal.Title>{selectedPackage?.title}</Modal.Title>
+                        <Modal.Title className="text-primary-emphasis">{selectedPackage?.title}</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <p><strong>Duration:</strong> {selectedPackage?.duration}</p>
-                        <p><strong>Capacity:</strong> {selectedPackage?.capacity}</p>
+                        <p><strong>Duration :</strong> {selectedPackage?.duration}</p>
+                        <p><strong>Capacity :</strong> {selectedPackage?.capacity}</p>
+                        <p><strong>Price : </strong> Rs. {selectedPackage?.price}</p>
                         <p>{selectedPackage?.description}</p>
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={() => setShowModal(false)}>
-                        Close
+                            Close
                         </Button>
                         <Button variant="success">
-                        Book Now
+                            Book Now
                         </Button>
                     </Modal.Footer>
                 </Modal>

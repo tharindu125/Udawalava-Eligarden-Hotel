@@ -115,15 +115,17 @@ const Gallery = () => {
         </div>
       </section>
 
-      {/* Modal */}
-      {modalImage && (
-        <div className="modal-overlay" onClick={() => setModalImage(null)} data-aos="zoom-in" data-aos-delay="200">
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <img src={modalImage} alt="Full view" className="modal-img" />
-            <button className="modal-close" onClick={() => setModalImage(null)}>X</button>
+      <div className='gallery'>
+        {/* Modal */}
+        {modalImage && (
+          <div className="modal-overlay" onClick={() => setModalImage(null)} data-aos="zoom-in" data-aos-delay="200">
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+              <img src={modalImage} alt="Full view" className="modal-img" />
+              <button className="modal-close" onClick={() => setModalImage(null)}>X</button>
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
 
       <Container className="py-3">
         {/* Call to Action */}
