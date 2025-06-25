@@ -10,7 +10,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import emailjs from 'emailjs-com';
 
 import welcomeImage from '../assets/slider2.jpg';
-import welcomeImage2 from '../assets/sri-lanka-leopard-asian.jpg';
+import welcomeImage2 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image06.jpg';
 import nearPlace1 from '../assets/slider1.jpg'
 import nearPlace2 from '../assets/Maduwanwela-Walawwa.jpg'
 import nearPlace3 from '../assets/Sankapala.jpg'
@@ -151,7 +151,7 @@ function Home() {
           {/* Text Content */}
           <div className='col-md-6 mb-4 mb-md-0 manual_text_center content'>
             <h2 className='h3 fw-bold mb-3 text-warning-emphasis' data-aos="flip-up" data-aos-delay="200">Room Features & Amenities</h2>
-            <p className='text-muted mb-3' data-aos="flip-up" data-aos-delay="300">
+            <p className='text-muted mb-3 index-paragraph' data-aos="flip-up" data-aos-delay="300">
               At Udawalawa Elegarden Hotel, we offer a peaceful stay with nature just outside your window. Whether you're traveling alone, as a couple, or with 
               family, our Single, Double, and Triple rooms are designed to match your needs with comfort and privacy.
             </p>
