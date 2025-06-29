@@ -22,7 +22,7 @@ function About() {
       {/* About Content */}
       <div className="about-content" style={{ paddingTop: '50px', paddingBottom: '50px' }}>
         <Container>
-          <Row className="mb-4 manual_text_center">
+          <Row className="mb-4 manual_text_left">
             <Col xs={12} md={6}>
               <h2 className='fw-bold text-primary-emphasis' data-aos="zoom-in" data-aos-delay="200">About Udawalawa Elegarden Hotel</h2>
               <p data-aos="flip-up" data-aos-delay="300">

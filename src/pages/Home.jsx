@@ -149,7 +149,7 @@ function Home() {
       <section className='container py-5 main-topic'>
         <div className='row align-items-center'>
           {/* Text Content */}
-          <div className='col-md-6 mb-4 mb-md-0 manual_text_center content'>
+          <div className='col-md-6 mb-4 mb-md-0 manual_text_left content'>
             <h2 className='h3 fw-bold mb-3 text-warning-emphasis' data-aos="flip-up" data-aos-delay="200">Room Features & Amenities</h2>
             <p className='text-muted mb-3' data-aos="flip-up" data-aos-delay="300">
               At Udawalawa Elegarden Hotel, we offer a peaceful stay with nature just outside your window. Whether you're traveling alone, as a couple, or with 
@@ -162,7 +162,7 @@ function Home() {
             <p data-aos="flip-up" data-aos-delay="500">
               Enjoy free laundry and room service with no extra fees – because your comfort is always our priority.
             </p>
-            <Link to="/RoomDetails" className="btn btn-primary" data-aos="flip-up" data-aos-delay="600">More Details</Link>
+            <Link to="/RoomDetails" className="btn text-light" style={{background: '#664d03', boxShadow: '0 0 5px'}} data-aos="flip-up" data-aos-delay="600">More Details</Link>
           </div>
 
           {/* Image */}
@@ -180,7 +180,7 @@ function Home() {
       </section>
 
       {/* Restuarent */}
-      <section className='container py-5 main-topic' style={{ boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)' }}>
+      <section className='container py-5 main-topic' style={{ boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)', background: 'rgb(239, 239, 239)' }}>
         <div className='row align-items-center'>
           {/* Image */}
           <div className='col-md-6 image'>
@@ -194,7 +194,7 @@ function Home() {
             />
           </div>
           {/* Text Content */}
-          <div className='col-md-6 mb-4 mb-md-0 manual_text_center content'>
+          <div className='col-md-6 mb-4 mb-md-0 manual_text_left content'>
             <h2 className='h3 fw-bold mb-3 text-warning-emphasis' data-aos="flip-up" data-aos-delay="200">Delicious Local & International Restaurant</h2>
             <p className='text-muted mb-3' data-aos="flip-up" data-aos-delay="300">
               Start your day with a hearty breakfast, relax with a satisfying lunch, or unwind with a flavorful dinner — all freshly prepared by our 
@@ -206,7 +206,7 @@ function Home() {
             <p className='text-muted' data-aos="flip-up" data-aos-delay="500">
               Looking for something cool and sweet? Treat yourself to a selection of ice creams and refreshing beverages, perfect for a hot Udawalawa afternoon.
             </p>
-            <Link to="/Restaurant" className="btn btn-primary" data-aos="flip-up" data-aos-delay="600">More Details</Link>
+            <Link to="/Restaurant" className="btn text-light" style={{background: '#664d03', boxShadow: '0 0 5px'}} data-aos="flip-up" data-aos-delay="600">More Details</Link>
           </div>
         </div>
       </section>
@@ -215,7 +215,7 @@ function Home() {
       <section className='container py-5 main-topic'>
         <div className='row align-items-center'>
           {/* Text Content */}
-          <div className='col-md-6 mb-4 mb-md-0 manual_text_center content'>
+          <div className='col-md-6 mb-4 mb-md-0 manual_text_left content'>
             <h2 className='h3 fw-bold mb-3 text-warning-emphasis' data-aos="flip-up" data-aos-delay="200">Wildlife Adventures : Udawalawe Safari Tours</h2>
             <p className='text-muted mb-3' data-aos="flip-up" data-aos-delay="200">
               Embark on an unforgettable journey with our Udawalawe Safari Tours the perfect way to experience Sri Lanka’s wild beauty. Home to a thriving population 
@@ -232,7 +232,7 @@ function Home() {
             <p className='text-muted' data-aos="flip-up" data-aos-delay="500">
               One unique feature of this park is the presence of Sri Lanka’s only known dwarf elephant, an extremely rare and fascinating species found nowhere else in South Asia.
             </p>
-            <Link to="/SafariTours" className="btn btn-primary" data-aos="flip-up" data-aos-delay="600">More Details</Link>
+            <Link to="/SafariTours" className="btn text-light" style={{background: '#664d03', boxShadow: '0 0 5px'}} data-aos="flip-up" data-aos-delay="600">More Details</Link>
           </div>
 
           {/* Image */}
@@ -250,7 +250,7 @@ function Home() {
       </section>
 
       {/* Near Places */}
-      <section className='container py-5 my-4 near_places' >
+      <section className='container py-5 my-4 near_places' style={{borderTop: '1px solid rgba(1, 0, 14, 0.39)'}}>
         <div className='container manual_text_center'>
           <h2 className='h3 fw-bold mb-3 text-warning-emphasis' data-aos="zoom-in" data-aos-delay="200">Explore Nearby Attractions</h2>
           <p className='text-muted mb-3' data-aos="flip-up" data-aos-delay="300">

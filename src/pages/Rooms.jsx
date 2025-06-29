@@ -1,6 +1,9 @@
 import React from 'react';
 import CustomNavbar from '../components/CustomNavbar';
 import slider1 from '../assets/slider1.jpg';
+import room1 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image02.jpg';
+import room2 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image07.jpg';
+import room3 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image02.jpg';
 import { useState } from 'react';
 import {
   FaWifi,
@@ -25,28 +28,39 @@ const RoomsSection = () => {
             title: 'Single Room',
             description: 'Perfect for solo travelers looking for peace and privacy.',
             price: '4500 LKR',
+            image: room1,
         },
         double: {
             title: 'Double Room',
             description: 'Ideal for couples or friends, offering a cozy and spacious atmosphere.',
             price: '6500 LKR',
+            image: room2,
         },
         triple: {
             title: 'Triple Room',
             description: 'Great for families or small groups, providing enough space and comfort for everyone.',
             price: '9000 LKR',
+            image: room3,
         },
     };
   
     const renderTabContent = () => {
-        const { title, description, price } = roomDetails[activeTab];
+        const { title, description, price, image } = roomDetails[activeTab];
         return (
             <>
-                <FaBed size={30} className="mb-2 text-primary" />
-                <h5 className="card-title">{title}</h5>
-                <p className="card-text">{description}</p>
-                <p className='card-price'>{price} ( Per Night)</p>
-                <a href="/contact#book_now" className="btn btn-primary">Book Now</a>
+            <div className='row col-md-12'>
+                <div className='col-md-6 mb-3'>
+                    <FaBed size={30} className="mb-2 text-primary" />
+                    <h5 className="card-title">{title}</h5>
+                    <p className="card-text">{description}</p>
+                    <p className='card-price'>{price} ( Per Night)</p>
+                    <a href="/contact#book_now" className="btn btn-primary">Book Now</a>
+                </div>
+                <div className='col-md-6'>
+                    <img src={image} alt={title} className="img-fluid rounded" style={{ maxHeight: '300px', objectFit: 'cover' }} />
+                </div>
+            </div>
+                
             </>
         );
     };

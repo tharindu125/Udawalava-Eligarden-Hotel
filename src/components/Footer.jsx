@@ -4,7 +4,7 @@ import logo from '../assets/logo.png';
 
 function Footer() {
   return (
-    <footer className="text-light pt-5 pb-4 manual_text_center" style={{ backgroundColor: 'rgb(0, 5, 27) ' }}>
+    <footer className="text-light pt-5 pb-4 manual_text_left" style={{ backgroundColor: 'rgb(0, 5, 27) ' }}>
       <Container>
         <Row>
           {/* Logo & Company Info */}

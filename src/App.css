@@ -9,6 +9,16 @@
   text-align: center;
 }
 
+.manual_text_left {
+  text-align: left;
+}
+
+.btn_color {
+  background: #664d03;
+  /* color: #fff; */
+  box-shadow: 0 0 5px rgba(102, 77, 3, 0.5);
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
