@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Masonry from 'react-masonry-css';
-import {Button, Container } from 'react-bootstrap';
+import {Button, Container, Modal } from 'react-bootstrap';
 
 import CustomNavbar from '../components/CustomNavbar';
 
@@ -115,17 +115,17 @@ const Gallery = () => {
         </div>
       </section>
 
-      <div className='gallery'>
-        {/* Modal */}
-        {modalImage && (
-          <div className="modal-overlay" onClick={() => setModalImage(null)} data-aos="zoom-in" data-aos-delay="200">
-            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-              <img src={modalImage} alt="Full view" className="modal-img" />
-              <button className="modal-close" onClick={() => setModalImage(null)}>X</button>
-            </div>
-          </div>
-        )}
-      </div>
+      <Modal show={!!modalImage} onHide={() => setModalImage(null)} centered size="lg">
+        <Modal.Header closeButton>
+          {/* <Modal.Title>Full Image</Modal.Title> */}
+        </Modal.Header>
+        <Modal.Body>
+          {modalImage && (
+            <img src={modalImage} alt="Full View" className="img-fluid w-100" />
+          )}
+        </Modal.Body>
+      </Modal>
+
 
       <Container className="py-3">
         {/* Call to Action */}

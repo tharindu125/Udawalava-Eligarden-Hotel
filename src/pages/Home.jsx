@@ -3,11 +3,13 @@ import CustomNavbar from '../components/CustomNavbar';
 import MainCarousel from '../components/MainCarousel';
 import { Link } from 'react-router-dom';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import Select from 'react-select';
 import 'react-datepicker/dist/react-datepicker.css';
 import emailjs from 'emailjs-com';
+import { Modal } from 'react-bootstrap';
+import { FaSearchPlus } from 'react-icons/fa';
 
 import welcomeImage from '../assets/slider2.jpg';
 import welcomeImage2 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image06.jpg';
@@ -137,7 +139,20 @@ function Home() {
         setLoading(false); // hide loading after response
       });
   };
-  
+
+  const [showModal, setShowModal] = useState(false);
+  const [modalImage, setModalImage] = useState(null);
+
+  const handleOpen = (image) => {
+    setModalImage(image);
+    setShowModal(true);
+  };
+
+  const handleClose = () => {
+    setShowModal(false);
+    setModalImage(null);
+  };
+
   return (
     <>
       <CustomNavbar />
@@ -174,7 +189,9 @@ function Home() {
               data-aos='fade-up'
               data-aos-delay='200'
               data-aos-duration='1000'
+             onClick={() => handleOpen(roomsImage)}
             />
+            <p className="text-muted small text-center mt-2"><FaSearchPlus className="me-1" />Click to enlarge</p>
           </div>
         </div>
       </section>
@@ -191,7 +208,9 @@ function Home() {
               data-aos='fade-up'
               data-aos-delay='200'
               data-aos-duration='1000'
+              onClick={() => handleOpen(restaurantimage)}
             />
+            <p className="text-muted small text-center mt-2"><FaSearchPlus className="me-1" />Click to enlarge</p>
           </div>
           {/* Text Content */}
           <div className='col-md-6 mb-4 mb-md-0 manual_text_left content'>
@@ -244,10 +263,21 @@ function Home() {
               data-aos='fade-up'
               data-aos-delay='100'
               data-aos-duration='1000'
+              onClick={() => handleOpen(welcomeImage2)}
             />
+            <p className="text-muted small text-center mt-2"><FaSearchPlus className="me-1" />Click to enlarge</p>
           </div>
         </div>
       </section>
+
+      <Modal show={showModal} onHide={handleClose} centered size="lg">
+        <Modal.Header closeButton>
+          {/* <Modal.Title>Full Image</Modal.Title> */}
+        </Modal.Header>
+        <Modal.Body>
+          {modalImage && <img src={modalImage} alt="Full Size" className="img-fluid w-100" />}
+        </Modal.Body>
+      </Modal>
 
       {/* Near Places */}
       <section className='container py-5 my-4 near_places' style={{borderTop: '1px solid rgba(1, 0, 14, 0.39)'}}>

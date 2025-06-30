@@ -1,12 +1,19 @@
 import CustomNavbar from '../components/CustomNavbar';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import { FaCheckCircle, FaInfoCircle, FaRegStar } from 'react-icons/fa'; // Icons for section
+import { Modal } from 'react-bootstrap';
+import { useState } from 'react';
+
+import { FaCheckCircle, FaInfoCircle, FaRegStar, FaSearchPlus } from 'react-icons/fa'; // Icons for section
 import aboutImage from '../assets/about-Udawalawa-Elegarden-Hotel.jpg';
 import slider1 from '../assets/about-Udawalawa-Elegarden-Hotel-Hero.jpg'
 
 function About() {
+  const [showModal, setShowModal] = useState(false);
+  const handleOpen = () => setShowModal(true);
+  const handleClose = () => setShowModal(false);
+
   return (
-    <>
+     <>
       <CustomNavbar />
 
       {/* Hero Section */}
@@ -39,9 +46,26 @@ function About() {
               </p>
             </Col>
             <Col xs={12} md={6} data-aos="fade-up" data-aos-delay="200">
-              <img src={aboutImage} alt="About Us" className="img-fluid rounded" />
+              <img
+                src={aboutImage}
+                alt="About Us"
+                className="img-fluid rounded"
+                style={{ cursor: 'pointer' }}
+                onClick={handleOpen}
+              />
+              <p className="text-muted small text-center mt-2"><FaSearchPlus className="me-1" />Click to enlarge</p>
             </Col>
           </Row>
+
+          <Modal show={showModal} onHide={handleClose} centered size="lg">
+            <Modal.Header closeButton>
+              {/* <Modal.Title>Full Image</Modal.Title> */}
+            </Modal.Header>
+            <Modal.Body>
+              <img src={aboutImage} alt="Full Size" className="img-fluid w-100" />
+            </Modal.Body>
+          </Modal>
+
 
           <Row className="mb-4">
             <Col xs={12} md={4} data-aos="fade-up" data-aos-delay="200">
@@ -83,7 +107,7 @@ function About() {
           <div className="cta-section text-center">
             <h3 className='fw-bold text-warning-emphasis' data-aos="fade-up" data-aos-delay="200">Ready to Experience the Best?</h3>
             <p data-aos="fade-up" data-aos-delay="400">Join us for an unforgettable experience. Book a tour with us today!</p>
-            <Button variant="primary" href="/contact#book_now" data-aos="fade-up" data-aos-delay="600">Book Now</Button>
+            <Button variant="primary" href="/contact#book_now" data-aos="fade-up" data-aos-delay="600"                                        >Book Now</Button>
           </div>
         </Container>
       </div>
