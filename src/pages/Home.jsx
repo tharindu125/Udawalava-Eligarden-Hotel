@@ -456,7 +456,7 @@ function Home() {
       </section>
 
       {/* Guest Reviews */}
-      <section className="container bg-light py-5 my-4">
+      {/* <section className="container bg-light py-5 my-4">
         <div className="text-center">
           <h3 className="fw-bold mb-4 text-primary-emphasis">What Our Guests Say</h3>
           <Swiper
@@ -479,7 +479,7 @@ function Home() {
             </SwiperSlide>
           </Swiper>
         </div>
-      </section>
+      </section> */}
 
       {/* Visit Us */}
       <section className="container py-5 my-4 bg-white">
