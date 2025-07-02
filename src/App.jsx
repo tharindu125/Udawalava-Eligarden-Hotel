@@ -15,6 +15,7 @@ import Restaurant from './pages/Restaurant'
 import Gallery from './pages/Gallery';
 import FloatingButtons from './components/FloatingButtons';
 import SafariTours from './pages/SafariTours'
+import UdawalaweSafariTours from './pages/UdawalaweSafariTours';
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
         <Route path="/Restaurant" element={<Restaurant />} />
         <Route path="/SafariTours" element={<SafariTours />} />
         <Route path="/Gallery" element={<Gallery />} />
+        <Route path="/UdawalaweSafariTours" element={<UdawalaweSafariTours />} />
       </Routes>
       <FloatingButtons />
       <Footer />

@@ -370,10 +370,10 @@ const Restaurant = () => {
 
       <section className="bg-white py-5">
         <div className="container">
-          <h2 className="text-center fw-bold mb-2">Menu</h2>
-          <p className="text-center text-muted mb-4">Check Our Tasty Menu</p>
+          <h2 className="text-center fw-bold mb-2" data-aos="zoom-in" data-aos-delay="200">Menu</h2>
+          <p className="text-center text-muted mb-4" data-aos="zoom-in" data-aos-delay="200">Check Our Tasty Menu</p>
 
-          <div className="text-center mb-4">
+          <div className="text-center mb-4" data-aos="zoom-out" data-aos-delay="300">
             {categories.map((cat, i) => (
               <button
                 key={i}
@@ -389,7 +389,7 @@ const Restaurant = () => {
 
           <div className="row">
             {filteredItems.map((item, index) => (
-              <div className="col-md-6 mb-4" key={index}>
+              <div className="col-md-6 mb-4" key={index} data-aos="flip-up" data-aos-delay="400">
                 <div className="d-flex align-items-start">
                   <img
                     src={item.image}
