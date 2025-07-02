@@ -331,7 +331,7 @@ h1 {
 
 .gallery-section .filter-btn {
   border: none;
-  background-color: var(--bs-primary-text-emphasis);
+  background-color: rgba(0, 0, 0, 0.5);
   font-weight: 500;
   padding: 8px 16px;
   cursor: pointer;
@@ -346,6 +346,12 @@ h1 {
 
 .gallery-section .filter-btn:hover {
   transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.gallery-section .filter-btn.active:hover {
+  background-color: rgb(156, 118, 4);
+  color: white;
 }
 
 .my-masonry-grid {
@@ -506,4 +512,15 @@ h1, p {
   color: #000 !important;
   box-shadow: none !important;
   font-size: 20px !important;
+}
+
+/* Footer */
+.footer {
+ text-align: left;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
 }

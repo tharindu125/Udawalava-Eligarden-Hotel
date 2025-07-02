@@ -56,7 +56,7 @@ const RoomsSection = () => {
           <h5 className="card-title">{title}</h5>
           <p className="card-text">{description}</p>
           <p className='card-price'>{price} (Per Night)</p>
-          <a href="/contact#book_now" className="btn btn-primary">Book Now</a>
+          <a href="/contact#book_now" className="btn btn-primary" style={{background:'#664d03', border:'none'}}>Book Now</a>
         </div>
         <div className='col-md-6'>
             <Carousel
