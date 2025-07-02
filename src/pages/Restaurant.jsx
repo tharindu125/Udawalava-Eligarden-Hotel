@@ -2,17 +2,70 @@ import CustomNavbar from '../components/CustomNavbar';
 import slider1 from '../assets/slider1.jpg';
 import food from '../assets/Restaurent.jpg'
 import { Container, Row, Col, Card, Accordion, Button } from 'react-bootstrap';
+import { useState } from 'react';
 
-function Restaurant() {
-  const foodMenus = {
-    Breakfast: ['Sri Lankan String Hoppers', 'Milk Rice', 'Omelette Toast', 'Tea / Coffee'],
-    Lunch: ['Rice & Curry', 'Chicken Fried Rice', 'Vegetable Kottu', 'Seafood Noodles'],
-    Dinner: ['Devilled Chicken', 'Grilled Fish', 'Vegetable Soup', 'Fried Rice with Egg'],
-    Beverages: ['Fresh Juice', 'Milkshake', 'King Coconut', 'Soda / Soft Drinks'],
-    'Ice Creams': ['Vanilla Delight', 'Chocolate Sundae', 'Fruit & Nut', 'Strawberry Swirl'],
-    // 'Dine-In & Takeaway': ['Available for All Items', 'Fast Packaging', 'Eco-friendly Containers'],
-  };
-  
+
+const Restaurant = () => {
+  const [selectedCategory, setSelectedCategory] = useState('All');
+
+  const menuItems = [
+    {
+      title: 'RI LANKAN TRADITIONAL RICE & CURRY',
+      description:
+        'Savor the authentic taste of Sri Lanka with a plate of steamed rice, served with three flavorful vegetable curries. Choose from prawns, fish or beef.',
+      price: 'Rs: 1000',
+      image: food,
+      category: 'Lunch and Dinner',
+    },
+    {
+      title: 'Vegetarian Kottu',
+      description:
+        'Chopped paratha roti stir-fried with vegetables and spices. Perfect for a quick meal.',
+      price: 'Rs:800',
+      image: food,
+      category: 'Lunch and Dinner',
+    },
+    {
+      title: 'Cheese Kottu',
+      description:
+        'Chopped paratha roti, savory spices & cheese. A satisfying and flavorful street food.',
+      price: 'Rs:1300',
+      image: food,
+      category: 'Brunch',
+    },
+    {
+      title: 'Seafood Kottu',
+      description:
+        'Kottu mixed with seafood and bold spices. Irresistible and spicy!',
+      price: 'Rs:1500',
+      image: food,
+      category: 'Brunch',
+    },
+    {
+      title: 'Vegetarian basil/pasto',
+      description:
+        'Perfectly cooked pasta with rich sauce. Topped with parmesan for elegance.',
+      price: 'Rs:800',
+      image: food,
+      category: 'Lunch and Dinner',
+    },
+    {
+      title: 'Spaghetti cabonara/bolognese',
+      description:
+        'Served with a touch of rich savory sauce. Classic Italian delight!',
+      price: 'Rs:1400',
+      image: food,
+      category: 'Dinner',
+    },
+  ];
+
+  const categories = ['All', 'Lunch and Dinner', 'Brunch', 'DRINKS', 'DESSERTS'];
+
+  const filteredItems =
+    selectedCategory === 'All'
+      ? menuItems
+      : menuItems.filter((item) => item.category === selectedCategory);
+
   return (
     <>
       <CustomNavbar />
@@ -27,57 +80,52 @@ function Restaurant() {
         </div>
       </div>
 
-      <div style={{ paddingTop: '70px' }}>
-        <Container className="py-3">
-          <h2 className="text-center mb-3 fw-bold display-6 text-warning-emphasis" data-aos="zoom-in" data-aos-delay="200">Experience Taste & Quality in Every Bite</h2>
-          <p className="text-center text-muted mb-5 px-3" data-aos="flip-up" data-aos-delay="300">
-            Whether you're dining in or taking away, we serve freshly prepared meals with no MSG or artificial flavors — all packed in eco-friendly containers. 
-            Enjoy delicious food that’s kind to your body and the planet.
-          </p>
-          <Row className="g-4">
-            {Object.keys(foodMenus).map((category, idx) => (
-              <Col xs={12} md={6} key={idx} data-aos="fade-up" data-aos-delay="200">
-                <Card className="shadow-sm p-0 bg-light">
-                  <Card.Body className='pb-5'>
-                  <div className="position-relative">
-                    <Card.Img variant="top" src={food} alt={category} className="restaurent_image" />
-                    <span
-                      className="position-absolute top-0 start-0 text-white px-3 py-1 rounded-end border shadow fs-5"
-                      style={{ marginTop: '10px', marginLeft: '10px', fontSize: '0.8rem', backgroundColor: 'rgba(78, 60, 1, 0.55)', textShadow: '2px 2px 4px rgba(255, 213, 0, 0.5)' }}
-                    >
-                      Dine-In & Takeaway
-                    </span>
-                  </div>
-                    <Card.Title className="text-primary-emphasis px-5 fs-3 manual_text_center mt-3">{category}</Card.Title>
-                    <Card.Text className="text-muted mb-2 px-5 manual_text_center">Explore our delicious {category} options.</Card.Text>  
-                    <Accordion flush className='mx-3 mt-3 border shadow-sm'>
-                      <Accordion.Item eventKey="0">
-                        <Accordion.Header>View Menu</Accordion.Header>
-                        <Accordion.Body>
-                          <ul className="mb-0">
-                            {foodMenus[category].map((item, i) => (
-                              <li key={i}>{item}</li>
-                            ))}
-                          </ul>
-                        </Accordion.Body>
-                      </Accordion.Item>
-                    </Accordion>
-                  </Card.Body>
-                </Card>
-              </Col>
-            ))}
-          </Row>
+      <section className="bg-white py-5">
+        <div className="container">
+          <h2 className="text-center fw-bold mb-2">Menu</h2>
+          <p className="text-center text-muted mb-4">Check Our Tasty Menu</p>
 
-          {/* Call to Action */}
-          <div className="cta-section text-center mb-3 shadow">
-            <h3 className='fw-bold text-warning-emphasis' data-aos="fade-up" data-aos-delay="200">Ready to Experience the Best?</h3>
-            <p data-aos="fade-up" data-aos-delay="400">Join us for an unforgettable experience. Book a tour with us today!</p>
-            <Button variant="primary" href="/contact#book_now" data-aos="fade-up" data-aos-delay="600">Book Now</Button>
+          <div className="text-center mb-4">
+            {categories.map((cat, i) => (
+              <button
+                key={i}
+                className={`btn btn-sm me-2 mb-2 ${
+                  selectedCategory === cat ? 'btn-dark' : 'btn-outline-dark'
+                }`}
+                onClick={() => setSelectedCategory(cat)}
+              >
+                {cat}
+              </button>
+            ))}
           </div>
-        </Container>
-      </div>
+
+          <div className="row">
+            {filteredItems.map((item, index) => (
+              <div className="col-md-6 mb-4" key={index}>
+                <div className="d-flex align-items-start">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="rounded-circle me-3"
+                    style={{ width: '70px', height: '70px', objectFit: 'cover' }}
+                  />
+                  <div className="flex-grow-1 border-bottom pb-3">
+                    <div className="d-flex justify-content-between">
+                      <h6 className="fw-bold text-uppercase">{item.title}</h6>
+                      <span className="badge bg-light text-dark">{item.price}</span>
+                    </div>
+                    <p className="text-muted mb-0" style={{ fontSize: '0.9rem' }}>
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
-}
+};
 
 export default Restaurant;
