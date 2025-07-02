@@ -303,25 +303,25 @@ function Home() {
       </Modal>
 
       {/* Image Slider */}
-      <section className='container py-5 my-4 pt-5 hero-slider-container' 
+      <section className='container py-5 my-4 pt-5 hero-slider-container w-100' 
         style={{boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)', background: 'rgb(239, 239, 239)'}} data-aos="zoom-in" data-aos-delay= "200">
           <Swiper
-            // modules={[Autoplay, EffectCoverflow]}
-            // effect="coverflow"
-            // centeredSlides={true}
-            // slidesPerView={3}
-            // loop={true}
-            // spaceBetween={30}
-            // coverflowEffect={{
-            //   rotate: 0,
-            //   stretch: 0,
-            //   depth: 100,
-            //   modifier: 2.5,
-            // }}
-            // autoplay={{
-            //   delay: 2500,
-            //   disableOnInteraction: false,
-            // }}
+            modules={[Autoplay, EffectCoverflow]}
+            effect="coverflow"
+            centeredSlides={true}
+            slidesPerView={3}
+            loop={true}
+            spaceBetween={30}
+            coverflowEffect={{
+              rotate: 0,
+              stretch: 0,
+              depth: 100,
+              modifier: 2.5,
+            }}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
             className="hero-swiper"
           >
             {imageList.map((img, index) => (
@@ -460,14 +460,14 @@ function Home() {
       </section>
 
       {/* Guest Reviews */}
-      <section className="container bg-light py-5 my-4">
+      <section className="container bg-light py-5 my-4 w-100">
         <div className="text-center">
           <h3 className="fw-bold mb-4 text-primary-emphasis">What Our Guests Say</h3>
           <Swiper
-            // slidesPerView={1}
-            // loop={true}
-            // autoplay={{ delay: 3000, disableOnInteraction: false }}
-            // modules={[Autoplay]}
+            slidesPerView={1}
+            loop={true}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            modules={[Autoplay]}
           >
             <SwiperSlide>
               <blockquote className="blockquote">
