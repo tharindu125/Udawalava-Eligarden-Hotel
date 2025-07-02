@@ -14,6 +14,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
+import 'swiper/css/autoplay';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectCoverflow } from 'swiper/modules';
 
@@ -27,18 +28,18 @@ import nearPlace5 from '../assets/wavulpone.webp'
 import roomsImage from '../assets/Udawalava-Eligarden-Hotel-rooms.jpg'
 import restaurantimage from '../assets/Udawalava-Eligarden-Hotel-restaurants.jpg';
 
-// import img1 from '../assets/Restaurent.jpeg';
-// import img2 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image01.jpg';
-// import img3 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image02.jpg';
-// import img4 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image05.jpg';
-// import img5 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image05.jpg';
-// import img6 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image04.jpg';
-// import img7 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image07.jpg';
-// import img8 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image08.jpg';
-// import img9 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image08.jpg';
-// import img10 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image05.jpg';
+import img1 from '../assets/Restaurent.jpeg';
+import img2 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image01.jpg';
+import img3 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image02.jpg';
+import img4 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image05.jpg';
+import img5 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image05.jpg';
+import img6 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image04.jpg';
+import img7 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image07.jpg';
+import img8 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image08.jpg';
+import img9 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image08.jpg';
+import img10 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image05.jpg';
 
-// const imageList = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
+const imageList = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
 
 
 function Home() {
@@ -299,7 +300,7 @@ function Home() {
       </Modal>
 
       {/* Image Slider */}
-      {/* <section className='container py-5 my-4 pt-5 hero-slider-container' 
+      <section className='container py-5 my-4 pt-5 hero-slider-container' 
         style={{boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)', background: 'rgb(239, 239, 239)'}} data-aos="zoom-in" data-aos-delay= "200">
           <Swiper
             modules={[Autoplay, EffectCoverflow]}
@@ -326,7 +327,7 @@ function Home() {
               </SwiperSlide>
             ))}
           </Swiper>
-      </section> */}
+      </section>
           
       {/* Near Places */}
       <section className='container py-5 my-4 near_places'>
@@ -456,7 +457,7 @@ function Home() {
       </section>
 
       {/* Guest Reviews */}
-      {/* <section className="container bg-light py-5 my-4">
+      <section className="container bg-light py-5 my-4">
         <div className="text-center">
           <h3 className="fw-bold mb-4 text-primary-emphasis">What Our Guests Say</h3>
           <Swiper
@@ -479,7 +480,7 @@ function Home() {
             </SwiperSlide>
           </Swiper>
         </div>
-      </section> */}
+      </section>
 
       {/* Visit Us */}
       <section className="container py-5 my-4 bg-white">
