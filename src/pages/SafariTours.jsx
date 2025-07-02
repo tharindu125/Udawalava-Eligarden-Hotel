@@ -45,7 +45,7 @@ function SafariTours() {
 
                 <Accordion defaultActiveKey="0">
                     <Accordion.Item eventKey="0">
-                        <Accordion.Header data-aos="flip-up" data-aos-delay="200">Udawalawe Safari Tours</Accordion.Header>
+                        <Accordion.Header  className="custom-accordion-header" data-aos="flip-up" data-aos-delay="200">Udawalawe Safari Tours</Accordion.Header>
                         <Accordion.Body>
                             <Row className='mb-5 mt-2'>
                                 <Col xs={12} md={6}>
@@ -100,7 +100,7 @@ function SafariTours() {
                                             <strong>Normal Safari Tours</strong> ( 3hr )
                                             
                                         </div>
-                                        <Button>More Info</Button>
+                                        <Button className="text-light" style={{background:'#664d03', border:'none'}}>More Info</Button>
                                     </div>
                                 </ListGroup.Item>
                                 <ListGroup.Item className='py-3' onClick={() => handlePackageClick({
@@ -115,7 +115,7 @@ function SafariTours() {
                                         <div className="packege_details">
                                             <strong>Half Day Safari Tours</strong> ( 6hr )
                                         </div>
-                                        <Button>More Info</Button>
+                                        <Button className="text-light" style={{background:'#664d03', border:'none'}}>More Info</Button>
                                     </div>
                                 </ListGroup.Item>
                                 <ListGroup.Item className='py-3' onClick={() => handlePackageClick({
@@ -130,7 +130,7 @@ function SafariTours() {
                                         <div className="packege_details">
                                             <strong>Full Day Safari Tours</strong> ( 12hr )
                                         </div>
-                                        <Button>More Info</Button>
+                                        <Button className="text-light" style={{background:'#664d03', border:'none'}}>More Info</Button>
                                     </div>
                                 </ListGroup.Item>
                             </ListGroup>
@@ -152,7 +152,7 @@ function SafariTours() {
                                 </div>
                             </Row>
                             <div className="mt-3 text-end">
-                                <Button variant="success">Book Your Tour</Button>
+                                <Button variant="success" href="/contact#book_now">Book Your Tour</Button>
                             </div>
                         </Accordion.Body>
                     </Accordion.Item>
@@ -207,7 +207,7 @@ function SafariTours() {
                         <Button variant="secondary" onClick={() => setShowModal(false)}>
                             Close
                         </Button>
-                        <Button variant="success">
+                        <Button variant="success" href="/contact#book_now">
                             Book Now
                         </Button>
                     </Modal.Footer>

@@ -10,6 +10,12 @@ import 'react-datepicker/dist/react-datepicker.css';
 import emailjs from 'emailjs-com';
 import { Modal } from 'react-bootstrap';
 import { FaSearchPlus } from 'react-icons/fa';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-coverflow';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, EffectCoverflow } from 'swiper/modules';
 
 import welcomeImage from '../assets/slider2.jpg';
 import welcomeImage2 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image06.jpg';
@@ -20,6 +26,19 @@ import nearPlace4 from '../assets/elephant_transit.webp'
 import nearPlace5 from '../assets/wavulpone.webp'
 import roomsImage from '../assets/Udawalava-Eligarden-Hotel-rooms.jpg'
 import restaurantimage from '../assets/Udawalava-Eligarden-Hotel-restaurants.jpg';
+
+import img1 from '../assets/Restaurent.jpeg';
+import img2 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image01.jpg';
+import img3 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image02.jpg';
+import img4 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image05.jpg';
+import img5 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image05.jpg';
+import img6 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image04.jpg';
+import img7 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image07.jpg';
+import img8 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image08.jpg';
+import img9 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image08.jpg';
+import img10 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image05.jpg';
+
+const imageList = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
 
 
 function Home() {
@@ -279,8 +298,38 @@ function Home() {
         </Modal.Body>
       </Modal>
 
+      {/* Image Slider */}
+      <section className='container py-5 my-4 pt-5 hero-slider-container' 
+        style={{boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)', background: 'rgb(239, 239, 239)'}} data-aos="zoom-in" data-aos-delay= "200">
+          <Swiper
+            modules={[Autoplay, EffectCoverflow]}
+            effect="coverflow"
+            centeredSlides={true}
+            slidesPerView={3}
+            loop={true}
+            spaceBetween={30}
+            coverflowEffect={{
+              rotate: 0,
+              stretch: 0,
+              depth: 100,
+              modifier: 2.5,
+            }}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            className="hero-swiper"
+          >
+            {imageList.map((img, index) => (
+              <SwiperSlide key={index}>
+                <img src={img} alt={`Slide ${index}`} className="slider-img" data-aos="zoom-in" data-aos-delay= "200"/>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+      </section>
+          
       {/* Near Places */}
-      <section className='container py-5 my-4 near_places' style={{borderTop: '1px solid rgba(1, 0, 14, 0.39)'}}>
+      <section className='container py-5 my-4 near_places'>
         <div className='container manual_text_center'>
           <h2 className='h3 fw-bold mb-3 text-warning-emphasis' data-aos="zoom-in" data-aos-delay="200">Explore Nearby Attractions</h2>
           <p className='text-muted mb-3' data-aos="flip-up" data-aos-delay="300">
@@ -404,6 +453,56 @@ function Home() {
           </div>
 
         </form>
+      </section>
+
+      {/* Guest Reviews */}
+      <section className="bg-light py-5">
+        <div className="container text-center">
+          <h3 className="fw-bold mb-4 text-primary-emphasis">What Our Guests Say</h3>
+          <Swiper
+            slidesPerView={1}
+            loop={true}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            modules={[Autoplay]}
+          >
+            <SwiperSlide>
+              <blockquote className="blockquote">
+                <p>"Amazing stay! The staff was incredibly kind and the room was spotless."</p>
+                <footer className="blockquote-footer">Emma W. from UK</footer>
+              </blockquote>
+            </SwiperSlide>
+            <SwiperSlide>
+              <blockquote className="blockquote">
+                <p>"Loved the nature around the hotel. Will definitely return!"</p>
+                <footer className="blockquote-footer">Saman P. from Sri Lanka</footer>
+              </blockquote>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </section>
+
+      {/* Visit Us */}
+      <section className="py-5 bg-white">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-md-6 mb-3">
+              <h4 className="fw-bold text-warning-emphasis">Visit Us</h4>
+              <p>Located near Udawalawe National Park, just minutes from adventure and nature.</p>
+              <a href="https://maps.app.goo.gl/E6x2HycsYbL2pxs16" className="btn btn-outline-primary">Get Directions</a>
+            </div>
+            <div className="col-md-6">
+              <iframe
+                title="Google Map"
+                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.1531425375417!2d80.86786452843538!3d6.443766399595056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae425f45c42cc33%3A0xe513b492b06eaa4a!2sElegarden%20Hotel!5e0!3m2!1sen!2slk!4v1746526882578!5m2!1sen!2slk"
+                width="100%"
+                height="250"
+                style={{ border: 0, borderRadius: '10px' }}
+                allowFullScreen
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
       </section>
 
     </>
