@@ -2,16 +2,21 @@
 
 import { useState } from "react";
 import { Accordion, Card, Button, ListGroup, Row, Col } from "react-bootstrap";
-import { Modal } from "react-bootstrap";
+import { Modal, Carousel } from "react-bootstrap";
 
 import CustomNavbar from '../components/CustomNavbar';
 
 import slider1 from '../assets/slider1.jpg';
-import image from '../assets/sri-lanka-wild-life.jpg'
+import udawalava01 from '../assets/sri-lanka-wild-life.jpg'
+import udawalava02 from '../assets/sri-lanka-leopard-asian.jpg'
+import udawalava03 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image09.jpg'
+import udawalava04 from '../assets/Udawalava-Eligarden-Hotel-Wildlife-Adventures.jpg'
+import udawalava05 from '../assets/Udawalava-Eligarden-Hotel-Safari.jpg'
 
 function SafariTours() {
     const [showModal, setShowModal] = useState(false);
     const [selectedPackage, setSelectedPackage] = useState(null);
+    const images = [udawalava01, udawalava02, udawalava03, udawalava04, udawalava05];
 
     const handlePackageClick = (pkg) => {
         setSelectedPackage(pkg);
@@ -40,7 +45,7 @@ function SafariTours() {
 
                 <Accordion defaultActiveKey="0">
                     <Accordion.Item eventKey="0">
-                        <Accordion.Header data-aos="flip-up" data-aos-delay="200">Udawalawe Safari</Accordion.Header>
+                        <Accordion.Header data-aos="flip-up" data-aos-delay="200">Udawalawe Safari Tours</Accordion.Header>
                         <Accordion.Body>
                             <Row className='mb-5 mt-2'>
                                 <Col xs={12} md={6}>
@@ -58,7 +63,25 @@ function SafariTours() {
                                     </p>
                                 </Col>
                                 <Col xs={12} md={6} data-aos="fade-up" data-aos-delay="200">
-                                    <img src={image} className="img-fluid rounded" alt="Elephants at Udawalawe National Park" />
+                                    {/* <img src={image} className="img-fluid rounded" alt="Elephants at Udawalawe National Park" /> */}
+                                    <Carousel
+                                        interval={3000}       // Auto-play every 3 seconds
+                                        indicators={true}     // Show dots
+                                        controls={true}       // Show prev/next arrows
+                                        pause="hover"         // Pause when mouse hovers
+                                        slide                  // Optional: fade effect
+                                        >
+                                        {images.map((imgSrc, index) => (
+                                            <Carousel.Item key={index}>
+                                            <img
+                                                className="d-block w-100 rounded"
+                                                src={imgSrc}
+                                                alt={`Slide ${index + 1}`}
+                                                style={{ maxHeight: '300px', objectFit: 'cover' }}
+                                            />
+                                            </Carousel.Item>
+                                        ))}
+                                    </Carousel>
                                 </Col>
                             </Row>
 
@@ -116,7 +139,6 @@ function SafariTours() {
                                     <h5 className="text-success fw-bold mb-2 text-center">Included Facilities (All Tours)</h5>
                                     <ListGroup variant="flush">
                                     <ListGroup.Item>✅ Water & Snacks</ListGroup.Item>
-                                    <ListGroup.Item>✅ Comfortable Jeep for 6 Persons</ListGroup.Item>
                                     <ListGroup.Item>✅ Experienced Driver (Over 10 years of experience)</ListGroup.Item>
                                     <ListGroup.Item>✅ Guide Service</ListGroup.Item>
                                     <ListGroup.Item>✅ Comfortable Jeep (Max 6 persons)<br />
@@ -163,6 +185,13 @@ function SafariTours() {
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
+
+                {/* Call to Action */}
+                <div className="cta-section text-center">
+                    <h3 className='fw-bold text-warning-emphasis' data-aos="fade-up" data-aos-delay="200">Ready to Experience the Best?</h3>
+                    <p data-aos="fade-up" data-aos-delay="400">Join us for an unforgettable experience. Book a tour with us today!</p>
+                    <Button variant="primary" href="/contact#book_now" data-aos="fade-up" data-aos-delay="600"                                        >Book Now</Button>
+                </div>
 
                 <Modal show={showModal} onHide={() => setShowModal(false)} centered>
                     <Modal.Header closeButton>
