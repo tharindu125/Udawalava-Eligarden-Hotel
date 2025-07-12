@@ -52,7 +52,7 @@ const RoomsSection = () => {
     return (
       <div className='row col-md-12'>
         <div className='col-md-6 mb-3'>
-          <FaBed size={30} className="mb-2 text-primary" />
+          <FaBed size={30} className="mb-2 text-warning" />
           <h5 className="card-title">{title}</h5>
           <p className="card-text">{description}</p>
           <p className='card-price'>{price} (Per Night)</p>
@@ -110,13 +110,13 @@ const RoomsSection = () => {
           <div className="card-header">
             <ul className="nav nav-tabs card-header-tabs">
               <li className="nav-item">
-                <button className={`nav-link ${activeTab === 'single' ? 'active' : ''}`} onClick={() => setActiveTab('single')}>Single</button>
+                <button className={`nav-link ${activeTab === 'single' ? 'active text-warning-emphasis' : 'text-warning'}`} onClick={() => setActiveTab('single')}>Single</button>
               </li>
               <li className="nav-item">
-                <button className={`nav-link ${activeTab === 'double' ? 'active' : ''}`} onClick={() => setActiveTab('double')}>Double</button>
+                <button className={`nav-link ${activeTab === 'double' ? 'active text-warning-emphasis' : 'text-warning'}`} onClick={() => setActiveTab('double')}>Double</button>
               </li>
               <li className="nav-item">
-                <button className={`nav-link ${activeTab === 'triple' ? 'active' : ''}`} onClick={() => setActiveTab('triple')}>Triple</button>
+                <button className={`nav-link ${activeTab === 'triple' ? 'active text-warning-emphasis' : 'text-warning'}`} onClick={() => setActiveTab('triple')}>Triple</button>
               </li>
             </ul>
           </div>
@@ -128,7 +128,7 @@ const RoomsSection = () => {
         {/* Features */}
         <div className="row mb-5 mx-5">
           <div className="col-md-6">
-            <h4 className="fw-semibold mb-3 text-primary-emphasis">Room Features & Amenities</h4>
+            <h4 className="fw-semibold mb-3 text-warning">Room Features & Amenities</h4>
             <ul className="list-unstyled">
               <li><FaFan className="me-2 text-secondary" /> Air Conditioning / Fan</li>
               <li><MdBathroom className="me-2 text-secondary" /> Attached Private Bathroom</li>
@@ -139,7 +139,7 @@ const RoomsSection = () => {
             </ul>
           </div>
           <div className="col-md-6">
-            <h4 className="fw-semibold mb-3 text-primary-emphasis">Complimentary Items & Services</h4>
+            <h4 className="fw-semibold mb-3 text-warning">Complimentary Items & Services</h4>
             <ul className="list-unstyled">
               <li><FaTshirt className="me-2 text-secondary" /> Soap, Towels & Hair Dryer</li>
               <li><MdLocalLaundryService className="me-2 text-secondary" /> Laundry Service (Free)</li>

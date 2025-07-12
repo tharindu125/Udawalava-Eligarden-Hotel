@@ -370,7 +370,7 @@ const Restaurant = () => {
 
       <section className="bg-white py-5">
         <div className="container">
-          <h2 className="text-center fw-bold mb-2" data-aos="zoom-in" data-aos-delay="200">Menu</h2>
+          <h2 className="text-center fw-bold mb-2 text-warning-emphasis" data-aos="zoom-in" data-aos-delay="200">Menu</h2>
           <p className="text-center text-muted mb-4" data-aos="zoom-in" data-aos-delay="200">Check Our Tasty Menu</p>
 
           <div className="text-center mb-4" data-aos="zoom-out" data-aos-delay="300">

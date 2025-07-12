@@ -8,7 +8,7 @@ function CustomNavbar() {
 
   // Helper function to set active class
   const getNavLinkClass = (path) =>
-    location.pathname === path ? 'fw-bold text-primary text-shadow' : '';
+    location.pathname === path ? 'fw-bold text-warning-emphasis text-shadow' : '';
 
   return (
     <Navbar expand="lg" fixed="top" className="custom-navbar">

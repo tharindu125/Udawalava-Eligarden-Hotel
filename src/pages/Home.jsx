@@ -453,12 +453,34 @@ function Home() {
           )}
 
           <div className='col-12' data-aos="flip-up" data-aos-delay="1000">
-            <button type='submit' className='btn btn-primary'>Submit</button>
+            <button type='submit' className='btn btn-warning text-dark fw-bold'>Submit</button>
           </div>
 
         </form>
       </section>
 
+      {/* Visit Us */}
+      <section className="container py-5 my-4 bg-white">
+        <div className="row align-items-center">
+          <div className="col-md-6 mb-3">
+            <h4 className="fw-bold text-warning-emphasis">Visit Us</h4>
+            <p>Located near Udawalawe National Park, just minutes from adventure and nature.</p>
+            <a href="https://maps.app.goo.gl/E6x2HycsYbL2pxs16" className="btn btn-outline-primary">Get Directions</a>
+          </div>
+          <div className="col-md-6">
+            <iframe
+              title="Google Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.1531425375417!2d80.86786452843538!3d6.443766399595056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae425f45c42cc33%3A0xe513b492b06eaa4a!2sElegarden%20Hotel!5e0!3m2!1sen!2slk!4v1746526882578!5m2!1sen!2slk"
+              width="100%"
+              height="250"
+              style={{ border: 0, borderRadius: '10px' }}
+              allowFullScreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      
       {/* Guest Reviews */}
       <section className="container bg-light py-5 my-4" style={{width: '100vw'}}>
         <div className="text-center">
@@ -482,28 +504,6 @@ function Home() {
               </blockquote>
             </SwiperSlide>
           </Swiper>
-        </div>
-      </section>
-
-      {/* Visit Us */}
-      <section className="container py-5 my-4 bg-white">
-        <div className="row align-items-center">
-          <div className="col-md-6 mb-3">
-            <h4 className="fw-bold text-warning-emphasis">Visit Us</h4>
-            <p>Located near Udawalawe National Park, just minutes from adventure and nature.</p>
-            <a href="https://maps.app.goo.gl/E6x2HycsYbL2pxs16" className="btn btn-outline-primary">Get Directions</a>
-          </div>
-          <div className="col-md-6">
-            <iframe
-              title="Google Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.1531425375417!2d80.86786452843538!3d6.443766399595056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae425f45c42cc33%3A0xe513b492b06eaa4a!2sElegarden%20Hotel!5e0!3m2!1sen!2slk!4v1746526882578!5m2!1sen!2slk"
-              width="100%"
-              height="250"
-              style={{ border: 0, borderRadius: '10px' }}
-              allowFullScreen
-              loading="lazy"
-            ></iframe>
-          </div>
         </div>
       </section>
 

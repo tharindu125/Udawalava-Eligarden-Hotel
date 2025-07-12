@@ -133,7 +133,7 @@ const Gallery = () => {
         <div className="cta-section text-center mb-3 shadow">
           <h3 className='fw-bold text-warning-emphasis' data-aos="fade-up" data-aos-delay="200">Ready to Experience the Best?</h3>
           <p data-aos="fade-up" data-aos-delay="400">Join us for an unforgettable experience. Book a tour with us today!</p>
-          <Button variant="primary" href="/contact#book_now" data-aos="fade-up" data-aos-delay="600">Book Now</Button>
+          <Button className='btn-warning text-dark fw-bold' href="/contact#book_now" data-aos="fade-up" data-aos-delay="600">Book Now</Button>
         </div>
       </Container>
     
