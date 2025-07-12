@@ -2,7 +2,7 @@
 import { Accordion, Card, Button, ListGroup, Row, Col, Modal, Carousel } from "react-bootstrap";
 
 import CustomNavbar from '../components/CustomNavbar';
-
+import backgroundimage from '../assets/backgroud_image_leopard.jpg'
 import slider1 from '../assets/slider1.jpg';
 import udawalava01 from '../assets/sri-lanka-wild-life.jpg';
 import udawalava02 from '../assets/sri-lanka-leopard-asian.jpg';
@@ -63,8 +63,8 @@ function SafariTours() {
         </div>
       </div>
 
-      <section className="mb-3 py-2 w-100" >
-        <Row>
+      <section className="mb-3 pb-0 w-100" >
+        <Row style={{background: `url(${backgroundimage}) no-repeat center center/cover `}}>
             {/* Safari Card */}
             <Col md={12} className="mb-4">
                 <Card className="border-0 bg-transparent">
@@ -80,7 +80,7 @@ function SafariTours() {
                         </Col>
 
                         {/* Right Content Side */}
-                        <Col md={6} className="text-center px-4 py-5" style={{ backgroundColor: '#fff' }}>
+                        <Col md={6} className="text-center px-4 py-5" style={{ backgroundColor: 'rgba(255, 255, 255, 0.5)' }}>
                             <h2 className="fw-bold text-uppercase mb-3" style={{ color: '#3d1e00', fontSize: '2.5rem' }}>
                                 Udawalawe Safari
                             </h2>
@@ -109,7 +109,7 @@ function SafariTours() {
                 <Card className="border-0 bg-transparent">
                     <Row className="g-0 align-items-center">
                         {/* Left Image Side */}
-                        <Col md={6} className="text-center px-4 py-5" style={{ backgroundColor: '#fff' }}>
+                        <Col md={6} className="text-center px-4 py-5" style={{ backgroundColor: 'rgba(255, 255, 255, 0.5)'}}>
                             <h2 className="fw-bold text-uppercase mb-3" style={{ color: '#3d1e00', fontSize: '2.5rem' }}>
                                 Seasonal Tours
                             </h2>
