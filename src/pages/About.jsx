@@ -17,7 +17,7 @@ function About() {
       <CustomNavbar />
 
       {/* Hero Section */}
-      <div className="about-hero-section" style={{ position: 'relative', height: '400px', background: `url(${slider1}) no-repeat center center/cover` }}>
+      <div className="about-hero-section" style={{ position: 'relative', width: '100vw', height: '400px', background: `url(${slider1}) no-repeat center center/cover` }}>
         <div className="hero-overlay">
           <h1 className="text-center text-white fw-bold" data-aos="fade-up" data-aos-delay="200">About Us</h1>
           <p className="text-center text-white" data-aos="fade-up" data-aos-delay="300">

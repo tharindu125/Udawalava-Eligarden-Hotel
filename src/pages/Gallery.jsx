@@ -59,6 +59,7 @@ const Gallery = () => {
         className="about-hero-section"
         style={{
           position: "relative",
+          width: '100vw',
           height: "400px",
           background: `url(${slider1}) no-repeat center center/cover`,
         }}

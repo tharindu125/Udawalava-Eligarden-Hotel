@@ -179,7 +179,7 @@ function Home() {
   return (
     <>
       <CustomNavbar />
-      <div>
+      <div style={{width: '100vw'}}>
         <MainCarousel />
       </div>
 
@@ -303,8 +303,8 @@ function Home() {
       </Modal>
 
       {/* Image Slider */}
-      <section className='container py-5 my-4 pt-5 hero-slider-container w-100' 
-        style={{boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)', background: 'rgb(239, 239, 239)'}} data-aos="zoom-in" data-aos-delay= "200">
+      <section className='container py-5 my-4 pt-5 hero-slider-container' 
+        style={{boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)', background: 'rgb(239, 239, 239)', width: '100vw'}} data-aos="zoom-in" data-aos-delay= "200">
           <Swiper
             modules={[Autoplay, EffectCoverflow]}
             effect="coverflow"
@@ -460,7 +460,7 @@ function Home() {
       </section>
 
       {/* Guest Reviews */}
-      <section className="container bg-light py-5 my-4 w-100">
+      <section className="container bg-light py-5 my-4" style={{width: '100vw'}}>
         <div className="text-center">
           <h3 className="fw-bold mb-4 text-primary-emphasis">What Our Guests Say</h3>
           <Swiper

@@ -4,7 +4,6 @@ import { Accordion, Card, Button, ListGroup, Row, Col, Modal, Carousel } from "r
 import CustomNavbar from '../components/CustomNavbar';
 
 import slider1 from '../assets/slider1.jpg';
-import backgroundImage from '../assets/backgroud_image_leopard.jpeg';
 import udawalava01 from '../assets/sri-lanka-wild-life.jpg';
 import udawalava02 from '../assets/sri-lanka-leopard-asian.jpg';
 import udawalava03 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image09.jpg';
@@ -41,6 +40,7 @@ function SafariTours() {
         className="about-hero-section"
         style={{
           position: 'relative',
+          width: '100vw',
           height: '400px',
           background: `url(${slider1}) no-repeat center center/cover`,
         }}
@@ -170,8 +170,8 @@ function SafariTours() {
         </Row>
 
         {/* Image Slider */}
-      <section className='container py-5 my-4 pt-5 hero-slider-container w-100 bg-white' 
-        style={{boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)', borderRadius: '15px'}} data-aos="zoom-in" data-aos-delay= "200">
+      <div className='container py-5 my-4 pt-5 hero-slider-container bg-white' 
+        style={{boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)', borderRadius: '15px', width: '100vw'}} data-aos="zoom-in" data-aos-delay= "200">
           <Swiper
             modules={[Autoplay, EffectCoverflow]}
             effect="coverflow"
@@ -197,7 +197,7 @@ function SafariTours() {
               </SwiperSlide>
             ))}
           </Swiper>
-      </section>
+      </div>
 
       </section>
     </>
