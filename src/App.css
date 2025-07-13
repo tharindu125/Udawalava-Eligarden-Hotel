@@ -501,6 +501,16 @@ h1, p {
 }
 
 /* Safari Tours */
+.safari_tours-hero h1 {
+  font-size: 50px;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.771);
+}
+
+.safari_tours-hero p {
+  font-size: 20px;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.771);
+}
+
 .packege_details {
   display: flex;
   justify-content: center;

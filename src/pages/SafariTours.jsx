@@ -2,9 +2,12 @@
 import { Accordion, Card, Button, ListGroup, Row, Col, Modal, Carousel } from "react-bootstrap";
 
 import CustomNavbar from '../components/CustomNavbar';
-import backgroundimage from '../assets/backgroud_image_leopard.jpg'
-import slider1 from '../assets/slider1.jpg';
-import udawalava01 from '../assets/sri-lanka-wild-life.jpg';
+import backgroundimage from '../assets/backgroud_image_elephant.jpg';
+import slider1 from '../assets/Yala-National-Park.jpg';
+import slider2 from '../assets/nine_arch_bridge_02.jpg';
+import slider3 from '../assets/slider1.jpg';
+import seasonalturs from '../assets/Sigiriya-Leopard-in-Sri-Lanka.jpg';
+import udawalava01 from '../assets/Udawalawe-Safari-Leopard-in-Sri-Lanka.jpg';
 import udawalava02 from '../assets/sri-lanka-leopard-asian.jpg';
 import udawalava03 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image09.jpg';
 import udawalava04 from '../assets/Udawalava-Eligarden-Hotel-Wildlife-Adventures.jpg';
@@ -21,47 +24,63 @@ import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectCoverflow } from 'swiper/modules';
 
-function SafariTours() {
-//   const [showModal, setShowModal] = useState(false);
-//   const [selectedPackage, setSelectedPackage] = useState(null);
-  const imageList = [udawalava01, udawalava02, udawalava03, udawalava04, udawalava05];
+const heroSlides = [
+  {
+    image: slider1,
+    heading: 'Udawalawe Safari Tours',
+    subheading: 'Enjoy free laundry and room service with no extra fees – because your comfort is always our priority.',
+  },
+  {
+    image: slider2,
+    heading: 'Explore Nature Up Close',
+    subheading: 'Get ready for breathtaking encounters with elephants and more in their natural habitat.',
+  },
+  {
+    image: slider3,
+    heading: 'Luxury & Adventure Combined',
+    subheading: 'Stay in comfort while experiencing the thrill of Sri Lanka’s wildlife.',
+  },
+];
 
-//   const handlePackageClick = (pkg) => {
-//     setSelectedPackage(pkg);
-//     setShowModal(true);
-//   };
+function SafariTours() {
+
+  const imageList = [udawalava01, udawalava02, udawalava03, udawalava04, udawalava05];
 
   return (
     <>
       <CustomNavbar />
 
       {/* Hero Section */}
-      <div
-        className="about-hero-section"
-        style={{
-          position: 'relative',
-          width: '100vw',
-          height: '400px',
-          background: `url(${slider1}) no-repeat center center/cover`,
-        }}
-      >
-        <div className="hero-overlay">
-          <h1
-            className="text-center text-white fw-bold"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            Udawalawe Safari Tours
-          </h1>
-          <p
-            className="text-center text-white"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            Enjoy free laundry and room service with no extra fees – because your comfort is always our priority.
-          </p>
-        </div>
-      </div>
+      <Carousel fade interval={3000}>
+        {heroSlides.map((slide, index) => (
+          <Carousel.Item key={index}>
+            <div
+              className="safari_tours-hero"
+              style={{
+                background: `url(${slide.image}) no-repeat center center/cover`,
+                height: '100vh',
+                width: '100%',
+              }}
+            >
+              <div
+                className="d-flex flex-column justify-content-center align-items-center text-center text-white"
+                style={{
+                  backgroundColor: 'rgba(0, 0, 0, 0.4)',
+                  height: '100%',
+                  padding: '20px',
+                }}
+              >
+                <h1 data-aos="fade-up" className="fw-bold">
+                  {slide.heading}
+                </h1>
+                <p data-aos="fade-up" data-aos-delay="200">
+                  {slide.subheading}
+                </p>
+              </div>
+            </div>
+          </Carousel.Item>
+        ))}
+      </Carousel>
 
       <section className="mb-3 pb-0 w-100" >
         <Row style={{background: `url(${backgroundimage}) no-repeat center center/cover `}}>
@@ -75,12 +94,12 @@ function SafariTours() {
                             src={udawalava01}
                             alt="Udawalawe National Park Safari"
                             className="img-fluid"
-                            style={{ objectFit: 'cover', borderRadius: '8px 0 0 8px', height: '500px' }}
+                            style={{ objectFit: 'cover', borderRadius: '5px', height: '500px' }}
                             />
                         </Col>
 
                         {/* Right Content Side */}
-                        <Col md={6} className="text-center px-4 py-5" style={{ backgroundColor: 'rgba(255, 255, 255, 0.5)' }}>
+                        <Col md={6} className="text-center px-4 py-5" style={{ backgroundColor: 'rgba(246, 239, 213, 0.5)' }}>
                             <h2 className="fw-bold text-uppercase mb-3" style={{ color: '#3d1e00', fontSize: '2.5rem' }}>
                                 Udawalawe Safari
                             </h2>
@@ -98,7 +117,7 @@ function SafariTours() {
                                     color: '#3d1e00'
                                 }}
                             >
-                                Book a Safari
+                              More Info
                             </Button>
                         </Col>
                     </Row>
@@ -109,11 +128,11 @@ function SafariTours() {
                 <Card className="border-0 bg-transparent">
                     <Row className="g-0 align-items-center">
                         {/* Left Image Side */}
-                        <Col md={6} className="text-center px-4 py-5" style={{ backgroundColor: 'rgba(255, 255, 255, 0.5)'}}>
+                        <Col md={6} className="text-center px-4 py-5" style={{ backgroundColor: 'rgba(216, 235, 250, 0.63)'}}>
                             <h2 className="fw-bold text-uppercase mb-3" style={{ color: '#3d1e00', fontSize: '2.5rem' }}>
                                 Seasonal Tours
                             </h2>
-                            <p className="text-muted mb-4">
+                            <p className="mb-4 text-dark" style={{textShadow: '0 0 4px #ffffff'}}>
                                 Explore the stunning landscapes and diverse wildlife of Udawalawe National Park. Our safari tours offer
                                 a unique opportunity to witness elephants, leopards, and more in their natural habitat.
                             </p>
@@ -127,78 +146,53 @@ function SafariTours() {
                                     color: '#3d1e00'
                                 }}
                             >
-                                Book a Safari
+                              More Info
                             </Button>
                         </Col>
 
                         {/* Right Image Side */}
                         <Col md={6}>
                             <img
-                            src={udawalava02}
+                            src={seasonalturs}
                             alt="Udawalawe National Park Safari"
                             className="img-fluid"
-                            style={{ objectFit: 'cover', borderRadius: '8px 0 0 8px', height: '500px' }}
+                            style={{ objectFit: 'cover', borderRadius: '5px', height: '500px' }}
                             />
                         </Col>
                     </Row>
                 </Card>
             </Col>
-
-          {/* Other Tours */}
-          {/* {[
-            'Wildlife Photography Tour',
-            'Bird Watching Expedition',
-            'Family Safari Adventure',
-          ].map((tour, i) => (
-            <Col md={12} className="mb-4" key={i}>
-              <Card className="shadow">
-                <Card.Body>
-                  <Card.Title>{tour}</Card.Title>
-                  <Card.Text>
-                    {tour === 'Wildlife Photography Tour' &&
-                      'Capture breathtaking moments with our wildlife photography tours. Perfect for both amateur and professional photographers looking to enhance their skills in a natural setting.'}
-                    {tour === 'Bird Watching Expedition' &&
-                      'Join our bird watching expedition to discover the rich avian diversity of Udawalawe. A perfect tour for bird enthusiasts and nature lovers.'}
-                    {tour === 'Family Safari Adventure' &&
-                      'Enjoy a family-friendly safari adventure with activities suitable for all ages. Create lasting memories while exploring the wonders of Udawalawe.'}
-                  </Card.Text>
-                  <Button variant="primary" onClick={() => handlePackageClick(tour)}>View Details</Button>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))} */}
         </Row>
+      </section>
 
-        {/* Image Slider */}
-      <div className='container py-5 my-4 pt-5 hero-slider-container bg-white' 
+      {/* Image Slider */}
+      <section className='container py-5 my-4 pt-5 hero-slider-container bg-white' 
         style={{boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)', borderRadius: '15px', width: '100vw'}} data-aos="zoom-in" data-aos-delay= "200">
-          <Swiper
-            modules={[Autoplay, EffectCoverflow]}
-            effect="coverflow"
-            centeredSlides={true}
-            slidesPerView={3}
-            loop={true}
-            spaceBetween={30}
-            coverflowEffect={{
-              rotate: 0,
-              stretch: 0,
-              depth: 100,
-              modifier: 2.5,
-            }}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            className="hero-swiper"
-          >
-            {imageList.map((img, index) => (
-              <SwiperSlide key={index}>
-                <img src={img} alt={`Slide ${index}`} className="slider-img" data-aos="zoom-in" data-aos-delay= "200"/>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-      </div>
-
+        <Swiper
+          modules={[Autoplay, EffectCoverflow]}
+          effect="coverflow"
+          centeredSlides={true}
+          slidesPerView={3}
+          loop={true}
+          spaceBetween={30}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          className="hero-swiper"
+        >
+          {imageList.map((img, index) => (
+            <SwiperSlide key={index}>
+              <img src={img} alt={`Slide ${index}`} className="slider-img" data-aos="zoom-in" data-aos-delay= "200"/>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </section>
     </>
   );
