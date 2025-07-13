@@ -1,5 +1,5 @@
 // import { useState } from "react";
-import { Accordion, Card, Button, ListGroup, Row, Col, Modal, Carousel } from "react-bootstrap";
+import { Card, Button, Row, Col, Carousel } from "react-bootstrap";
 
 import CustomNavbar from '../components/CustomNavbar';
 import backgroundimage from '../assets/backgroud_image_elephant.jpg';
@@ -137,7 +137,7 @@ function SafariTours() {
                                 a unique opportunity to witness elephants, leopards, and more in their natural habitat.
                             </p>
                             <Button
-                                href="/UdawalaweSafariTours"
+                                href="/SeasonalTours"
                                 className="px-4 py-2 fw-bold text-uppercase border-0"
                                 style={{
                                     backgroundColor: '#f8aa28',

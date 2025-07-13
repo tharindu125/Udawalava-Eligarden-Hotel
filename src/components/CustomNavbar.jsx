@@ -22,7 +22,7 @@ function CustomNavbar() {
             className="d-inline-block align-top"
             alt="Udawalawa Elegarden Hotel"
           />{' '}
-          <span className='fw-bold fs-4' style={{textShadow: '0 0 4px var(--bs-warning-text-emphasis)'}}>Udawalawa Elegarden Hotel</span>
+          <span className='fw-bold' style={{textShadow: '0 0 4px var(--bs-warning-text-emphasis)'}}>Udawalawa Elegarden Hotel</span>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbar-nav" />
