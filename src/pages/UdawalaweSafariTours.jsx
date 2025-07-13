@@ -1,31 +1,15 @@
 
-
-// import { useState } from "react";
 import {Card, Button, Row, Col } from "react-bootstrap";
-// import { Modal, Carousel } from "react-bootstrap";
 
 import CustomNavbar from '../components/CustomNavbar';
 
-// import backgroundimage01 from '../assets/Udawalawe-Safari-Leopard-in-Sri-Lanka-C-1.jpg'
 import backgroundimage02 from '../assets/backgroud_image_leopard.jpg'
 import backgroundimage03 from '../assets/Yala-National-Park.jpg'
 import backgroundimage04 from '../assets/sri-lanka-wild-life.jpg'
 import slider1 from '../assets/Udawalawe-Safari-Leopard-in-Sri-Lanka-hero.jpg';
 import udawalava01 from '../assets/Udawalawe-Safari-Leopard-in-Sri-Lanka-C-2.jpg'
-// import udawalava02 from '../assets/Udawalava-Eligarden-Hotel-Safari.jpg'
-// import udawalava03 from '../assets/Sinharaja-Rainforest-Leopard-in-Sri-Lanka-C-2.jpg'
-// import udawalava04 from '../assets/Udawalava-Eligarden-Hotel-Wildlife-Adventures.jpg'
-// import udawalava05 from '../assets/Udawalava-Eligarden-Hotel-Safari.jpg'
 
 function SafariTours() {
-    // const [showModal, setShowModal] = useState(false);
-    // const [selectedPackage, setSelectedPackage] = useState(null);
-    // const images = [udawalava01, udawalava02, udawalava03, udawalava04, udawalava05];
-
-    // const handlePackageClick = (pkg) => {
-    //     setSelectedPackage(pkg);
-    //     setShowModal(true);
-    // };
 
     return (
         <>
@@ -155,12 +139,6 @@ function SafariTours() {
                             <Row className="g-0 align-items-center">
                                 {/* Left Image Side */}
                                 <Col md={6}>
-                                    {/* <img
-                                    src={udawalava01}
-                                    alt="Udawalawe National Park Safari"
-                                    className="img-fluid"
-                                    style={{ objectFit: 'cover', borderRadius: '5px', height: '400px' }}    
-                                    /> */}
                                 </Col>
         
                                 {/* Right Content Side */}
