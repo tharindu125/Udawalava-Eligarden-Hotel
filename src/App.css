@@ -531,6 +531,11 @@ h1, p {
 }
 
 /* Safari Tours */
+.safari_tours-hero {
+  height: 100vh;
+  width: 100%;
+}
+
 .safari_tours-hero h1 {
   font-size: 50px;
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.771);
@@ -539,6 +544,14 @@ h1, p {
 .safari_tours-hero p {
   font-size: 20px;
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.771);
+}
+
+.safari_tours-packeges img{
+  height: 500px;
+}
+
+.safari_tours-packeges h2{
+  font-size: 2.5rem;
 }
 
 .packege_details {
@@ -552,6 +565,31 @@ h1, p {
   color: #000 !important;
   box-shadow: none !important;
   font-size: 20px !important;
+}
+
+@media (max-width:768px) {
+  .safari_tours-hero {
+    height: 50vh;
+    width: 100%;
+  }
+
+  .safari_tours-hero h1 {
+    font-size: 30px;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.771);
+  }
+
+  .safari_tours-hero p {
+    font-size: 18px;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.771);
+  }
+
+  .safari_tours-packeges img{
+    height: 200px;
+  }
+
+  .safari_tours-packeges h2{
+    font-size: 30px;
+  }
 }
 
 /* Footer */

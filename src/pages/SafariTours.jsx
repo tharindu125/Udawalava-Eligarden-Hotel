@@ -58,8 +58,6 @@ function SafariTours() {
               className="safari_tours-hero"
               style={{
                 background: `url(${slide.image}) no-repeat center center/cover`,
-                height: '100vh',
-                width: '100%',
               }}
             >
               <div
@@ -82,7 +80,7 @@ function SafariTours() {
         ))}
       </Carousel>
 
-      <section className="mb-3 pb-0 w-100" >
+      <section className="mb-3 pb-0 w-100 safari_tours-packeges">
         <Row style={{background: `url(${backgroundimage}) no-repeat center center/cover `}}>
             {/* Safari Card */}
             <Col md={12} className="mb-4">
@@ -94,13 +92,13 @@ function SafariTours() {
                             src={udawalava01}
                             alt="Udawalawe National Park Safari"
                             className="img-fluid"
-                            style={{ objectFit: 'cover', borderRadius: '5px', height: '500px' }}
+                            style={{ objectFit: 'cover', borderRadius: '5px'}}
                             />
                         </Col>
 
                         {/* Right Content Side */}
-                        <Col md={6} className="text-center px-4 py-5" style={{ backgroundColor: 'rgba(246, 239, 213, 0.5)' }}>
-                            <h2 className="fw-bold text-uppercase mb-3" style={{ color: '#3d1e00', fontSize: '2.5rem' }}>
+                        <Col md={6} className="text-center px-3 py-5" style={{ backgroundColor: 'rgba(246, 239, 213, 0.5)' }}>
+                            <h2 className="fw-bold text-uppercase mb-3" style={{ color: '#3d1e00'}}>
                                 Udawalawe Safari
                             </h2>
                             <p className="text-muted mb-4">
@@ -128,8 +126,8 @@ function SafariTours() {
                 <Card className="border-0 bg-transparent">
                     <Row className="g-0 align-items-center">
                         {/* Left Image Side */}
-                        <Col md={6} className="text-center px-4 py-5" style={{ backgroundColor: 'rgba(216, 235, 250, 0.63)'}}>
-                            <h2 className="fw-bold text-uppercase mb-3" style={{ color: '#3d1e00', fontSize: '2.5rem' }}>
+                        <Col md={6} className="text-center px-3 py-5" style={{ backgroundColor: 'rgba(216, 235, 250, 0.63)'}}>
+                            <h2 className="fw-bold text-uppercase mb-3" style={{ color: '#3d1e00'}}>
                                 Seasonal Tours
                             </h2>
                             <p className="mb-4 text-dark" style={{textShadow: '0 0 4px #ffffff'}}>
@@ -156,7 +154,7 @@ function SafariTours() {
                             src={seasonalturs}
                             alt="Udawalawe National Park Safari"
                             className="img-fluid"
-                            style={{ objectFit: 'cover', borderRadius: '5px', height: '500px' }}
+                            style={{ objectFit: 'cover', borderRadius: '5px'}}
                             />
                         </Col>
                     </Row>

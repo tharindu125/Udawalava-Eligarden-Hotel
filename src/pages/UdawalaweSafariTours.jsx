@@ -11,8 +11,8 @@ import backgroundimage02 from '../assets/backgroud_image_leopard.jpg'
 import backgroundimage03 from '../assets/Yala-National-Park.jpg'
 import backgroundimage04 from '../assets/sri-lanka-wild-life.jpg'
 import slider1 from '../assets/Udawalawe-Safari-Leopard-in-Sri-Lanka-hero.jpg';
-// import udawalava01 from '../assets/Wilpattu-Safari-Leopard-in-Sri-Lanka-C-1.jpg'
-import udawalava02 from '../assets/Udawalava-Eligarden-Hotel-Safari.jpg'
+import udawalava01 from '../assets/Udawalawe-Safari-Leopard-in-Sri-Lanka-C-2.jpg'
+// import udawalava02 from '../assets/Udawalava-Eligarden-Hotel-Safari.jpg'
 // import udawalava03 from '../assets/Sinharaja-Rainforest-Leopard-in-Sri-Lanka-C-2.jpg'
 // import udawalava04 from '../assets/Udawalava-Eligarden-Hotel-Wildlife-Adventures.jpg'
 // import udawalava05 from '../assets/Udawalava-Eligarden-Hotel-Safari.jpg'
@@ -48,7 +48,7 @@ function SafariTours() {
                 </p>
             </div>
 
-            <section>
+            <section className="safari_tours-packeges">
                 <Row>
                     <Col md={12} className="py-2" style={{background: `url(${backgroundimage03}) no-repeat center center/cover `}}>
                         <Card className="border-0 bg-transparent">
@@ -100,10 +100,10 @@ function SafariTours() {
                                 {/* Left Image Side */}
                                 <Col md={6}>
                                     <img
-                                    src={udawalava02}
+                                    src={udawalava01}
                                     alt="Udawalawe National Park Safari"
                                     className="img-fluid"
-                                    style={{ objectFit: 'cover', borderRadius: '5px', height: '500px' }}
+                                    style={{ objectFit: 'cover', borderRadius: '5px'}}
                                     />
                                 </Col>
         
@@ -214,7 +214,7 @@ function SafariTours() {
                                     src={backgroundimage04}
                                     alt="Udawalawe National Park Safari"
                                     className="img-fluid"
-                                    style={{ objectFit: 'cover', borderRadius: '5px', height: '500px' }}
+                                    style={{ objectFit: 'cover', borderRadius: '5px'}}
                                     />
                                 </Col>
         
