@@ -1,6 +1,8 @@
 import CustomNavbar from '../components/CustomNavbar';
 import slider1 from '../assets/slider1.jpg';
 import food from '../assets/Restaurent.jpg'
+import Sandwich from '../assets/Restaurent-Sandwich.jpg'
+import Milk_Rice from '../assets/Restaurent-Milk-Rice.jpg'
 import { Container, Row, Col, Card, Accordion, Button } from 'react-bootstrap';
 import { useState } from 'react';
 
@@ -14,7 +16,7 @@ const Restaurant = () => {
       description:
         'A classic sandwich with fresh vegetables, cheese, and your choice of meat. Perfect for a quick bite.',
       price: 'Rs:0',
-      image: food,
+      image: Sandwich,
       category: 'Brunch',
     },
     {
@@ -30,7 +32,7 @@ const Restaurant = () => {
       description:
         'Steamed rice served with a variety of sambols and curries. A staple in Sri Lankan cuisine.',
       price: 'Rs:0',
-      image: food,
+      image: Milk_Rice,
       category: 'Brunch',
     },
     {
