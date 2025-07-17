@@ -1,8 +1,13 @@
 import CustomNavbar from '../components/CustomNavbar';
 import slider1 from '../assets/slider1.jpg';
-import food from '../assets/Restaurent.jpg'
-import Sandwich from '../assets/Restaurent-Sandwich.jpg'
-import Milk_Rice from '../assets/Restaurent-Milk-Rice.jpg'
+import food from '../assets/Restaurent.jpg';
+import Sandwich from '../assets/Restaurent-Sandwich.jpg';
+import Milk_Rice from '../assets/Restaurent-Milk-Rice.jpg';
+import Lavariya from '../assets/Restaurent-Lavariya.jpg';
+import Traditional_Rice_Curry from '../assets/Restaurent-Traditional-Rice-&-Curry.jpg';
+import Fried_Rice from '../assets/Restaurent-Fried-Rice.jpg';
+import Mix_Rice from '../assets/Restaurent-Mix-Rice.jpg';
+import Grilled_Fish from '../assets/Restaurent-Grilled Fish.jpg'
 import { Container, Row, Col, Card, Accordion, Button } from 'react-bootstrap';
 import { useState } from 'react';
 
@@ -48,7 +53,7 @@ const Restaurant = () => {
       description:
         'Soft and fluffy roti served with a side of spicy sambol. A traditional Sri Lankan favorite.',
       price: 'Rs:0',
-      image: food,
+      image: Lavariya,
       category: 'Brunch',
     },
     {
@@ -64,7 +69,7 @@ const Restaurant = () => {
       description:
         'Savor the authentic taste of Sri Lanka with a plate of steamed rice, served with three flavorful vegetable curries. Choose from prawns, fish or beef.',
       price: 'Rs: 2000',
-      image: food,
+      image: Traditional_Rice_Curry,
       category: 'Lunch',
     },
     {
@@ -72,7 +77,7 @@ const Restaurant = () => {
       description:
         'A delightful mix of fried rice with vegetables, eggs, and your choice of chicken or prawns. A perfect meal for any time of the day.',
       price: 'Rs: 1800',
-      image: food,
+      image: Mix_Rice,
       category: 'Lunch',
     },
     {
@@ -80,7 +85,7 @@ const Restaurant = () => {
       description:
         'A delightful mix of fried rice with vegetables, eggs, and chicken. A perfect meal for any time of the day.',
       price: 'Rs: 1500',
-      image: food,
+      image: Fried_Rice,
       category: 'Lunch',
     },
     {
@@ -88,7 +93,7 @@ const Restaurant = () => {
       description:
         'A delightful mix of fried rice with vegetables, eggs, and your choice of chicken or prawns. A perfect meal for any time of the day.',
       price: 'Rs: 1200',
-      image: food,
+      image: Fried_Rice,
       category: 'Lunch',
     },
     {
@@ -96,7 +101,7 @@ const Restaurant = () => {
       description:
         'A delightful mix of fried rice with vegetables, eggs, and your choice of chicken or prawns. A perfect meal for any time of the day.',
       price: 'Rs: 1200',
-      image: food,
+      image: Fried_Rice,
       category: 'Lunch',
     },
     {
@@ -112,7 +117,7 @@ const Restaurant = () => {
       description:
         'Freshly grilled fish seasoned with herbs and spices, served with a side of vegetables and rice. A healthy choice for lunch.',
       price: 'Rs: 3500',
-      image: food,
+      image: Grilled_Fish,
       category: 'Lunch',
     },
     {
