@@ -14,7 +14,7 @@ import Grilled_Chicken from '../assets/Restaurent-Grilled-Chicken.jpg';
 import Roti from '../assets/Restaurent-Roti.jpg';
 import String_Hoppers from '../assets/Restaurent-String-Hoppers.jpg';
 import Noodles from '../assets/Restaurent-Noodles.jpg';
-
+import Restaurent_Macaroni_with_cheese from '../assets/Restaurent-Macaroni-with-cheese.jpg';
 import { Container, Row, Col, Card, Accordion, Button } from 'react-bootstrap';
 import { useState } from 'react';
 
@@ -148,7 +148,7 @@ const Restaurant = () => {
       description:
         'Creamy macaroni pasta baked with mozzarella cheese, served with a side of garlic bread. A comforting dinner option.',
       price: 'Rs: 1800',
-      image: food,
+      image: Restaurent_Macaroni_with_cheese,
       category: 'Dinner',
     },
     {
