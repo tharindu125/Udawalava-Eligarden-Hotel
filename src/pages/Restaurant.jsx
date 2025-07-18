@@ -7,7 +7,14 @@ import Lavariya from '../assets/Restaurent-Lavariya.jpg';
 import Traditional_Rice_Curry from '../assets/Restaurent-Traditional-Rice-&-Curry.jpg';
 import Fried_Rice from '../assets/Restaurent-Fried-Rice.jpg';
 import Mix_Rice from '../assets/Restaurent-Mix-Rice.jpg';
-import Grilled_Fish from '../assets/Restaurent-Grilled Fish.jpg'
+import Chicken_Fried_Rice from '../assets/Restaurent-Chicken-Rice.jpg';
+import Grilled_Fish from '../assets/Restaurent-Grilled Fish.jpg';
+import Burger from '../assets/Restaurent-Burger.jpg';
+import Grilled_Chicken from '../assets/Restaurent-Grilled-Chicken.jpg';
+import Roti from '../assets/Restaurent-Roti.jpg';
+import String_Hoppers from '../assets/Restaurent-String-Hoppers.jpg';
+import Noodles from '../assets/Restaurent-Noodles.jpg';
+
 import { Container, Row, Col, Card, Accordion, Button } from 'react-bootstrap';
 import { useState } from 'react';
 
@@ -29,7 +36,7 @@ const Restaurant = () => {
       description:
         'Soft and fluffy roti served with a side of spicy sambol. A traditional Sri Lankan favorite.',
       price: 'Rs:0',
-      image: food,
+      image: Roti,
       category: 'Brunch',
     },
     {
@@ -45,7 +52,7 @@ const Restaurant = () => {
       description:
         'Delicate steamed rice noodles served with coconut milk and a side of sambol. A traditional breakfast dish.',
       price: 'Rs:0',
-      image: food,
+      image: String_Hoppers,
       category: 'Brunch',
     },
     {
@@ -61,7 +68,7 @@ const Restaurant = () => {
       description:
         'Stir-fried noodles with vegetables and your choice of meat. A quick and satisfying meal.',
       price: 'Rs:0',
-      image: food,
+      image: Noodles,
       category: 'Brunch',
     },
     {
@@ -85,7 +92,7 @@ const Restaurant = () => {
       description:
         'A delightful mix of fried rice with vegetables, eggs, and chicken. A perfect meal for any time of the day.',
       price: 'Rs: 1500',
-      image: Fried_Rice,
+      image: Chicken_Fried_Rice,
       category: 'Lunch',
     },
     {
@@ -109,7 +116,7 @@ const Restaurant = () => {
       description:
         'Juicy grilled chicken marinated with spices, served with a side of vegetables and rice. A hearty meal for lunch.',
       price: 'Rs: 3000',
-      image: food,
+      image: Grilled_Chicken,
       category: 'Lunch',
     },
     {
@@ -125,7 +132,7 @@ const Restaurant = () => {
       description:
         'Stir-fried noodles with vegetables and your choice of meat. A quick and satisfying meal.',
       price: 'Rs: 1000',
-      image: food,
+      image: Noodles,
       category: 'Dinner',
     },
     {
@@ -133,7 +140,7 @@ const Restaurant = () => {
       description:
         'A delicious burger served with a side of crispy French fries and a refreshing Coca-Cola. Perfect for a quick dinner.',
       price: 'Rs: 1800',
-      image: food,
+      image: Burger,
       category: 'Dinner',
     },
     {
