@@ -1,5 +1,6 @@
 import CustomNavbar from '../components/CustomNavbar';
-import slider1 from '../assets/slider1.jpg';
+import slider1 from '../assets/Udawalawe-Safari-Leopard-in-Sri-Lanka-C-1.jpg';
+import backgroundimage from '../assets/backgroud_image_elephant.jpg';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { FaFacebook, FaInstagram, FaTwitter, FaPhone, FaEnvelope } from 'react-icons/fa';
 import React, { useState } from 'react';
@@ -94,7 +95,7 @@ function Contact() {
         </div>
       </div>
 
-      <div className="contact-container" style={{ paddingTop: '70px' }}>
+      <div className="contact-container" style={{paddingTop: '70px', background: `url(${backgroundimage}) no-repeat center center/cover `}}>
         <Container>
           <Row>
             {/* Google Map Section */}
@@ -159,7 +160,7 @@ function Contact() {
           </Row>
         </Container>
 
-        <section className='container py-5 my-4 bg-light' id='book_now' style={{ boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)' }}>
+        <section className='container py-5 my-4' id='book_now' style={{ boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)', backgroundColor: 'rgba(255, 255, 255, 0.8)', borderRadius: '10px' }}>
           <div className='manual_text_center'>
             <h2 className='h3 fw-bold mb-3 text-warning-emphasis'>Ready to Book Your Package</h2>
             <p className='text-muted mb-4 mx-3'>

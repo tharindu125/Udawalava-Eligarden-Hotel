@@ -31,7 +31,6 @@ import nearPlace5 from '../assets/wavulpone.webp'
 import roomsImage from '../assets/Udawalava-Eligarden-Hotel-rooms.jpg'
 import restaurantimage from '../assets/Udawalava-Eligarden-Hotel-restaurants.jpg';
 
-import img1 from '../assets/Restaurent.jpeg';
 import img2 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image01.jpg';
 import img3 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image02.jpg';
 import img4 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image05.jpg';
@@ -42,7 +41,7 @@ import img8 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image08.jpg';
 import img9 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image08.jpg';
 import img10 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image05.jpg';
 
-const imageList = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
+const imageList = [img2, img3, img4, img5, img6, img7, img8, img9, img10];
 
 
 function Home() {

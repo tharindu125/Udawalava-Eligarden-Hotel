@@ -1,8 +1,8 @@
 // src/components/MainCarousel.jsx
 import { Carousel } from 'react-bootstrap';
 import { FaHome, FaUtensils, FaBed } from 'react-icons/fa';
-import slider2 from '../assets/Restaurent.jpg';
-import slider1 from '../assets/slider2.jpg';
+import slider2 from '../assets/restaurent_wallpaper_02.jpeg';
+import slider1 from '../assets/hotel_wallpaper_01.jpg';
 import slider3 from '../assets/sri-lanka-leopard-asian.jpg';
 
 function MainCarousel() {
@@ -58,7 +58,7 @@ function MainCarousel() {
         <Carousel.Caption className="carousel-caption">
           <div className="container position-relative">
             <div className="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-              <h2>WELCOME TO THE UDAWALAWA ELEGARDEN HOTEL</h2>
+              <h2>WELCOME TO THE UDAWALAWA ELEGARDEN RESTAURENT </h2>
               <p>Discover comfort, flavor, and adventure at Udawalawa Elegarden Hotel – your perfect getaway near the wild.</p>
             </div>
 {/* 
@@ -100,7 +100,7 @@ function MainCarousel() {
         <Carousel.Caption className="carousel-caption">
           <div className="container position-relative">
             <div className="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-              <h2>WELCOME TO THE UDAWALAWA ELEGARDEN HOTEL</h2>
+              <h2>WELCOME TO THE UDAWALAWA SAFARI TOURS</h2>
               <p>Discover comfort, flavor, and adventure at Udawalawa Elegarden Hotel – your perfect getaway near the wild.</p>
             </div>
 

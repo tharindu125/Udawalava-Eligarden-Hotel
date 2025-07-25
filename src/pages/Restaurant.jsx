@@ -1,5 +1,5 @@
 import CustomNavbar from '../components/CustomNavbar';
-import slider1 from '../assets/slider1.jpg';
+import slider1 from '../assets/restaurent_wallpaper_01.jpg';
 import food from '../assets/Restaurent.jpg';
 import Sandwich from '../assets/Restaurent-Sandwich.jpg';
 import Milk_Rice from '../assets/Restaurent-Milk-Rice.jpg';

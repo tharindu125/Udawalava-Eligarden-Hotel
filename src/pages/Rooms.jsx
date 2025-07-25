@@ -2,7 +2,7 @@ import { Carousel } from 'react-bootstrap';
 import CustomNavbar from '../components/CustomNavbar';
 
 // ✅ Imported Images
-import slider1 from '../assets/slider1.jpg';
+import slider1 from '../assets/hotel_wallpaper_02.jpg';
 import room1 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image02.jpg';
 import room2 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image07.jpg';
 import room3 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image02.jpg';
