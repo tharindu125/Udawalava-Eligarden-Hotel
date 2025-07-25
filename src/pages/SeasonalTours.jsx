@@ -2,11 +2,12 @@ import { Card, Button, Row, Col } from "react-bootstrap";
 import CustomNavbar from '../components/CustomNavbar';
 
 import seasonalHero from '../assets/Sigiriya-Leopard-in-Sri-Lanka-hero.jpg';
-import whaleWatching from '../assets/Yala-National-Park.jpg';
-import trincomaleeBeach from '../assets/Yala-National-Park.jpg';
-import arugambaySurf from '../assets/Yala-National-Park.jpg';
+import whaleWatching from '../assets/Whale-Wathing.jpg';
+import trincomaleeBeach from '../assets/trincomaleeBeach.jpg';
+import arugambaySurf from '../assets/arugambaySurf.jpg';
 import kumanaSafari from '../assets/Yala-National-Park.jpg';
-import adamsPeak from '../assets/Yala-National-Park.jpg';
+import adamsPeak from '../assets/adamsPeak.jpg';
+
 
 function SeasonalTours() {
     return (
