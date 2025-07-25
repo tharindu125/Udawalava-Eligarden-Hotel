@@ -19,7 +19,7 @@ function MainCarousel() {
               <p>Discover comfort, flavor, and adventure at Udawalawa Elegarden Hotel – your perfect getaway near the wild.</p>
             </div>
 
-            <div className="content row gy-4">
+            {/* <div className="content row gy-4">
               <div className="col-lg-4 d-flex align-items-stretch">
                 <div className="why-box" data-aos="zoom-in" data-aos-delay="200">
                   <h3>Why Choose Us</h3>
@@ -46,7 +46,7 @@ function MainCarousel() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
           </div>
         </Carousel.Caption>
@@ -61,7 +61,7 @@ function MainCarousel() {
               <h2>WELCOME TO THE UDAWALAWA ELEGARDEN HOTEL</h2>
               <p>Discover comfort, flavor, and adventure at Udawalawa Elegarden Hotel – your perfect getaway near the wild.</p>
             </div>
-
+{/* 
             <div className="content row gy-4">
               <div className="col-lg-4 d-flex align-items-stretch">
                 <div className="why-box" data-aos="zoom-in" data-aos-delay="200">
@@ -89,7 +89,7 @@ function MainCarousel() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -104,7 +104,7 @@ function MainCarousel() {
               <p>Discover comfort, flavor, and adventure at Udawalawa Elegarden Hotel – your perfect getaway near the wild.</p>
             </div>
 
-            <div className="content row gy-4">
+            {/* <div className="content row gy-4">
               <div className="col-lg-4 d-flex align-items-stretch">
                 <div className="why-box" data-aos="zoom-in" data-aos-delay="200">
                   <h3>Why Choose Us</h3>
@@ -128,7 +128,7 @@ function MainCarousel() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </Carousel.Caption>
       </Carousel.Item>
