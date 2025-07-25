@@ -10,10 +10,29 @@ import Mix_Rice from '../assets/Restaurent-Mix-Rice.jpg';
 import Chicken_Fried_Rice from '../assets/Restaurent-Chicken-Rice.jpg';
 import Grilled_Fish from '../assets/Restaurent-Grilled Fish.jpg';
 import Burger from '../assets/Restaurent-Burger.jpg';
-import Grilled_Chicken from '../assets/Restaurent-Grilled-Chicken.jpg';
+import Grilled_Chicken from '../assets/Restaurent-Grilled-Chicken.jpg';  
 import Roti from '../assets/Restaurent-Roti.jpg';
 import String_Hoppers from '../assets/Restaurent-String-Hoppers.jpg';
 import Noodles from '../assets/Restaurent-Noodles.jpg';
+import Ceylon_Tea from '../assets/Ceylon-Tea.jpg';
+import Ceylon_Coffee from '../assets/Restaurent-Ceylon-Coffee.jpg';
+import Americano from '../assets/Restaurent-Americano.jpg';
+import Cappuccino from '../assets/Restaurent-Cappuccino.jpg';
+import Latte from '../assets/Restaurent-Latte.jpg';
+import Mocha from '../assets/Restaurent-Mocha.jpg';
+import Milk_Tea from '../assets/Restaurent-Milk-Tea.jpg';
+import Cardomam_Tea from '../assets/Restaurent-Cardomam-Tea.jpg';
+import Ginger_Tea from '../assets/Restaurent-Ginger-Tea.jpg';
+import Hot_Chocolate from '../assets/Restaurent-Hot-Chocolate.jpg';
+import Milkshake from '../assets/Restaurent-Milkshake.jpg';
+import Mocha1 from '../assets/Restaurent-Mocha.jpg';
+import Mocha2 from '../assets/Restaurent-Mocha.jpg';
+import Mocha3 from '../assets/Restaurent-Mocha.jpg';
+import Mocha4 from '../assets/Restaurent-Mocha.jpg';
+import Mocha5 from '../assets/Restaurent-Mocha.jpg';
+import Mocha6 from '../assets/Restaurent-Mocha.jpg';
+import Mocha11 from '../assets/Restaurent-Mocha.jpg';
+
 import Restaurent_Macaroni_with_cheese from '../assets/Restaurent-Macaroni-with-cheese.jpg';
 import { Container, Row, Col, Card, Accordion, Button } from 'react-bootstrap';
 import { useState } from 'react';
@@ -156,7 +175,7 @@ const Restaurant = () => {
       description:
         'Coffee is a brewed beverage made from roasted coffee beans. It is one of the most popular beverages in the world.',
       price: 'Rs: 150',
-      image: food,
+      image: Ceylon_Coffee,
       category: 'Beverages',
     },
     {
@@ -164,7 +183,7 @@ const Restaurant = () => {
       description:
         'Tea is a beverage made by steeping cured or fresh tea leaves in hot water. It is one of the most popular beverages in the world.',
       price: 'Rs: 150',
-      image: food,
+      image: Ceylon_Tea,
       category: 'Beverages',
     },
     {
@@ -172,15 +191,15 @@ const Restaurant = () => {
       description:
         'Americano is a coffee drink made by diluting espresso with hot water. It is one of the most popular coffee drinks in the world.',
       price: 'Rs: 500',
-      image: food,
+      image: Americano,
       category: 'Beverages',
     },
     {
-      title: 'Capuccino',
+      title: 'Cappuccino',
       description:
         'Cappeuccino is a coffee drink made with espresso, steamed milk, and milk foam. It is one of the most popular coffee drinks in the world.',
       price: 'Rs: 600',
-      image: food,
+      image: Cappuccino,
       category: 'Beverages',
     },
     {
@@ -188,7 +207,7 @@ const Restaurant = () => {
       description:
         'Latte is a coffee drink made with espresso and steamed milk. It is one of the most popular coffee drinks in the world.',
       price: 'Rs: 600',
-      image: food,
+      image: Latte,
       category: 'Beverages',
     },
     {
@@ -196,7 +215,7 @@ const Restaurant = () => {
       description:
         'Mocha is a coffee drink made with espresso, steamed milk, and chocolate syrup. It is one of the most popular coffee drinks in the world.',
       price: 'Rs: 700',
-      image: food,
+      image: Mocha,
       category: 'Beverages',
     },
     {
@@ -204,7 +223,7 @@ const Restaurant = () => {
       description:
         'Milk tea is a beverage made by brewing black tea with milk and sugar. It is one of the most popular beverages in the world.',
       price: 'Rs: 200',
-      image: food,
+      image: Milk_Tea,
       category: 'Beverages',
     },
     {
@@ -212,7 +231,7 @@ const Restaurant = () => {
       description:
         'Cardamom tea is a beverage made by brewing black tea with cardamom and milk. It is one of the most popular beverages in the world.',
       price: 'Rs: 200',
-      image: food,
+      image: Cardomam_Tea,
       category: 'Beverages',
     },
     {
@@ -220,7 +239,7 @@ const Restaurant = () => {
       description:
         'Ginger tea is a beverage made by brewing black tea with ginger and milk. It is one of the most popular beverages in the world.',
       price: 'Rs: 200',
-      image: food,
+      image: Ginger_Tea,
       category: 'Beverages',
     },
     {
@@ -228,7 +247,7 @@ const Restaurant = () => {
       description:
         'Hot chocolate is a beverage made by mixing cocoa powder, sugar, and milk. It is one of the most popular beverages in the world.',
       price: 'Rs: 300',
-      image: food,
+      image: Hot_Chocolate,
       category: 'Beverages',
     },
     {
@@ -236,7 +255,7 @@ const Restaurant = () => {
       description:
         'Iced coffee is a beverage made by brewing coffee and then chilling it. It is one of the most popular beverages in the world.',
       price: 'Rs: 200',
-      image: food,
+      image: Milkshake,
       category: 'Beverages',
     },
     {
@@ -244,7 +263,7 @@ const Restaurant = () => {
       description:
         'Milkshake is a beverage made by blending milk, ice cream, and flavorings. It is one of the most popular beverages in the world.',
       price: 'Rs: 400',
-      image: food,
+      image: Milkshake,
       category: 'Beverages',
     },
     {
