@@ -36,9 +36,18 @@ import image29 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image29.
 import image30 from "../assets/Udawalava-Eligarden-Hotel-Gallery-Image30.jpg";
 import image31 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image31.jpg";
 import image32 from "../assets/Udawalava-Eligarden-Hotel-Gallery-Image32.jpg";
-import image33 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image33.jpg";
-// import image34 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image28.jpg";
-
+import image33 from "../assets/Udawalava-Eligarden-Hotel-Gallery-Image33.jpg";
+import image34 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image34.jpg";
+import image35 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image35.jpg";
+import image36 from "../assets/Udawalava-Eligarden-Hotel-Gallery-Image36.jpg";
+import image37 from "../assets/Udawalava-Eligarden-Hotel-Gallery-Image37.jpg";
+import image38 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image38.jpg";
+import image39 from "../assets/Udawalava-Eligarden-Hotel-Gallery-Image39.jpg";
+import image40 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image40.jpg";
+import image41 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image41.jpg";
+import image42 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image42.jpg";
+import image43 from "../assets/Udawalava-Eligarden-Hotel-Gallery-Image43.jpg";
+import image44 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image44.jpg";
 import slider1 from "../assets/slider1.jpg";
 
 const categories = ["All", "Room & Hotel", "Restaurant", "Safari Tours"];
@@ -76,7 +85,18 @@ const images = [
   { id: 30, url: image30, category: "Room & Hotel" },
   { id: 31, url: image31, category: "Safari Tours" },
   { id: 32, url: image32, category: "Room & Hotel" },
-  { id: 33, url: image33, category: "Safari Tours" },
+  { id: 33, url: image33, category: "Room & Hotel" },
+  { id: 34, url: image34, category: "Safari Tours" },
+  { id: 35, url: image35, category: "Safari Tours" },
+  { id: 36, url: image36, category: "Restaurant" },
+  { id: 37, url: image37, category: "Restaurant" },
+  { id: 38, url: image38, category: "Safari Tours" },
+  { id: 39, url: image39, category: "Room & Hotel" },
+  { id: 40, url: image40, category: "Safari Tours" },
+  { id: 41, url: image41, category: "Safari Tours" },
+  { id: 42, url: image42, category: "Safari Tours" },
+  { id: 43, url: image43, category: "Room & Hotel" },
+  { id: 44, url: image44, category: "Safari Tours" },
 ];
 
 const Gallery = () => {
