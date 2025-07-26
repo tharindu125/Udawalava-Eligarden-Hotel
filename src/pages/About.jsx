@@ -66,6 +66,50 @@ function About() {
             </Modal.Body>
           </Modal>
 
+          <section className="container py-5">
+            <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3">
+              {/* Service Item */}
+              <div className="col text-center" data-aos="zoom-in" data-aos-delay="100">
+                <i className="bi bi-wifi fs-1 text-warning"></i>
+                <p className="mt-2 text-muted small">Free Wi-Fi</p>
+              </div>
+
+              <div className="col text-center" data-aos="zoom-in" data-aos-delay="200">
+                <i className="bi bi-droplet-half fs-1 text-warning"></i>
+                <p className="mt-2 text-muted small">Hot Water</p>
+              </div>
+
+              <div className="col text-center" data-aos="zoom-in" data-aos-delay="300">
+                <i className="bi bi-snow fs-1 text-warning"></i>
+                <p className="mt-2 text-muted small">Air Conditioning</p>
+              </div>
+
+              <div className="col text-center" data-aos="zoom-in" data-aos-delay="1000">
+                <i className="bi bi-egg-fried fs-1 text-warning"></i>
+                <p className="mt-2 text-muted small">On-site Restaurant</p>
+              </div>
+
+              <div className="col text-center" data-aos="zoom-in" data-aos-delay="900">
+                <i className="bi bi-binoculars fs-1 text-warning"></i>
+                <p className="mt-2 text-muted small">Safari Tours</p>
+              </div>
+
+              <div className="col text-center" data-aos="zoom-in" data-aos-delay="600">
+                <i className="bi bi-car-front fs-1 text-warning"></i>
+                <p className="mt-2 text-muted small">Free Parking</p>
+              </div>
+
+              <div className="col text-center" data-aos="zoom-in" data-aos-delay="700">
+                <i className="bi bi-house-door fs-1 text-warning"></i>
+                <p className="mt-2 text-muted small">Private Entrance</p>
+              </div>
+
+              <div className="col text-center" data-aos="zoom-in" data-aos-delay="800">
+                <i className="bi bi-people fs-1 text-warning"></i>
+                <p className="mt-2 text-muted small">Family Rooms</p>
+              </div>
+            </div>
+          </section>
 
           <Row className="mb-4">
             <Col xs={12} md={4} data-aos="fade-up" data-aos-delay="200">
