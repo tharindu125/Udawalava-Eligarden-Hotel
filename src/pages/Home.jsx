@@ -375,9 +375,9 @@ function Home() {
             modules={[Autoplay, EffectCoverflow]}
             effect="coverflow"
             centeredSlides={true}
-            slidesPerView={3}
+            slidesPerView={2}
             loop={true}
-            spaceBetween={30}
+            spaceBetween={5}
             coverflowEffect={{
               rotate: 0,
               stretch: 0,
