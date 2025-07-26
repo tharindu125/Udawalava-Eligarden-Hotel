@@ -1,4 +1,3 @@
-// src/pages/Home.jsx
 import CustomNavbar from '../components/CustomNavbar';
 import MainCarousel from '../components/MainCarousel';
 import { Link } from 'react-router-dom';
@@ -22,14 +21,20 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectCoverflow } from 'swiper/modules';
 
 import welcomeImage from '../assets/slider2.jpg';
-import welcomeImage2 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image06.jpg';
-import nearPlace1 from '../assets/slider1.jpg'
-import nearPlace2 from '../assets/Maduwanwela-Walawwa.jpg'
-import nearPlace3 from '../assets/Sankapala.jpg'
-import nearPlace4 from '../assets/elephant_transit.webp'
-import nearPlace5 from '../assets/wavulpone.webp'
-import roomsImage from '../assets/Udawalava-Eligarden-Hotel-rooms.jpg'
-import restaurantimage from '../assets/Udawalava-Eligarden-Hotel-restaurants.jpg';
+import nearPlace1 from '../assets/slider1.jpg';
+import nearPlace2 from '../assets/Maduwanwela-Walawwa.jpg';
+import nearPlace3 from '../assets/Sankapala.jpg';
+import nearPlace4 from '../assets/elephant_transit.webp';
+import nearPlace5 from '../assets/wavulpone.webp';
+import roomsImage01 from '../assets/Udawalava-Eligarden-Hotel-rooms.jpg';
+import roomsImage02 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image02.jpg';
+import roomsImage03 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image01.jpg';
+import restaurantimage01 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image05.jpg';
+import restaurantimage02 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image04.jpg';
+import restaurantimage03 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image10.jpg';
+import safariImage01 from '../assets/sri-lanka-wild-life.jpg';
+import safariImage02 from '../assets/Udawalawe-Safari-Leopard-in-Sri-Lanka.jpg';
+import safariImage03 from '../assets/Yala-National-Park.jpg';
 
 import img2 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image01.jpg';
 import img3 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image02.jpg';
@@ -186,7 +191,7 @@ function Home() {
       <section className='container py-5 main-topic'>
         <div className='row align-items-center'>
           {/* Text Content */}
-          <div className='col-md-6 mb-4 mb-md-0 manual_text_left content'>
+          <div className='col-md-5 mb-4 mb-md-0 manual_text_left content'>
             <h2 className='h3 fw-bold mb-3 text-warning-emphasis' data-aos="flip-up" data-aos-delay="200">Room Features & Amenities</h2>
             <p className='text-muted mb-3 index-paragraph' data-aos="flip-up" data-aos-delay="300">
               At Udawalawa Elegarden Hotel, we offer a peaceful stay with nature just outside your window. Whether you're traveling alone, as a couple, or with 
@@ -203,39 +208,81 @@ function Home() {
           </div>
 
           {/* Image */}
-          <div className='col-md-6 image'>
-            <img
-              src={roomsImage}
-              alt='Room Features & Amenities'
-              className='img-fluid rounded shadow'
-              data-aos='fade-up'
-              data-aos-delay='200'
-              data-aos-duration='1000'
-             onClick={() => handleOpen(roomsImage)}
-            />
-            <p className="text-muted small text-center mt-2"><FaSearchPlus className="me-1" />Click to enlarge</p>
+          <div className="col-md-7 mb-3">
+            <div className="row g-2" data-aos="fade-down" data-aos-delay="200">
+              {/* Left Large Image */}
+              <div className="col-6">
+                <img
+                  src= {roomsImage01}
+                  alt="Bonfire Dinner"
+                  className="img-fluid rounded shadow"
+                  style={{ height: '100%', objectFit: 'cover', cursor: 'pointer' }}
+                  onClick={() => handleOpen(roomsImage01)}
+                />
+              </div>
+
+              {/* Right Two Small Images */}
+              <div className="col-6 d-flex flex-column justify-content-between" data-aos="fade-up" data-aos-delay="200">
+                <img
+                  src={roomsImage02}
+                  alt="Bonfire Table"
+                  className="img-fluid rounded shadow mb-2"
+                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginTop:'2rem' }}
+                  onClick={() => handleOpen(roomsImage02)}
+                />
+                <img
+                  src={roomsImage03}
+                  alt="Outdoor Dinner"
+                  className="img-fluid rounded shadow"
+                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginBottom:'2rem' }}
+                  onClick={() => handleOpen(roomsImage03)}
+                />
+              </div>
+            </div>
           </div>
+
         </div>
       </section>
 
       {/* Restuarent */}
-      <section className='container py-5 main-topic' style={{ boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)', background: 'rgb(239, 239, 239)' }}>
+      <section className='container py-5 main-topic'>
         <div className='row align-items-center'>
           {/* Image */}
-          <div className='col-md-6 image'>
-            <img
-              src={restaurantimage}
-              alt='Delicious Local & International Restaurant'
-              className='img-fluid rounded shadow'
-              data-aos='fade-up'
-              data-aos-delay='200'
-              data-aos-duration='1000'
-              onClick={() => handleOpen(restaurantimage)}
-            />
-            <p className="text-muted small text-center mt-2"><FaSearchPlus className="me-1" />Click to enlarge</p>
+          <div className="col-md-7 mb-3">
+            <div className="row g-2">
+              {/* Left Large Image */}
+              <div className="col-6" data-aos="fade-down" data-aos-delay="200">
+                <img
+                  src= {restaurantimage01}
+                  alt="Bonfire Dinner"
+                  className="img-fluid rounded shadow"
+                  style={{ height: '100%', objectFit: 'cover', cursor: 'pointer' }}
+                  onClick={() => handleOpen(restaurantimage01)}
+                />
+              </div>
+
+              {/* Right Two Small Images */}
+              <div className="col-6 d-flex flex-column justify-content-between" data-aos="fade-up" data-aos-delay="200">
+                <img
+                  src={restaurantimage02}
+                  alt="Bonfire Table"
+                  className="img-fluid rounded shadow mb-2"
+                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginTop:'2rem' }}
+                  onClick={() => handleOpen(restaurantimage02)}
+                />
+                <img
+                  src={restaurantimage03}
+                  alt="Outdoor Dinner"
+                  className="img-fluid rounded shadow"
+                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginBottom:'2rem' }}
+                  onClick={() => handleOpen(restaurantimage03)}
+                />
+              </div>
+            </div>
           </div>
+
           {/* Text Content */}
-          <div className='col-md-6 mb-4 mb-md-0 manual_text_left content'>
+          <div className='col-md-5 mb-4 mb-md-0 manual_text_left content'>
             <h2 className='h3 fw-bold mb-3 text-warning-emphasis' data-aos="flip-up" data-aos-delay="200">Delicious Local & International Restaurant</h2>
             <p className='text-muted mb-3' data-aos="flip-up" data-aos-delay="300">
               Start your day with a hearty breakfast, relax with a satisfying lunch, or unwind with a flavorful dinner — all freshly prepared by our 
@@ -256,7 +303,7 @@ function Home() {
       <section className='container py-5 main-topic'>
         <div className='row align-items-center'>
           {/* Text Content */}
-          <div className='col-md-6 mb-4 mb-md-0 manual_text_left content'>
+          <div className='col-md-5 mb-4 mb-md-0 manual_text_left content'>
             <h2 className='h3 fw-bold mb-3 text-warning-emphasis' data-aos="flip-up" data-aos-delay="200">Wildlife Adventures : Udawalawe Safari Tours</h2>
             <p className='text-muted mb-3' data-aos="flip-up" data-aos-delay="200">
               Embark on an unforgettable journey with our Udawalawe Safari Tours the perfect way to experience Sri Lanka’s wild beauty. Home to a thriving population 
@@ -277,17 +324,37 @@ function Home() {
           </div>
 
           {/* Image */}
-          <div className='col-md-6 image'>
-            <img
-              src={welcomeImage2}
-              alt='Wildlife Adventures : Udawalawe Safari Tours'
-              className='img-fluid rounded shadow'
-              data-aos='fade-up'
-              data-aos-delay='100'
-              data-aos-duration='1000'
-              onClick={() => handleOpen(welcomeImage2)}
-            />
-            <p className="text-muted small text-center mt-2"><FaSearchPlus className="me-1" />Click to enlarge</p>
+          <div className="col-md-7 mb-3">
+            <div className="row g-2">
+              {/* Left Large Image */}
+              <div className="col-6" data-aos="fade-down" data-aos-delay="200">
+                <img
+                  src= {safariImage01}
+                  alt="Bonfire Dinner"
+                  className="img-fluid rounded shadow"
+                  style={{ height: '100%', objectFit: 'cover', cursor: 'pointer' }}
+                  onClick={() => handleOpen(safariImage01)}
+                />
+              </div>
+
+              {/* Right Two Small Images */}
+              <div className="col-6 d-flex flex-column justify-content-between" data-aos="fade-up" data-aos-delay="200">
+                <img
+                  src={safariImage02}
+                  alt="Bonfire Table"
+                  className="img-fluid rounded shadow mb-2"
+                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginTop:'2rem' }}
+                  onClick={() => handleOpen(safariImage02)}
+                />
+                <img
+                  src={safariImage03}
+                  alt="Outdoor Dinner"
+                  className="img-fluid rounded shadow"
+                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginBottom:'2rem' }}
+                  onClick={() => handleOpen(safariImage03)}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
