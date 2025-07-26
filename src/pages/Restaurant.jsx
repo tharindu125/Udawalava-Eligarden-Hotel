@@ -25,13 +25,13 @@ import Cardomam_Tea from '../assets/Restaurent-Cardomam-Tea.jpg';
 import Ginger_Tea from '../assets/Restaurent-Ginger-Tea.jpg';
 import Hot_Chocolate from '../assets/Restaurent-Hot-Chocolate.jpg';
 import Milkshake from '../assets/Restaurent-Milkshake.jpg';
-import Mocha1 from '../assets/Restaurent-Mocha.jpg';
-import Mocha2 from '../assets/Restaurent-Mocha.jpg';
-import Mocha3 from '../assets/Restaurent-Mocha.jpg';
-import Mocha4 from '../assets/Restaurent-Mocha.jpg';
-import Mocha5 from '../assets/Restaurent-Mocha.jpg';
-import Mocha6 from '../assets/Restaurent-Mocha.jpg';
-import Mocha11 from '../assets/Restaurent-Mocha.jpg';
+import Watermelon from '../assets/Restaurent-Watermelon.jpg';
+import Papaya from '../assets/Restaurent-Papaya.jpg';
+import Pineapple from '../assets/Restaurent-Pineapple.jpg';
+import Lime from '../assets/Restaurent-Lime.jpg';
+import Avocado from '../assets/Restaurent-Avocado.jpg';
+import mango from '../assets/Restaurent-mango.jpg';
+import Wood_Apple from '../assets/Restaurent-Wood-Apple.jpg';
 
 import Restaurent_Macaroni_with_cheese from '../assets/Restaurent-Macaroni-with-cheese.jpg';
 import { Container, Row, Col, Card, Accordion, Button } from 'react-bootstrap';
@@ -272,7 +272,7 @@ const Restaurant = () => {
         'Watermelon juice is a refreshing beverage made from fresh watermelon. It is one of the most popular beverages in the world.',
       price: 'Rs: 500',
       iceCream: 'With Ice Cream Rs:800', 
-      image: food,
+      image: Watermelon,
       category: 'Beverages',
     },
     {
@@ -281,7 +281,7 @@ const Restaurant = () => {
         'Papaya juice is a refreshing beverage made from fresh papaya. It is one of the most popular beverages in the world.',
       price: 'Rs: 500',
       iceCream: 'With Ice Cream Rs:800', 
-      image: food,
+      image: Papaya,
       category: 'Beverages',
     },
     {
@@ -290,7 +290,7 @@ const Restaurant = () => {
         'Pineapple juice is a refreshing beverage made from fresh pineapple. It is one of the most popular beverages in the world.',
       price: 'Rs: 500',
       iceCream: 'With Ice Cream Rs:800', 
-      image: food,
+      image: Pineapple,
       category: 'Beverages',
     },
     {
@@ -299,7 +299,7 @@ const Restaurant = () => {
         'Lime juice is a refreshing beverage made from fresh lime. It is one of the most popular beverages in the world.',
       price: 'Rs: 500',
       iceCream: 'With Ice Cream Rs:800', 
-      image: food,
+      image: Lime,
       category: 'Beverages',
     },
     {
@@ -308,7 +308,7 @@ const Restaurant = () => {
         'Avocado juice is a refreshing beverage made from fresh avocado. It is one of the most popular beverages in the world.',
       price: 'Rs: 500',
       iceCream: 'With Ice Cream Rs:800', 
-      image: food,
+      image: Avocado,
       category: 'Beverages',
     },
     {
@@ -317,7 +317,7 @@ const Restaurant = () => {
         'Mango juice is a refreshing beverage made from fresh mango. It is one of the most popular beverages in the world.',
       price: 'Rs: 500',
       iceCream: 'With Ice Cream Rs:800', 
-      image: food,
+      image: mango,
       category: 'Beverages',
     },
     {
@@ -326,7 +326,7 @@ const Restaurant = () => {
         'Wood apple juice is a refreshing beverage made from fresh wood apple. It is one of the most popular beverages in the world.',
       price: 'Rs: 500',
       iceCream: 'With Ice Cream Rs:800', 
-      image: food,
+      image: Wood_Apple,
       category: 'Beverages',
     },
     {
@@ -335,7 +335,7 @@ const Restaurant = () => {
         'Milkshake is a beverage made by blending milk, ice cream, and flavorings. It is one of the most popular beverages in the world.',
       price: 'Rs: 500',
       iceCream: 'With Ice Cream Rs:800', 
-      image: food,
+      image: Lime,
       category: 'Beverages',
     },
     {
