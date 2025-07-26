@@ -160,7 +160,7 @@ function Contact() {
           </Row>
         </Container>
 
-        <section className='container py-5 my-4' id='book_now' style={{ boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)', backgroundColor: 'rgba(255, 255, 255, 0.8)', borderRadius: '10px' }}>
+        <section className='container py-5 my-4' id='book_now' style={{ boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)', backgroundColor: 'rgba(255, 255, 255, 0.83)', borderRadius: '10px' }}>
           <div className='manual_text_center'>
             <h2 className='h3 fw-bold mb-3 text-warning-emphasis'>Ready to Book Your Package</h2>
             <p className='text-muted mb-4 mx-3'>

@@ -32,6 +32,12 @@ import image25 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image25.
 import image26 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image26.jpg";
 import image27 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image27.jpg";
 import image28 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image28.jpg";
+import image29 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image29.jpg";
+import image30 from "../assets/Udawalava-Eligarden-Hotel-Gallery-Image30.jpg";
+import image31 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image31.jpg";
+import image32 from "../assets/Udawalava-Eligarden-Hotel-Gallery-Image32.jpg";
+import image33 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image33.jpg";
+// import image34 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image28.jpg";
 
 import slider1 from "../assets/slider1.jpg";
 
@@ -60,12 +66,17 @@ const images = [
   { id: 20, url: image20, category: "Restaurant" },
   { id: 21, url: image21, category: "Safari Tours" },
   { id: 22, url: image22, category: "Safari Tours" },
-    { id: 23, url: image23, category: "Safari Tours" },
+  { id: 23, url: image23, category: "Safari Tours" },
   { id: 24, url: image24, category: "Safari Tours" },
   { id: 25, url: image25, category: "Safari Tours" },
-    { id: 26, url: image26, category: "Safari Tours" },
-      { id: 27, url: image27, category: "Safari Tours" },
-    { id: 28, url: image28, category: "Safari Tours" },
+  { id: 26, url: image26, category: "Safari Tours" },
+  { id: 27, url: image27, category: "Safari Tours" },
+  { id: 28, url: image28, category: "Safari Tours" },
+  { id: 29, url: image29, category: "Safari Tours" },
+  { id: 30, url: image30, category: "Room & Hotel" },
+  { id: 31, url: image31, category: "Safari Tours" },
+  { id: 32, url: image32, category: "Room & Hotel" },
+  { id: 33, url: image33, category: "Safari Tours" },
 ];
 
 const Gallery = () => {
@@ -79,7 +90,7 @@ const Gallery = () => {
 
   const breakpointColumnsObj = {
     default: 4,
-    1100: 4,
+    1100: 3,
     700: 3,
     500: 3,
     400: 2,
