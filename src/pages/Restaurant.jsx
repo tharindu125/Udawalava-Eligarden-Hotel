@@ -32,7 +32,11 @@ import Lime from '../assets/Restaurent-Lime.jpg';
 import Avocado from '../assets/Restaurent-Avocado.jpg';
 import mango from '../assets/Restaurent-mango.jpg';
 import Wood_Apple from '../assets/Restaurent-Wood-Apple.jpg';
-
+import Vanila from '../assets/Restaurent-Vanila-Ice-Cream.jpg';
+import Chocolate from '../assets/Restaurent-Vanila-Ice-Cream.jpg';
+import Fruit_Nut from '../assets/Restaurent-Fruit-and-Nuts-Ice-Cream.jpg';
+import Faluda from '../assets/Restaurent-Falooda-Ice-Cream.jpg';
+import Mix from '../assets/Restaurent-Mix-Ice-Cream.jpg'
 import Restaurent_Macaroni_with_cheese from '../assets/Restaurent-Macaroni-with-cheese.jpg';
 import { Container, Row, Col, Card, Accordion, Button } from 'react-bootstrap';
 import { useState } from 'react';
@@ -343,7 +347,7 @@ const Restaurant = () => {
       description:
         'Vanilla ice cream is a classic dessert made with cream, sugar, and vanilla flavoring. It is one of the most popular ice creams in the world.',
       price: 'Rs: 450',
-      image: food,
+      image: Vanila,
       category: 'Desserts',
     },
     {
@@ -351,7 +355,7 @@ const Restaurant = () => {
       description:
         'Chocolate ice cream is a rich and creamy dessert made with chocolate, cream, and sugar. It is one of the most popular ice creams in the world.',
       price: 'Rs: 550',
-      image: food,
+      image: Chocolate,
       category: 'Desserts',
     },
     {
@@ -359,7 +363,7 @@ const Restaurant = () => {
       description:
         'Fruit and nut ice cream is a delightful dessert made with a mix of fresh fruits and crunchy nuts, blended into a creamy base. It is a popular choice for those who enjoy a combination of flavors and textures.',
       price: 'Rs: 600',
-      image: food,
+      image: Fruit_Nut,
       category: 'Desserts',
     },
     {
@@ -367,7 +371,7 @@ const Restaurant = () => {
       description:
         'Faluda ice cream is a traditional dessert made with vermicelli noodles, basil seeds, and rose syrup, topped with a scoop of ice cream. It is a popular choice in South Asian cuisine.',
       price: 'Rs: 550',
-      image: food,
+      image: Faluda,
       category: 'Desserts',
     },
     {
@@ -375,7 +379,7 @@ const Restaurant = () => {
       description:
         'Mix ice cream is a delightful dessert that combines various flavors of ice cream into one scoop. It is a popular choice for those who enjoy a variety of tastes in their dessert.',
       price: 'Rs: 800',
-      image: food,
+      image: Mix,
       category: 'Desserts',
     },
   ];
