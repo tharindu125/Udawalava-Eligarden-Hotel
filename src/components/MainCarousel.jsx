@@ -10,7 +10,7 @@ function MainCarousel() {
     <Carousel fade>
       {/* First Slide */}
       <Carousel.Item>
-        <img className="d-block w-100 fullscreen-image" src={slider1} alt="First slide" />
+        <img className="d-block fullscreen-image" src={slider1} alt="First slide" />
         <Carousel.Caption className="carousel-caption">
           <div className="container position-relative">
 

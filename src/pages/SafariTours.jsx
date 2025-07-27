@@ -8,10 +8,15 @@ import slider2 from '../assets/nine_arch_bridge_02.jpg';
 import slider3 from '../assets/slider1.jpg';
 import seasonalturs from '../assets/Sigiriya-Leopard-in-Sri-Lanka.jpg';
 import udawalava01 from '../assets/Udawalawe-Safari-Leopard-in-Sri-Lanka.jpg';
-import udawalava02 from '../assets/sri-lanka-leopard-asian.jpg';
-import udawalava03 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image09.jpg';
-import udawalava04 from '../assets/Udawalava-Eligarden-Hotel-Wildlife-Adventures.jpg';
-import udawalava05 from '../assets/Udawalava-Eligarden-Hotel-Safari.jpg';
+import udawalava02 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image03.jpg';
+import udawalava03 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image06.jpg';
+import udawalava04 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image09.jpg';
+import udawalava05 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image12.jpg';
+import udawalava06 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image13.jpg';
+import udawalava07 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image14.jpg';
+import udawalava08 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image16.jpg';
+import udawalava09 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image19.jpg';
+import udawalava10 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image21.jpg';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -44,7 +49,7 @@ const heroSlides = [
 
 function SafariTours() {
 
-  const imageList = [udawalava01, udawalava02, udawalava03, udawalava04, udawalava05];
+  const imageList = [udawalava01, udawalava02, udawalava03, udawalava04, udawalava05, udawalava06, udawalava07, udawalava08, udawalava09, udawalava10];
 
   return (
     <>
@@ -163,14 +168,20 @@ function SafariTours() {
         </Row>
       </section>
 
+      {/* Call to Action */}
+        <div className=" cta-section text-center">
+          <h3 className='fw-bold text-warning-emphasis' data-aos="fade-up" data-aos-delay="200">Ready to Experience the Best?</h3>
+          <p data-aos="fade-up" data-aos-delay="400">Join us for an unforgettable experience. Book a tour with us today!</p>
+          <Button className='btn-warning text-dark fw-bold' href="/contact#book_now" data-aos="fade-up" data-aos-delay="600">Book Now</Button>
+        </div>
+
       {/* Image Slider */}
-      <section className='container py-5 my-4 pt-5 hero-slider-container bg-white' 
+      <section className='container p-4 my-5 pt-5 hero-slider-container bg-white' 
         style={{boxShadow: '0 0 8px rgba(0, 0, 0, 0.2)', borderRadius: '15px', width: '100vw'}} data-aos="zoom-in" data-aos-delay= "200">
         <Swiper
           modules={[Autoplay, EffectCoverflow]}
           effect="coverflow"
           centeredSlides={true}
-          slidesPerView={2}
           loop={true}
           spaceBetween={5}
           coverflowEffect={{
@@ -183,6 +194,12 @@ function SafariTours() {
             delay: 2500,
             disableOnInteraction: false,
           }}
+          breakpoints={{
+              0: { slidesPerView: 1 },
+              576: { slidesPerView: 1.2 },
+              768: { slidesPerView: 2 },
+              992: { slidesPerView: 2 },
+            }}
           className="hero-swiper"
         >
           {imageList.map((img, index) => (

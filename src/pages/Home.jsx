@@ -36,17 +36,18 @@ import safariImage01 from '../assets/sri-lanka-wild-life.jpg';
 import safariImage02 from '../assets/Udawalawe-Safari-Leopard-in-Sri-Lanka.jpg';
 import safariImage03 from '../assets/Yala-National-Park.jpg';
 
-import img2 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image01.jpg';
-import img3 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image02.jpg';
-import img4 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image05.jpg';
+import img1 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image01.jpg';
+import img2 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image02.jpg';
+import img3 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image03.jpg';
+import img4 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image04.jpg';
 import img5 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image05.jpg';
-import img6 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image04.jpg';
+import img6 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image06.jpg';
 import img7 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image07.jpg';
 import img8 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image08.jpg';
-import img9 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image08.jpg';
-import img10 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image05.jpg';
+import img9 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image09.jpg';
+import img10 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image10.jpg';
 
-const imageList = [img2, img3, img4, img5, img6, img7, img8, img9, img10];
+const imageList = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
 
 
 function Home() {
@@ -375,7 +376,6 @@ function Home() {
             modules={[Autoplay, EffectCoverflow]}
             effect="coverflow"
             centeredSlides={true}
-            slidesPerView={2}
             loop={true}
             spaceBetween={5}
             coverflowEffect={{
@@ -387,6 +387,12 @@ function Home() {
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,
+            }}
+            breakpoints={{
+              0: { slidesPerView: 1 },
+              576: { slidesPerView: 1.2 },
+              768: { slidesPerView: 2 },
+              992: { slidesPerView: 2 },
             }}
             className="hero-swiper"
           >

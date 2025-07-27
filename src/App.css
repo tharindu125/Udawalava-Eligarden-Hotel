@@ -5,6 +5,10 @@
   /* text-align: center; */
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .manual_text_center {
   text-align: center;
 }
