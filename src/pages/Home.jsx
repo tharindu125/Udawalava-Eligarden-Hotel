@@ -238,7 +238,7 @@ function Home() {
           <div className="col-md-7 mb-3">
             <div className="row g-2" data-aos="fade-down" data-aos-delay="200">
               {/* Left Large Image */}
-              <div className="col-md-6">
+              <div className="col-6">
                 <img
                   src= {roomsImage01}
                   alt="Bonfire Dinner"
@@ -249,7 +249,7 @@ function Home() {
               </div>
 
               {/* Right Two Small Images */}
-              <div className="col-md-6 d-flex flex-column justify-content-between" data-aos="fade-up" data-aos-delay="200">
+              <div className="col-6 d-flex flex-column justify-content-between" data-aos="fade-up" data-aos-delay="200">
                 <img
                   src={roomsImage02}
                   alt="Bonfire Table"
@@ -278,7 +278,7 @@ function Home() {
           <div className="col-md-7 mb-3">
             <div className="row g-2">
               {/* Left Large Image */}
-              <div className="col-md-6" data-aos="fade-down" data-aos-delay="200">
+              <div className="col-6" data-aos="fade-down" data-aos-delay="200">
                 <img
                   src= {restaurantimage01}
                   alt="Bonfire Dinner"
@@ -289,7 +289,7 @@ function Home() {
               </div>
 
               {/* Right Two Small Images */}
-              <div className="col-md-6 d-flex flex-column justify-content-between" data-aos="fade-up" data-aos-delay="200">
+              <div className="col-6 d-flex flex-column justify-content-between" data-aos="fade-up" data-aos-delay="200">
                 <img
                   src={restaurantimage02}
                   alt="Bonfire Table"
@@ -354,7 +354,7 @@ function Home() {
           <div className="col-md-7 mb-3">
             <div className="row g-2">
               {/* Left Large Image */}
-              <div className="col-md-6" data-aos="fade-down" data-aos-delay="200">
+              <div className="col-6" data-aos="fade-down" data-aos-delay="200">
                 <img
                   src= {safariImage01}
                   alt="Bonfire Dinner"
@@ -365,7 +365,7 @@ function Home() {
               </div>
 
               {/* Right Two Small Images */}
-              <div className="col-md-6 d-flex flex-column justify-content-between" data-aos="fade-up" data-aos-delay="200">
+              <div className="col-6 d-flex flex-column justify-content-between" data-aos="fade-up" data-aos-delay="200">
                 <img
                   src={safariImage02}
                   alt="Bonfire Table"
