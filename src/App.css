@@ -9,6 +9,11 @@ body {
   overflow-x: hidden;
 }
 
+img {
+  object-fit: cover;
+  -webkit-transform: translateZ(0); /* fixes some render bugs in Safari */
+}
+
 .manual_text_center {
   text-align: center;
 }

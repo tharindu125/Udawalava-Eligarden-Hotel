@@ -49,7 +49,7 @@ const Restaurant = () => {
       title: 'Sandwich',
       description:
         'A classic sandwich with fresh vegetables, cheese, and your choice of meat. Perfect for a quick bite.',
-      price: 'Rs:0',
+      price: 'Rs: 800',
       image: Sandwich,
       category: 'Brunch',
     },
@@ -57,7 +57,7 @@ const Restaurant = () => {
       title: 'Sri Lankan Traditional Roti',
       description:
         'Soft and fluffy roti served with a side of spicy sambol. A traditional Sri Lankan favorite.',
-      price: 'Rs:0',
+      price: 'Rs: 800',
       image: Roti,
       category: 'Brunch',
     },
@@ -65,7 +65,7 @@ const Restaurant = () => {
       title: 'Milk Rice',
       description:
         'Steamed rice served with a variety of sambols and curries. A staple in Sri Lankan cuisine.',
-      price: 'Rs:0',
+      price: 'Rs: 800',
       image: Milk_Rice,
       category: 'Brunch',
     },
@@ -73,7 +73,7 @@ const Restaurant = () => {
       title: 'String Hoppers',
       description:
         'Delicate steamed rice noodles served with coconut milk and a side of sambol. A traditional breakfast dish.',
-      price: 'Rs:0',
+      price: 'Rs: 800',
       image: String_Hoppers,
       category: 'Brunch',
     },
@@ -81,7 +81,7 @@ const Restaurant = () => {
       title: 'Lavariya',
       description:
         'Soft and fluffy roti served with a side of spicy sambol. A traditional Sri Lankan favorite.',
-      price: 'Rs:0',
+      price: 'Rs: 700',
       image: Lavariya,
       category: 'Brunch',
     },
@@ -89,7 +89,7 @@ const Restaurant = () => {
       title: 'Noodles',
       description:
         'Stir-fried noodles with vegetables and your choice of meat. A quick and satisfying meal.',
-      price: 'Rs:0',
+      price: 'Rs: 800',
       image: Noodles,
       category: 'Brunch',
     },
@@ -97,7 +97,7 @@ const Restaurant = () => {
       title: 'Sri Lankan Traditional Rice & Curry',
       description:
         'Savor the authentic taste of Sri Lanka with a plate of steamed rice, served with three flavorful vegetable curries. Choose from prawns, fish or beef.',
-      price: 'Rs: 2000',
+      price: 'Rs: 1400',
       image: Traditional_Rice_Curry,
       category: 'Lunch',
     },
@@ -105,7 +105,7 @@ const Restaurant = () => {
       title: 'Mixed Fried Rice',
       description:
         'A delightful mix of fried rice with vegetables, eggs, and your choice of chicken or prawns. A perfect meal for any time of the day.',
-      price: 'Rs: 1800',
+      price: 'Rs: 1400',
       image: Mix_Rice,
       category: 'Lunch',
     },
@@ -113,7 +113,7 @@ const Restaurant = () => {
       title: 'Chicken Fried Rice',
       description:
         'A delightful mix of fried rice with vegetables, eggs, and chicken. A perfect meal for any time of the day.',
-      price: 'Rs: 1500',
+      price: 'Rs: 1200',
       image: Chicken_Fried_Rice,
       category: 'Lunch',
     },
@@ -121,7 +121,7 @@ const Restaurant = () => {
       title: 'Egg Fried Rice',
       description:
         'A delightful mix of fried rice with vegetables, eggs, and your choice of chicken or prawns. A perfect meal for any time of the day.',
-      price: 'Rs: 1200',
+      price: 'Rs: 1000',
       image: Fried_Rice,
       category: 'Lunch',
     },
@@ -129,7 +129,7 @@ const Restaurant = () => {
       title: 'Vegetable Fried Rice',
       description:
         'A delightful mix of fried rice with vegetables, eggs, and your choice of chicken or prawns. A perfect meal for any time of the day.',
-      price: 'Rs: 1200',
+      price: 'Rs: 1000',
       image: Fried_Rice,
       category: 'Lunch',
     },
@@ -137,7 +137,7 @@ const Restaurant = () => {
       title: 'Grilled Chicken',
       description:
         'Juicy grilled chicken marinated with spices, served with a side of vegetables and rice. A hearty meal for lunch.',
-      price: 'Rs: 3000',
+      price: 'Rs: 2000',
       image: Grilled_Chicken,
       category: 'Lunch',
     },
@@ -145,7 +145,7 @@ const Restaurant = () => {
       title: 'Grilled Fish',
       description:
         'Freshly grilled fish seasoned with herbs and spices, served with a side of vegetables and rice. A healthy choice for lunch.',
-      price: 'Rs: 3500',
+      price: 'Rs: 1800',
       image: Grilled_Fish,
       category: 'Lunch',
     },
@@ -153,7 +153,7 @@ const Restaurant = () => {
       title: 'Noodles',
       description:
         'Stir-fried noodles with vegetables and your choice of meat. A quick and satisfying meal.',
-      price: 'Rs: 1000',
+      price: 'Rs: 800',
       image: Noodles,
       category: 'Dinner',
     },

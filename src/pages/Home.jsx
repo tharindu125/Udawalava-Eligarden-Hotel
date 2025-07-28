@@ -238,30 +238,30 @@ function Home() {
           <div className="col-md-7 mb-3">
             <div className="row g-2" data-aos="fade-down" data-aos-delay="200">
               {/* Left Large Image */}
-              <div className="col-6">
+              <div className="col-md-6">
                 <img
                   src= {roomsImage01}
                   alt="Bonfire Dinner"
                   className="img-fluid rounded shadow"
-                  style={{ height: '100%', objectFit: 'cover', cursor: 'pointer' }}
+                  style={{ height: '100%', objectFit: 'cover', cursor: 'pointer', maxWidth: '100%', display: 'block' }}
                   onClick={() => handleOpen(roomsImage01)}
                 />
               </div>
 
               {/* Right Two Small Images */}
-              <div className="col-6 d-flex flex-column justify-content-between" data-aos="fade-up" data-aos-delay="200">
+              <div className="col-md-6 d-flex flex-column justify-content-between" data-aos="fade-up" data-aos-delay="200">
                 <img
                   src={roomsImage02}
                   alt="Bonfire Table"
                   className="img-fluid rounded shadow mb-2"
-                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginTop:'2rem' }}
+                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginTop:'2rem', maxWidth: '100%', display: 'block' }}
                   onClick={() => handleOpen(roomsImage02)}
                 />
                 <img
                   src={roomsImage03}
                   alt="Outdoor Dinner"
                   className="img-fluid rounded shadow"
-                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginBottom:'2rem' }}
+                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginBottom:'2rem', maxWidth: '100%', display: 'block' }}
                   onClick={() => handleOpen(roomsImage03)}
                 />
               </div>
@@ -278,30 +278,30 @@ function Home() {
           <div className="col-md-7 mb-3">
             <div className="row g-2">
               {/* Left Large Image */}
-              <div className="col-6" data-aos="fade-down" data-aos-delay="200">
+              <div className="col-md-6" data-aos="fade-down" data-aos-delay="200">
                 <img
                   src= {restaurantimage01}
                   alt="Bonfire Dinner"
                   className="img-fluid rounded shadow"
-                  style={{ height: '100%', objectFit: 'cover', cursor: 'pointer' }}
+                  style={{ height: '100%', objectFit: 'cover', cursor: 'pointer', maxWidth: '100%', display: 'block' }}
                   onClick={() => handleOpen(restaurantimage01)}
                 />
               </div>
 
               {/* Right Two Small Images */}
-              <div className="col-6 d-flex flex-column justify-content-between" data-aos="fade-up" data-aos-delay="200">
+              <div className="col-md-6 d-flex flex-column justify-content-between" data-aos="fade-up" data-aos-delay="200">
                 <img
                   src={restaurantimage02}
                   alt="Bonfire Table"
                   className="img-fluid rounded shadow mb-2"
-                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginTop:'2rem' }}
+                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginTop:'2rem', maxWidth: '100%', display: 'block' }}
                   onClick={() => handleOpen(restaurantimage02)}
                 />
                 <img
                   src={restaurantimage03}
                   alt="Outdoor Dinner"
                   className="img-fluid rounded shadow"
-                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginBottom:'2rem' }}
+                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginBottom:'2rem', maxWidth: '100%', display: 'block' }} 
                   onClick={() => handleOpen(restaurantimage03)}
                 />
               </div>
@@ -354,30 +354,30 @@ function Home() {
           <div className="col-md-7 mb-3">
             <div className="row g-2">
               {/* Left Large Image */}
-              <div className="col-6" data-aos="fade-down" data-aos-delay="200">
+              <div className="col-md-6" data-aos="fade-down" data-aos-delay="200">
                 <img
                   src= {safariImage01}
                   alt="Bonfire Dinner"
                   className="img-fluid rounded shadow"
-                  style={{ height: '100%', objectFit: 'cover', cursor: 'pointer' }}
+                  style={{ height: '100%', objectFit: 'cover', cursor: 'pointer', maxWidth: '100%', display: 'block' }}
                   onClick={() => handleOpen(safariImage01)}
                 />
               </div>
 
               {/* Right Two Small Images */}
-              <div className="col-6 d-flex flex-column justify-content-between" data-aos="fade-up" data-aos-delay="200">
+              <div className="col-md-6 d-flex flex-column justify-content-between" data-aos="fade-up" data-aos-delay="200">
                 <img
                   src={safariImage02}
                   alt="Bonfire Table"
                   className="img-fluid rounded shadow mb-2"
-                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginTop:'2rem' }}
+                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginTop:'2rem', maxWidth: '100%', display: 'block' }}
                   onClick={() => handleOpen(safariImage02)}
                 />
                 <img
                   src={safariImage03}
                   alt="Outdoor Dinner"
                   className="img-fluid rounded shadow"
-                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginBottom:'2rem' }}
+                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginBottom:'2rem', maxWidth: '100%', display: 'block' }}
                   onClick={() => handleOpen(safariImage03)}
                 />
               </div>
@@ -529,7 +529,7 @@ function Home() {
           {selectedServices.accommodation && (
             <div className='row'>
               <label className='form-label fw-bold mx-3 mt-3 ms-0 mb-0 text-warning'>Accommodation</label>
-              <div className='col-6'>
+              <div className='col-md-6'>
                 <label className='form-label'>Select Packages *</label>
                 <Select
                   isMulti
@@ -633,7 +633,7 @@ function Home() {
               {message.text}
             </div>
           )}
-          <div className='col-12'>
+          <div className='col-md-12'>
             <button type='submit' className='btn btn-warning text-dark fw-bold'>Submit</button>
           </div>
         </form>
