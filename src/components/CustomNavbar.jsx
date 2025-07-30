@@ -20,9 +20,9 @@ function CustomNavbar() {
             width="40"
             height="40"
             className="d-inline-block align-top"
-            alt="Udawalawa Elegarden Hotel"
+            alt="Udawalawe Elegarden Safari Resort"
           />{' '}
-          <span className='fw-bold' style={{textShadow: '0 0 4px var(--bs-warning-text-emphasis)'}}>Udawalawa Elegarden Hotel</span>
+          <span className='fw-bold' style={{textShadow: '0 0 4px var(--bs-warning-text-emphasis)'}}>Udawalawe Elegarden Safari Resort</span>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbar-nav" />

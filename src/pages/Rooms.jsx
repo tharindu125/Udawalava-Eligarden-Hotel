@@ -4,10 +4,14 @@ import CustomNavbar from '../components/CustomNavbar';
 // ✅ Imported Images
 import slider1 from '../assets/hotel_wallpaper_02.jpg';
 import room1 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image02.jpg';
-import room2 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image07.jpg';
-import room3 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image22.jpg';
-import room4 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image30.jpg';
+import room2 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image46.jpg';
 import room5 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image32.jpg';
+import singleroom1 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image22.jpg';
+import singleroom2 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image39.jpg';
+import singleroom3 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image07.jpg';
+import singleroom4 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image45.jpg';
+import bathroomimage01 from '../assets/bathroom_image_01.jpg';
+import bathroomimage02 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image30.jpg';
 
 import { useState } from 'react';
 import {
@@ -21,9 +25,9 @@ const RoomsSection = () => {
   const [activeTab, setActiveTab] = useState('single');
 
   // ✅ Image arrays for each room type
-  const room01 = [room1, room2, room3, room4, room5];
-  const room02 = [room2, room3, room4, room5, room1];
-  const room03 = [room3, room4, room5, room1, room2];
+  const room01 = [singleroom1, singleroom2, singleroom3, bathroomimage01, singleroom4];
+  const room02 = [room2, bathroomimage02, room5, room1];
+  const room03 = [bathroomimage01, room5, room1, room2];
 
   const roomDetails = {
     single: {

@@ -3,8 +3,8 @@ import {Card, Button, Row, Col } from "react-bootstrap";
 
 import CustomNavbar from '../components/CustomNavbar';
 
-import backgroundimage02 from '../assets/backgroud_image_leopard.jpg'
-import backgroundimage03 from '../assets/Yala-National-Park.jpg'
+import backgroundimage02 from '../assets/sri_lanka_elephant_04.jpg'
+import backgroundimage03 from '../assets/sri_lanka_elephant_01.jpg'
 import backgroundimage04 from '../assets/sri-lanka-wild-life.jpg'
 import slider1 from '../assets/Udawalawe-Safari-Leopard-in-Sri-Lanka-hero.jpg';
 import udawalava01 from '../assets/Udawalawe-Safari-Leopard-in-Sri-Lanka-C-2.jpg'

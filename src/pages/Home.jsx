@@ -26,6 +26,7 @@ import nearPlace2 from '../assets/Maduwanwela-Walawwa.jpg';
 import nearPlace3 from '../assets/Sankapala.jpg';
 import nearPlace4 from '../assets/elephant_transit.webp';
 import nearPlace5 from '../assets/wavulpone.webp';
+import nearPlace6 from '../assets/katupila_wewa.jpg';
 import roomsImage01 from '../assets/Udawalava-Eligarden-Hotel-rooms.jpg';
 import roomsImage02 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image02.jpg';
 import roomsImage03 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image01.jpg';
@@ -67,10 +68,10 @@ function Home() {
       fade: '300',
     },
     {
-      title: 'Katupila wewa',
+      title: 'Katupila Wewa',
       distance: '8.5 km',
       description: 'A scenic waterfall surrounded by lush forest — perfect for a short trek.',
-      image: welcomeImage,
+      image: nearPlace6,
       fade: '400',
     },
     {

@@ -48,7 +48,7 @@ function Footer() {
          {/* Contact Details */}
           <Col md={3} className="mb-4">
             <h5 className='text-warning-emphasis' data-aos="fade-up" data-aos-delay="200">Contact Us</h5>
-            <p data-aos="fade-up" data-aos-delay="300"><FaEnvelope /> info@eligardenhotel.com</p>
+            <p data-aos="fade-up" data-aos-delay="300"><FaEnvelope /> info@udawalaweelegardenhotelandsafari.com</p>
             <p data-aos="fade-up" data-aos-delay="400"><FaPhone /> +94 71 123 4567</p>
             <div data-aos="fade-up" data-aos-delay="500">
               <a href="#" className="text-light me-3"><FaFacebook /></a>
