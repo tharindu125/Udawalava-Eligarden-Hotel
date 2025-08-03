@@ -31,7 +31,7 @@ import { Autoplay, EffectCoverflow } from 'swiper/modules';
 
 const heroSlides = [
   {
-    image: slider1,
+    image: slider3,
     heading: 'Udawalawe Safari Tours',
     subheading: 'Enjoy free laundry and room service with no extra fees – because your comfort is always our priority.',
   },
@@ -41,7 +41,7 @@ const heroSlides = [
     subheading: 'Get ready for breathtaking encounters with elephants and more in their natural habitat.',
   },
   {
-    image: slider3,
+    image: slider1,
     heading: 'Luxury & Adventure Combined',
     subheading: 'Stay in comfort while experiencing the thrill of Sri Lanka’s wildlife.',
   },

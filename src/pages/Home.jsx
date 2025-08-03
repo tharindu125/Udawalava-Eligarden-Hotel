@@ -20,13 +20,14 @@ import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectCoverflow } from 'swiper/modules';
 
-import welcomeImage from '../assets/slider2.jpg';
+// import welcomeImage from '../assets/slider2.jpg';
 import nearPlace1 from '../assets/slider1.jpg';
 import nearPlace2 from '../assets/Maduwanwela-Walawwa.jpg';
 import nearPlace3 from '../assets/Sankapala.jpg';
 import nearPlace4 from '../assets/elephant_transit.webp';
 import nearPlace5 from '../assets/wavulpone.webp';
 import nearPlace6 from '../assets/katupila_wewa.jpg';
+import nearPlace7 from '../assets/Udawalawa_Dam.jpg';
 import roomsImage01 from '../assets/Udawalava-Eligarden-Hotel-rooms.jpg';
 import roomsImage02 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image02.jpg';
 import roomsImage03 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image01.jpg';
@@ -94,6 +95,13 @@ function Home() {
       description: 'A prehistoric limestone cave with a flowing stream and bat colonies.',
       image: nearPlace5 ,
       fade: '700',
+    },
+    {
+      title: 'Udawalawa Dam',
+      distance: '5 km',
+      description: 'The Udawalawe Dam is a large irrigation dam in Udawalawe, in the Southern Province of Sri Lanka.',
+      image: nearPlace7 ,
+      fade: '800',
     }
   ];  
 

@@ -15,7 +15,7 @@ function MainCarousel() {
           <div className="container position-relative">
 
             <div className="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-              <h2>WELCOME TO THE UDAWALAWA ELEGARDEN HOTEL</h2>
+              <h2 className='shadow'>WELCOME TO THE UDAWALAWA ELEGARDEN HOTEL</h2>
               <p>Discover comfort, flavor, and adventure at Udawalawa Elegarden Hotel – your perfect getaway near the wild.</p>
             </div>
 
@@ -61,8 +61,8 @@ function MainCarousel() {
               <h2>WELCOME TO THE UDAWALAWA ELEGARDEN RESTAURENT </h2>
               <p>Discover comfort, flavor, and adventure at Udawalawa Elegarden Hotel – your perfect getaway near the wild.</p>
             </div>
-{/* 
-            <div className="content row gy-4">
+
+            {/* <div className="content row gy-4">
               <div className="col-lg-4 d-flex align-items-stretch">
                 <div className="why-box" data-aos="zoom-in" data-aos-delay="200">
                   <h3>Why Choose Us</h3>

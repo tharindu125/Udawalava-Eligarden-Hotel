@@ -1,6 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaFacebook, FaInstagram, FaTwitter, FaEnvelope, FaPhone } from 'react-icons/fa';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.jpg';
 
 function Footer() {
   return (
@@ -17,7 +17,7 @@ function Footer() {
                 height="100"
                 className="me-2"
               />
-              {/* <h5 className="mb-0">Udawalawa Eligarden Hotel</h5> */}
+              {/* <h5 className="mb-0">Udawalawe Elegarden Safari Resort</h5> */}
             </div>
             <p data-aos="fade-up" data-aos-delay="200">Experience nature and comfort in the heart of Udawalawe. Perfect for your safari adventure and peaceful stay.</p>
           </Col>
@@ -48,8 +48,8 @@ function Footer() {
          {/* Contact Details */}
           <Col md={3} className="mb-4">
             <h5 className='text-warning-emphasis' data-aos="fade-up" data-aos-delay="200">Contact Us</h5>
-            <p data-aos="fade-up" data-aos-delay="300"><FaEnvelope /> info@udawalaweelegardenhotelandsafari.com</p>
-            <p data-aos="fade-up" data-aos-delay="400"><FaPhone /> +94 71 123 4567</p>
+            <p data-aos="fade-up" data-aos-delay="300" style={{fontSize: '12px'}}><FaEnvelope /> info@udawalaweelegardenhotelandsafari.com</p>
+            <p data-aos="fade-up" data-aos-delay="400"><FaPhone /> +94 76 560 3802</p>
             <div data-aos="fade-up" data-aos-delay="500">
               <a href="#" className="text-light me-3"><FaFacebook /></a>
               <a href="#" className="text-light me-3"><FaInstagram /></a>
@@ -58,7 +58,7 @@ function Footer() {
           </Col>
         </Row>
         <hr className="border-light"/>
-        <p className="text-center">© {new Date().getFullYear()} Udawalawa Eligarden Hotel. All rights reserved.</p>
+        <p className="text-center">© {new Date().getFullYear()} Udawalawe Elegarden Safari Resort. All rights reserved.</p>
       </Container>
     </footer>
   );

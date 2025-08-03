@@ -1,7 +1,7 @@
 // src/components/CustomNavbar.jsx
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { useLocation } from 'react-router-dom';
-import logo from '../assets/logo - 1.png'; 
+import logo from '../assets/logo.jpg'; 
 
 function CustomNavbar() {
   const location = useLocation();

@@ -12,6 +12,29 @@ function About() {
   const handleOpen = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
 
+  const services = [
+    { icon: "bi-wifi", label: "Free Wi-Fi", delay: 100 },
+    { icon: "bi-droplet-half", label: "Hot Water", delay: 200 },
+    { icon: "bi-snow", label: "Air Conditioning", delay: 300 },
+    { icon: "bi-egg-fried", label: "On-site Restaurant", delay: 1000 },
+    { icon: "bi-binoculars", label: "Safari Tours", delay: 900 },
+    { icon: "bi-car-front", label: "Free Parking", delay: 600 },
+    { icon: "bi-house-door", label: "Private Entrance", delay: 700 },
+    { icon: "bi-people", label: "Family Rooms", delay: 800 },
+    { icon: "bi-lightning-charge", label: "EV Charging", delay: 1100 },
+    { icon: "bi-cup-straw", label: "BYOB Friendly", delay: 1200 },
+    { icon: "bi-basket", label: "Laundry Service", delay: 1300 },
+    { icon: "bi-bell", label: "Room Service", delay: 1400 },
+    { icon: "bi-airplane-engines", label: "Airport Pickup", delay: 1500 },
+    { icon: "bi-clock-history", label: "24/7 Front Desk", delay: 1600 },
+    { icon: "bi-shield-lock", label: "24/7 Security", delay: 1700 },
+    { icon: "bi-flower2", label: "Garden Area", delay: 1900 },
+    { icon: "bi-fire", label: "BBQ Facilities", delay: 2000 },
+    { icon: "bi-brush", label: "Daily Housekeeping", delay: 2100 },
+    { icon: "bi-map", label: "Travel Assistance", delay: 2200 },
+  ];
+
+
   return (
      <>
       <CustomNavbar />
@@ -68,46 +91,17 @@ function About() {
 
           <section className="container py-5">
             <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3">
-              {/* Service Item */}
-              <div className="col text-center" data-aos="zoom-in" data-aos-delay="100">
-                <i className="bi bi-wifi fs-1 text-warning"></i>
-                <p className="mt-2 text-muted small">Free Wi-Fi</p>
-              </div>
-
-              <div className="col text-center" data-aos="zoom-in" data-aos-delay="200">
-                <i className="bi bi-droplet-half fs-1 text-warning"></i>
-                <p className="mt-2 text-muted small">Hot Water</p>
-              </div>
-
-              <div className="col text-center" data-aos="zoom-in" data-aos-delay="300">
-                <i className="bi bi-snow fs-1 text-warning"></i>
-                <p className="mt-2 text-muted small">Air Conditioning</p>
-              </div>
-
-              <div className="col text-center" data-aos="zoom-in" data-aos-delay="1000">
-                <i className="bi bi-egg-fried fs-1 text-warning"></i>
-                <p className="mt-2 text-muted small">On-site Restaurant</p>
-              </div>
-
-              <div className="col text-center" data-aos="zoom-in" data-aos-delay="900">
-                <i className="bi bi-binoculars fs-1 text-warning"></i>
-                <p className="mt-2 text-muted small">Safari Tours</p>
-              </div>
-
-              <div className="col text-center" data-aos="zoom-in" data-aos-delay="600">
-                <i className="bi bi-car-front fs-1 text-warning"></i>
-                <p className="mt-2 text-muted small">Free Parking</p>
-              </div>
-
-              <div className="col text-center" data-aos="zoom-in" data-aos-delay="700">
-                <i className="bi bi-house-door fs-1 text-warning"></i>
-                <p className="mt-2 text-muted small">Private Entrance</p>
-              </div>
-
-              <div className="col text-center" data-aos="zoom-in" data-aos-delay="800">
-                <i className="bi bi-people fs-1 text-warning"></i>
-                <p className="mt-2 text-muted small">Family Rooms</p>
-              </div>
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className="col text-center"
+                  data-aos="zoom-in"
+                  data-aos-delay={service.delay}
+                >
+                  <i className={`bi ${service.icon} fs-1`} style={{color: '#bd8400ff'}}></i>
+                  <p className="mt-2 text-muted small">{service.label}</p>
+                </div>
+              ))}
             </div>
           </section>
 
