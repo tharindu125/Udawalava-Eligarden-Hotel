@@ -7,7 +7,7 @@ import slider1 from '../assets/Yala-National-Park.jpg';
 import slider2 from '../assets/nine_arch_bridge_02.jpg';
 import slider3 from '../assets/slider1.jpg';
 import seasonalturs from '../assets/Sigiriya-Leopard-in-Sri-Lanka.jpg';
-import udawalava01 from '../assets/Udawalawe-Safari-Leopard-in-Sri-Lanka.jpg';
+import udawalava01 from '../assets/sri_lanka_elephant_01.jpg';
 import udawalava02 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image03.jpg';
 import udawalava03 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image06.jpg';
 import udawalava04 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image09.jpg';

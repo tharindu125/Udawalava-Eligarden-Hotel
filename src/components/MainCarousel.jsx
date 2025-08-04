@@ -3,7 +3,7 @@ import { Carousel } from 'react-bootstrap';
 import { FaHome, FaUtensils, FaBed } from 'react-icons/fa';
 import slider2 from '../assets/restaurent_wallpaper_02.jpeg';
 import slider1 from '../assets/hotel_wallpaper_01.jpg';
-import slider3 from '../assets/sri-lanka-leopard-asian.jpg';
+import slider3 from '../assets/sri_lanka_elephant_04.jpg';
 
 function MainCarousel() {
   return (

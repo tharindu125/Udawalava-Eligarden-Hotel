@@ -112,15 +112,30 @@ const RoomsSection = () => {
         {/* Room Tabs */}
         <div className="card text-center shadow">
           <div className="card-header">
-            <ul className="nav nav-tabs card-header-tabs">
-              <li className="nav-item">
-                <button className={`nav-link ${activeTab === 'single' ? 'active text-warning-emphasis' : 'text-warning'}`} onClick={() => setActiveTab('single')}>Single</button>
+            <ul className="nav nav-tabs card-header-tabs w-100 d-flex">
+              <li className="nav-item flex-fill text-center">
+                <button
+                  className={`nav-link w-100 ${activeTab === 'single' ? 'active text-warning-emphasis' : 'text-warning'}`}
+                  onClick={() => setActiveTab('single')}
+                >
+                  Single
+                </button>
               </li>
-              <li className="nav-item">
-                <button className={`nav-link ${activeTab === 'double' ? 'active text-warning-emphasis' : 'text-warning'}`} onClick={() => setActiveTab('double')}>Double</button>
+              <li className="nav-item flex-fill text-center">
+                <button
+                  className={`nav-link w-100 ${activeTab === 'double' ? 'active text-warning-emphasis' : 'text-warning'}`}
+                  onClick={() => setActiveTab('double')}
+                >
+                  Double
+                </button>
               </li>
-              <li className="nav-item">
-                <button className={`nav-link ${activeTab === 'triple' ? 'active text-warning-emphasis' : 'text-warning'}`} onClick={() => setActiveTab('triple')}>Triple</button>
+              <li className="nav-item flex-fill text-center">
+                <button
+                  className={`nav-link w-100 ${activeTab === 'triple' ? 'active text-warning-emphasis' : 'text-warning'}`}
+                  onClick={() => setActiveTab('triple')}
+                >
+                  Triple
+                </button>
               </li>
             </ul>
           </div>

@@ -34,9 +34,9 @@ import roomsImage03 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image01.jp
 import restaurantimage01 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image05.jpg';
 import restaurantimage02 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image04.jpg';
 import restaurantimage03 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image10.jpg';
-import safariImage01 from '../assets/sri-lanka-wild-life.jpg';
-import safariImage02 from '../assets/Udawalawe-Safari-Leopard-in-Sri-Lanka.jpg';
-import safariImage03 from '../assets/Yala-National-Park.jpg';
+import safariImage01 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image60.jpg';
+import safariImage02 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image55.jpg';
+import safariImage03 from '../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image28.jpg';
 
 import img1 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image01.jpg';
 import img2 from '../assets/Udawalava-Eligarden-Hotel-Gallery-Image02.jpg';
