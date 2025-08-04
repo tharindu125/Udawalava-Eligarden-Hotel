@@ -67,8 +67,28 @@ import image60 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image60.
 import image61 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image61.jpg";
 import image62 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image62.jpg";
 import image63 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image63.jpg";
-// import image58 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image62.jpg";
-// import image59 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image63.jpg";
+import image64 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image64.jpg";
+import image65 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image65.jpg";
+import image66 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image66.jpg";
+import image67 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image67.jpg";
+import image68 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image68.jpg";
+import image69 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image69.jpg";
+import image70 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image70.jpg";
+import image71 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image71.jpg";
+import image72 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image72.jpg";
+import image73 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image73.jpg";
+import image74 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image74.jpg";
+import image75 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image75.jpg";
+import image76 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image76.jpg";
+import image77 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image77.jpg";
+import image78 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image78.jpg";
+import image79 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image79.jpg";
+import image80 from "../assets/Udawalava-Eligarden-Hotel-Safari-Gallery-Image80.jpg";
+import image81 from "../assets/sri_lanka_elephant_01.jpg";
+import image82 from "../assets/sri_lanka_elephant_02.webp";
+import image83 from "../assets/sri_lanka_elephant_03.webp";
+import image84 from "../assets/sri_lanka_elephant_04.jpg";
+import image85 from "../assets/Udawalawa_Dam.jpg";
 import slider1 from "../assets/slider1.jpg";
 
 const categories = ["All", "Room & Hotel", "Restaurant", "Safari Tours"];
@@ -136,7 +156,29 @@ const images = [
   { id: 60, url: image60, category: "Safari Tours" },
   { id: 61, url: image61, category: "Safari Tours" },
   { id: 62, url: image62, category: "Safari Tours" },
-   { id: 63, url: image63, category: "Safari Tours" },
+  { id: 63, url: image63, category: "Safari Tours" },
+  { id: 64, url: image64, category: "Safari Tours" },
+  { id: 65, url: image65, category: "Safari Tours" },
+  { id: 66, url: image66, category: "Safari Tours" },
+  { id: 67, url: image67, category: "Safari Tours" },
+  { id: 68, url: image68, category: "Safari Tours" },
+  { id: 69, url: image69, category: "Safari Tours" },
+  { id: 70, url: image70, category: "Safari Tours" },
+  { id: 71, url: image71, category: "Safari Tours" },
+  { id: 72, url: image72, category: "Safari Tours" },
+  { id: 73, url: image73, category: "Safari Tours" },
+  { id: 74, url: image74, category: "Safari Tours" },
+  { id: 75, url: image75, category: "Safari Tours" },
+  { id: 76, url: image76, category: "Safari Tours" },
+  { id: 77, url: image77, category: "Safari Tours" },
+  { id: 78, url: image78, category: "Safari Tours" },
+  { id: 79, url: image79, category: "Safari Tours" },
+  { id: 80, url: image80, category: "Safari Tours" },
+  { id: 81, url: image81, category: "Safari Tours" },
+  { id: 82, url: image82, category: "Safari Tours" },
+  { id: 83, url: image83, category: "Safari Tours" },
+  { id: 84, url: image84, category: "Safari Tours" },
+  { id: 85, url: image85, category: "Safari Tours" },
 ];
 
 const Gallery = () => {
