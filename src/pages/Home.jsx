@@ -224,7 +224,7 @@ function Home() {
       </div>
 
       {/* Guest House */}
-      <section className='container py-5 main-topic'>
+      <section className='container py-5 main-topic home_page_main_card'>
         <div className='row align-items-center'>
           {/* Text Content */}
           <div className='col-md-5 mb-4 mb-md-0 manual_text_left content'>
@@ -245,32 +245,31 @@ function Home() {
 
           {/* Image */}
           <div className="col-md-7 mb-3">
-            <div className="row g-2" data-aos="fade-down" data-aos-delay="200">
+            <div className="row g-2">
               {/* Left Large Image */}
-              <div className="col-6">
+              <div className="col-6 main_img" data-aos="fade-down" data-aos-delay="200">
                 <img
                   src= {roomsImage01}
                   alt="Bonfire Dinner"
                   className="img-fluid rounded shadow"
-                  style={{ height: '100%', objectFit: 'cover', cursor: 'pointer', maxWidth: '100%', display: 'block' }}
                   onClick={() => handleOpen(roomsImage01)}
                 />
               </div>
 
               {/* Right Two Small Images */}
-              <div className="col-6 d-flex flex-column justify-content-between" data-aos="fade-up" data-aos-delay="200">
+              <div className="col-6 d-flex flex-column justify-content-between sub_img" data-aos="fade-up" data-aos-delay="200">
                 <img
                   src={roomsImage02}
                   alt="Bonfire Table"
                   className="img-fluid rounded shadow mb-2"
-                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginTop:'2rem', maxWidth: '100%', display: 'block' }}
+                  style={{marginTop:'2rem'}}
                   onClick={() => handleOpen(roomsImage02)}
                 />
                 <img
                   src={roomsImage03}
                   alt="Outdoor Dinner"
                   className="img-fluid rounded shadow"
-                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginBottom:'2rem', maxWidth: '100%', display: 'block' }}
+                  style={{marginBottom:'2rem'}}
                   onClick={() => handleOpen(roomsImage03)}
                 />
               </div>
@@ -281,36 +280,35 @@ function Home() {
       </section>
 
       {/* Restuarent */}
-      <section className='container py-5 main-topic'>
+      <section className='container py-5 main-topic home_page_main_card'>
         <div className='row align-items-center'>
           {/* Image */}
           <div className="col-md-7 mb-3">
             <div className="row g-2">
               {/* Left Large Image */}
-              <div className="col-6" data-aos="fade-down" data-aos-delay="200">
+              <div className="col-6 main_img" data-aos="fade-down" data-aos-delay="200">
                 <img
                   src= {restaurantimage01}
                   alt="Bonfire Dinner"
                   className="img-fluid rounded shadow"
-                  style={{ height: '100%', objectFit: 'cover', cursor: 'pointer', maxWidth: '100%', display: 'block' }}
                   onClick={() => handleOpen(restaurantimage01)}
                 />
               </div>
 
               {/* Right Two Small Images */}
-              <div className="col-6 d-flex flex-column justify-content-between" data-aos="fade-up" data-aos-delay="200">
+              <div className="col-6 d-flex flex-column justify-content-between sub_img" data-aos="fade-up" data-aos-delay="200">
                 <img
                   src={restaurantimage02}
                   alt="Bonfire Table"
                   className="img-fluid rounded shadow mb-2"
-                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginTop:'2rem', maxWidth: '100%', display: 'block' }}
+                  style={{marginTop:'2rem'}}
                   onClick={() => handleOpen(restaurantimage02)}
                 />
                 <img
                   src={restaurantimage03}
                   alt="Outdoor Dinner"
                   className="img-fluid rounded shadow"
-                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginBottom:'2rem', maxWidth: '100%', display: 'block' }} 
+                  style={{marginBottom:'2rem'}} 
                   onClick={() => handleOpen(restaurantimage03)}
                 />
               </div>
@@ -336,7 +334,7 @@ function Home() {
       </section>
 
       {/* Wild Life & Safari Tours */}
-      <section className='container py-5 main-topic'>
+      <section className='container py-5 main-topic home_page_main_card'>
         <div className='row align-items-center'>
           {/* Text Content */}
           <div className='col-md-5 mb-4 mb-md-0 manual_text_left content'>
@@ -363,30 +361,29 @@ function Home() {
           <div className="col-md-7 mb-3">
             <div className="row g-2">
               {/* Left Large Image */}
-              <div className="col-6" data-aos="fade-down" data-aos-delay="200">
+              <div className="col-6 main_img" data-aos="fade-down" data-aos-delay="200">
                 <img
                   src= {safariImage01}
                   alt="Bonfire Dinner"
                   className="img-fluid rounded shadow"
-                  style={{ height: '100%', objectFit: 'cover', cursor: 'pointer', maxWidth: '100%', display: 'block' }}
                   onClick={() => handleOpen(safariImage01)}
                 />
               </div>
 
               {/* Right Two Small Images */}
-              <div className="col-6 d-flex flex-column justify-content-between" data-aos="fade-up" data-aos-delay="200">
+              <div className="col-6 d-flex flex-column justify-content-between sub_img" data-aos="fade-up" data-aos-delay="200">
                 <img
                   src={safariImage02}
                   alt="Bonfire Table"
                   className="img-fluid rounded shadow mb-2"
-                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginTop:'2rem', maxWidth: '100%', display: 'block' }}
+                  style={{marginTop:'2rem'}}
                   onClick={() => handleOpen(safariImage02)}
                 />
                 <img
                   src={safariImage03}
                   alt="Outdoor Dinner"
                   className="img-fluid rounded shadow"
-                  style={{ height: '49%', objectFit: 'cover', cursor: 'pointer', marginBottom:'2rem', maxWidth: '100%', display: 'block' }}
+                  style={{marginBottom:'2rem'}}
                   onClick={() => handleOpen(safariImage03)}
                 />
               </div>

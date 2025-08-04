@@ -80,6 +80,40 @@ img {
   transition: height 1s ease !important; /* Adjust duration and easing as needed */
 }
 
+.home_page_main_card .main_img img {
+  height: 500px;
+  object-fit: cover;
+  cursor: pointer;
+  max-width: 100%;
+  display: block;
+}
+
+.home_page_main_card .sub_img img {
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+  max-width: 100%;
+  display: block;
+}
+
+@media (max-width:450px) {
+  .home_page_main_card .main_img img {
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    max-width: 100%;
+    display: block;
+  }
+
+  .home_page_main_card .sub_img img {
+    height: 120px;
+    object-fit: cover;
+    cursor: pointer;
+    max-width: 100%;
+    display: block;
+  }
+}
+
 /* Main carousel */
 .fullscreen-image {
   width: 100vw;
