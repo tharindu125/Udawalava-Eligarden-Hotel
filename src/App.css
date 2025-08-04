@@ -135,19 +135,34 @@ img {
   font-size: 22px;
 }
 
+@media (max-width:1024px) {
+  .navbar-brand span {
+    font-size: 20px;
+  }
+
+  .nav-link {
+    font-size: 13px !important;
+    padding-right: 0 !important;
+  }
+
+  #navbar-nav .btn {
+    font-size: 13px;
+  }
+}
+
 @media (max-width:768px) {
   .navbar-brand span {
     font-size: 20px;
   }
 }
 
-@media (max-width:425px) {
+@media (max-width:450px) {
   .navbar-brand span {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
-@media (max-width:350px) {
+@media (max-width:400px) {
   .navbar-brand span {
     font-size: 12px;
   }
