@@ -155,15 +155,15 @@ function Contact() {
                     <div className="contact-info" data-aos="fade-up" data-aos-delay="200">
                       <h5 className='text-primary-emphasis'>Phone:</h5>
                       <div className='d-flex gap-5 mobile_no'>
-                        <p><FaPhone /> +94 123 456 789</p>
-                        <p><FaPhone /> +94 123 456 789</p>
+                        <p><FaPhone /> +94 76 560 3802</p>
+                        {/* <p><FaPhone /> +94 123 456 789</p> */}
                       </div>
                     </div>
 
                     {/* Email */}
                     <div className="contact-info" data-aos="fade-up" data-aos-delay="200">
                       <h5 className='text-primary-emphasis'>Email:</h5>
-                      <p><FaEnvelope /> info@udawalawaelegarden.com</p>
+                      <p><FaEnvelope />info@udawalaweelegardenhotelandsafari.com</p>
                     </div>
 
                     {/* Social Media Links */}
