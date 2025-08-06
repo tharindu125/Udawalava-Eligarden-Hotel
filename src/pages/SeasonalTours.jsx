@@ -51,7 +51,7 @@ function SeasonalTours() {
                                 <Col md={6} className="px-2 py-4">
                                     <h2 className="fw-bold text-uppercase mb-3">Whale Watching & Boat Tours</h2>
                                     <p className="text-muted">Join our expert-led boat trips to witness blue whales, dolphins, and other marine life just off Sri Lanka’s southern coast. Best time: Nov to April.</p>
-                                    <Button href="/WhaleWatchingTours" className="btn-warning border-0 fw-bold px-4 py-2 rounded">Explore</Button>
+                                    <Button href="/#book_now" className="btn-warning border-0 fw-bold px-4 py-2 rounded">Explore</Button>
                                 </Col>
                             </Row>
                         </Card>
@@ -65,7 +65,7 @@ function SeasonalTours() {
                                 <Col md={6} className="px-2 py-4">
                                     <h2 className="fw-bold text-uppercase mb-3">Trincomalee - Marble & Nilaveli Beach</h2>
                                     <p className="text-muted">Relax on soft sandy beaches and snorkel in the crystal-clear waters of Nilaveli and Marble Beach. Ideal during the east coast season: May to September.</p>
-                                    <Button href="/TrincomaleeTours" className="btn-warning border-0 fw-bold px-4 py-2 rounded">Explore</Button>
+                                    <Button href="/#book_now" className="btn-warning border-0 fw-bold px-4 py-2 rounded">Explore</Button>
                                 </Col>
                             </Row>
                         </Card>
@@ -79,7 +79,7 @@ function SeasonalTours() {
                                 <Col md={6} className="px-2 py-4">
                                     <h2 className="fw-bold text-uppercase mb-3">Arugambay Surf & Chill</h2>
                                     <p className="text-muted">Catch waves at Sri Lanka’s top surf destination and enjoy the beach lifestyle. Season: April to October.</p>
-                                    <Button href="/ArugambayTours" className="btn-warning border-0 fw-bold px-4 py-2 rounded">Explore</Button>
+                                    <Button href="/#book_now" className="btn-warning border-0 fw-bold px-4 py-2 rounded">Explore</Button>
                                 </Col>
                             </Row>
                         </Card>
@@ -93,7 +93,7 @@ function SeasonalTours() {
                                 <Col md={6} className="px-2 py-4">
                                     <h2 className="fw-bold text-uppercase mb-3">Yala - Kumana Bird Safari</h2>
                                     <p className="text-muted">Explore the untouched side of Yala. Kumana is a birdwatcher’s paradise and perfect for nature photography. Season: April to July.</p>
-                                    <Button href="/KumanaTours" className="btn-warning border-0 fw-bold px-4 py-2 rounded">Explore</Button>
+                                    <Button href="/#book_now" className="btn-warning border-0 fw-bold px-4 py-2 rounded">Explore</Button>
                                 </Col>
                             </Row>
                         </Card>
@@ -107,7 +107,7 @@ function SeasonalTours() {
                                 <Col md={6} className="px-2 py-4">
                                     <h2 className="fw-bold text-uppercase mb-3">Adam’s Peak Pilgrimage</h2>
                                     <p className="text-muted">Join a sacred journey to the top of Sri Lanka’s holy mountain. Best climbed between December and May for sunrise views and cultural experience.</p>
-                                    <Button href="/AdamsPeakTours" className="btn-warning border-0 fw-bold px-4 py-2 rounded">Explore</Button>
+                                    <Button href="/#book_now" className="btn-warning border-0 fw-bold px-4 py-2 rounded">Explore</Button>
                                 </Col>
                             </Row>
                         </Card>

@@ -62,7 +62,7 @@ function SafariTours() {
                                         You can even see the dwarf elephant in this forest — the only one of its kind found in South Asia.
                                     </p>
                                     <Button
-                                        href="/UdawalaweSafariTours"
+                                        href="/#book_now"
                                         className="px-4 py-2 fw-bold text-uppercase border-0"
                                         style={{
                                             backgroundColor: '#f8aa28',
@@ -113,12 +113,13 @@ function SafariTours() {
                                     <p className="text-muted mb-1 manual_text_left text_shadow_black">✅ Water, snacks, and binoculars provided</p>
                                     <p className="text-muted mb-1 manual_text_left text_shadow_black">✅ Comfortable jeep with expert driver (Over 10 years of experience)</p>
                                     <p className="text-muted mb-1 manual_text_left text_shadow_black">✅ Ideal for photography & nature lovers</p>
+                                    <p className="text-muted mb-1 manual_text_left text_shadow_black">☑️ Insurance Available (include extra charge)</p>
                                     <p className="text-muted mb-1 manual_text_left text_shadow_black p-3 mt-3" style={{backgroundColor: '#fae5c4ff', borderRadius: '5px', boxShadow: '0 0 8px #00000081'}}>
                                         Rs: 12000.00 Per Jeep
                                     </p>
 
                                     <Button
-                                        href="/UdawalaweSafariTours"
+                                        href="/#book_now"
                                         className="px-4 py-2 fw-bold text-uppercase border-0 mt-3"
                                         style={{
                                             backgroundColor: '#f8aa28',
@@ -162,12 +163,13 @@ function SafariTours() {
                                     <p className="text-light mb-1 manual_text_left text_shadow_black">✅ Water, snacks, and binoculars provided</p>
                                     <p className="text-light mb-1 manual_text_left text_shadow_black">✅ Comfortable jeep with expert driver (Over 10 years of experience)</p>
                                     <p className="text-light mb-1 manual_text_left text_shadow_black">✅ Optional jungle breakfast / lunch available</p>
+                                    <p className="text-light mb-1 manual_text_left text_shadow_black">☑️ Insurance Available (include extra charge)</p>
                                     <p className="text-light mb-1 manual_text_left text_shadow_black p-3 mt-3" style={{backgroundColor: '#5e4823ce', borderRadius: '5px', boxShadow: '0 0 8px #00000081'}}>
                                         Rs: 20000.00 Per Jeep
                                     </p>
 
                                     <Button
-                                        href="/UdawalaweSafariTours"
+                                        href="/#book_now"
                                         className="px-4 py-2 fw-bold text-uppercase border-0 mt-3"
                                         style={{
                                             backgroundColor: '#f8aa28',
@@ -217,12 +219,13 @@ function SafariTours() {
                                     <p className="text-muted mb-1 manual_text_left text_shadow_black">✅ Water, snacks, and binoculars provided</p>
                                     <p className="text-muted mb-1 manual_text_left text_shadow_black">✅ Comfortable jeep with expert driver (Over 10 years of experience)</p>
                                     <p className="text-muted mb-1 manual_text_left text_shadow_black">✅ Optional jungle breakfast / lunch available</p>
+                                    <p className="text-muted mb-1 manual_text_left text_shadow_black">☑️ Insurance Available (include extra charge)</p>
                                     <p className="text-muted mb-1 manual_text_left text_shadow_black p-3 mt-3" style={{backgroundColor: '#fae5c4ff', borderRadius: '5px', boxShadow: '0 0 8px #00000081'}}>
                                         Rs: 35000.00 Per Jeep
                                     </p>
 
                                     <Button
-                                        href="/UdawalaweSafariTours"
+                                        href="/#book_now"
                                         className="px-4 py-2 fw-bold text-uppercase border-0 mt-3"
                                         style={{
                                             backgroundColor: '#f8aa28',
