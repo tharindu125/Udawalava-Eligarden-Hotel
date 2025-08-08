@@ -1,6 +1,6 @@
 
 import {Card, Button, Row, Col } from "react-bootstrap";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 
 import CustomNavbar from '../components/CustomNavbar';
 
@@ -14,12 +14,12 @@ function SafariTours() {
 
     return (
         <>
-            <Helmet>
+            {/* <Helmet>
                 <title>Udawalawe Safari Tours | Udawalawe Elegarden Safari Resort</title>
                 <meta name="description" content="Udawalawe Elegarden Safari Resort - Your perfect getaway in Udawalaww, Sri Lanka. Experience luxury, comfort, and nature." />
                 <meta name="keywords" content="Udawalawe, Safari tours in Sri Lanka, Sri Lanka, luxury hotel, nature retreat, safari tours, accommodation, elephants, 
                     udawalawe safari Tours, Sri Lanka wildlife safari, Elephant safari Sri Lanka, Sri Lanka jeep safari, Best safari in Sri Lanka" />
-            </Helmet>
+            </Helmet> */}
 
             <CustomNavbar />
 

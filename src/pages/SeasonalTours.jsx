@@ -1,6 +1,6 @@
 import { Card, Button, Row, Col } from "react-bootstrap";
 import CustomNavbar from '../components/CustomNavbar';
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 
 import seasonalHero from '../assets/Sigiriya-Leopard-in-Sri-Lanka-hero.jpg';
 import whaleWatching from '../assets/Whale-Wathing.jpg';
@@ -13,12 +13,12 @@ import adamsPeak from '../assets/adamsPeak.jpg';
 function SeasonalTours() {
     return (
         <>
-            <Helmet>
+            {/* <Helmet>
                 <title>Seasonal Travel Tours | Udawalawe Elegarden Safari Resort</title>
                 <meta name="description" content="Udawalawe Elegarden Safari Resort - Your perfect getaway in Udawalaww, Sri Lanka. Experience luxury, comfort, and nature." />
                 <meta name="keywords" content="Udawalawe, Safari tours in Sri Lanka, Sri Lanka, luxury hotel, nature retreat, safari tours, accommodation, 
                     elephants, udawalawe safari Tours, Sri Lanka wildlife safari, Elephant safari Sri Lanka, Sri Lanka jeep safari, Best safari in Sri Lanka" />
-            </Helmet>
+            </Helmet> */}
 
             <CustomNavbar />
 

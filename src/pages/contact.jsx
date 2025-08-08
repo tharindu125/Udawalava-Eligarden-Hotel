@@ -8,7 +8,7 @@ import DatePicker from 'react-datepicker';
 import Select from 'react-select';
 import 'react-datepicker/dist/react-datepicker.css';
 import emailjs from 'emailjs-com';
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 
 function Contact() {
     const [formData, setFormData] = useState({
@@ -111,12 +111,12 @@ function Contact() {
 
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>Contact | Udawalawe Elegarden Safari Resort</title>
         <meta name="description" content="Udawalawe Elegarden Safari Resort - Your perfect getaway in Udawalaww, Sri Lanka. Experience luxury, comfort, and nature." />
         <meta name="keywords" content="Udawalawe, Safari tours in Sri Lanka, Sri Lanka, luxury hotel, nature retreat, safari tours, accommodation, 
           elephants, udawalawe safari Tours, Sri Lanka wildlife safari, Elephant safari Sri Lanka, Sri Lanka jeep safari, Best safari in Sri Lanka" />
-      </Helmet>
+      </Helmet> */}
 
       <CustomNavbar />
       {/* Hero Section */}

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import CustomNavbar from '../components/CustomNavbar';
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 
 import slider1 from '../assets/restaurent_wallpaper_01.jpg';
 import Sandwich from '../assets/restaurent_menu/Restaurent-Sandwich.jpg';
@@ -393,12 +393,12 @@ const Restaurant = () => {
 
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>Restaurant | Udawalawe Elegarden Safari Resort</title>
         <meta name="description" content="Udawalawe Elegarden Safari Resort - Your perfect getaway in Udawalaww, Sri Lanka. Experience luxury, comfort, and nature." />
         <meta name="keywords" content="Udawalawe, Safari tours in Sri Lanka, Sri Lanka, luxury hotel, nature retreat, safari tours, accommodation, 
           elephants, udawalawe safari Tours, Sri Lanka wildlife safari, Elephant safari Sri Lanka, Sri Lanka jeep safari, Best safari in Sri Lanka" />
-      </Helmet>
+      </Helmet> */}
 
       <CustomNavbar />
 

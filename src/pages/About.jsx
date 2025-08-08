@@ -2,7 +2,7 @@ import CustomNavbar from '../components/CustomNavbar';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { Modal } from 'react-bootstrap';
 import { useState } from 'react';
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 
 import { FaCheckCircle, FaInfoCircle, FaRegStar, FaSearchPlus } from 'react-icons/fa'; // Icons for section
 import aboutImage from '../assets/about-Udawalawa-Elegarden-Hotel.jpg';
@@ -38,12 +38,12 @@ function About() {
 
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>About Us | Udawalawe Elegarden Safari Resort</title>
         <meta name="description" content="Udawalawe Elegarden Safari Resort - Your perfect getaway in Udawalaww, Sri Lanka. Experience luxury, comfort, and nature." />
         <meta name="keywords" content="Udawalawe, Safari tours in Sri Lanka, Sri Lanka, luxury hotel, nature retreat, safari tours, accommodation, 
           elephants, udawalawe safari Tours, Sri Lanka wildlife safari, Elephant safari Sri Lanka, Sri Lanka jeep safari, Best safari in Sri Lanka" />
-      </Helmet>
+      </Helmet> */}
 
       <CustomNavbar />
 
