@@ -110,6 +110,13 @@ function Contact() {
 
   return (
     <>
+      <Helmet>
+        <title>Contact | Udawalawe Elegarden Safari Resort</title>
+        <meta name="description" content="Udawalawe Elegarden Safari Resort - Your perfect getaway in Udawalaww, Sri Lanka. Experience luxury, comfort, and nature." />
+        <meta name="keywords" content="Udawalawe, Safari tours in Sri Lanka, Sri Lanka, luxury hotel, nature retreat, safari tours, accommodation, 
+          elephants, udawalawe safari Tours, Sri Lanka wildlife safari, Elephant safari Sri Lanka, Sri Lanka jeep safari, Best safari in Sri Lanka" />
+      </Helmet>
+
       <CustomNavbar />
       {/* Hero Section */}
       <div className="about-hero-section" style={{ position: 'relative', width: '100vw', height: '400px', background: `url(${slider1}) no-repeat center center/cover` }}>
