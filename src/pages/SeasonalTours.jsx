@@ -1,5 +1,6 @@
 import { Card, Button, Row, Col } from "react-bootstrap";
 import CustomNavbar from '../components/CustomNavbar';
+import { Helmet } from "react-helmet";
 
 import seasonalHero from '../assets/Sigiriya-Leopard-in-Sri-Lanka-hero.jpg';
 import whaleWatching from '../assets/Whale-Wathing.jpg';

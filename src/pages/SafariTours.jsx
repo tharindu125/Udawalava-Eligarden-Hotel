@@ -1,5 +1,6 @@
 // import { useState } from "react";
 import { Card, Button, Row, Col, Carousel } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 
 import CustomNavbar from '../components/CustomNavbar';
 import backgroundimage from '../assets/backgroud_image_elephant.jpg';

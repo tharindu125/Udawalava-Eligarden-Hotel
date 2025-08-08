@@ -9,6 +9,8 @@ import 'react-datepicker/dist/react-datepicker.css';
 import emailjs from 'emailjs-com';
 import { Modal } from 'react-bootstrap';
 import { FaSearchPlus } from 'react-icons/fa';
+import { Helmet } from "react-helmet";
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import CustomNavbar from '../components/CustomNavbar';
+import { Helmet } from "react-helmet";
 
 import slider1 from '../assets/restaurent_wallpaper_01.jpg';
 import Sandwich from '../assets/restaurent_menu/Restaurent-Sandwich.jpg';

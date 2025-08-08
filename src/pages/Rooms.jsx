@@ -1,5 +1,6 @@
 import { Carousel } from 'react-bootstrap';
 import CustomNavbar from '../components/CustomNavbar';
+import { Helmet } from "react-helmet";
 
 // ✅ Imported Images
 import slider1 from '../assets/hotel_wallpaper_02.jpg';

@@ -4,7 +4,6 @@
 import './App.css'
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Helmet } from "react-helmet";
 
 import { Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';

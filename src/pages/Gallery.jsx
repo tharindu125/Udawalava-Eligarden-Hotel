@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Masonry from "react-masonry-css";
 import { Button, Container, Modal } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 
 import CustomNavbar from "../components/CustomNavbar";
 

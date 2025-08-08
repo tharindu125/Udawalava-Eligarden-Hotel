@@ -8,6 +8,7 @@ import DatePicker from 'react-datepicker';
 import Select from 'react-select';
 import 'react-datepicker/dist/react-datepicker.css';
 import emailjs from 'emailjs-com';
+import { Helmet } from "react-helmet";
 
 function Contact() {
     const [formData, setFormData] = useState({

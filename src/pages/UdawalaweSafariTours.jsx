@@ -1,5 +1,6 @@
 
 import {Card, Button, Row, Col } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 
 import CustomNavbar from '../components/CustomNavbar';
 
