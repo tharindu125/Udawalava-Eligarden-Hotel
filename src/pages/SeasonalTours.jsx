@@ -1,6 +1,5 @@
 import { Card, Button, Row, Col } from "react-bootstrap";
 import CustomNavbar from '../components/CustomNavbar';
-// import { Helmet } from "react-helmet";
 
 import seasonalHero from '../assets/Sigiriya-Leopard-in-Sri-Lanka-hero.jpg';
 import whaleWatching from '../assets/Whale-Wathing.jpg';
@@ -13,13 +12,6 @@ import adamsPeak from '../assets/adamsPeak.jpg';
 function SeasonalTours() {
     return (
         <>
-            {/* <Helmet>
-                <title>Seasonal Travel Tours | Udawalawe Elegarden Safari Resort</title>
-                <meta name="description" content="Udawalawe Elegarden Safari Resort - Your perfect getaway in Udawalaww, Sri Lanka. Experience luxury, comfort, and nature." />
-                <meta name="keywords" content="Udawalawe, Safari tours in Sri Lanka, Sri Lanka, luxury hotel, nature retreat, safari tours, accommodation, 
-                    elephants, udawalawe safari Tours, Sri Lanka wildlife safari, Elephant safari Sri Lanka, Sri Lanka jeep safari, Best safari in Sri Lanka" />
-            </Helmet> */}
-
             <CustomNavbar />
 
             {/* Hero Section */}
@@ -59,7 +51,7 @@ function SeasonalTours() {
                                 <Col md={6} className="px-2 py-4">
                                     <h2 className="fw-bold text-uppercase mb-3">Whale Watching & Boat Tours</h2>
                                     <p className="text-muted">Join our expert-led boat trips to witness blue whales, dolphins, and other marine life just off Sri Lanka’s southern coast. Best time: Nov to April.</p>
-                                    <Button href="/#book_now" className="btn-warning border-0 fw-bold px-4 py-2 rounded">Explore</Button>
+                                    <Button href="/WhaleWatchingTours" className="btn-warning border-0 fw-bold px-4 py-2 rounded">Explore</Button>
                                 </Col>
                             </Row>
                         </Card>
@@ -73,7 +65,7 @@ function SeasonalTours() {
                                 <Col md={6} className="px-2 py-4">
                                     <h2 className="fw-bold text-uppercase mb-3">Trincomalee - Marble & Nilaveli Beach</h2>
                                     <p className="text-muted">Relax on soft sandy beaches and snorkel in the crystal-clear waters of Nilaveli and Marble Beach. Ideal during the east coast season: May to September.</p>
-                                    <Button href="/#book_now" className="btn-warning border-0 fw-bold px-4 py-2 rounded">Explore</Button>
+                                    <Button href="/TrincomaleeTours" className="btn-warning border-0 fw-bold px-4 py-2 rounded">Explore</Button>
                                 </Col>
                             </Row>
                         </Card>
@@ -87,7 +79,7 @@ function SeasonalTours() {
                                 <Col md={6} className="px-2 py-4">
                                     <h2 className="fw-bold text-uppercase mb-3">Arugambay Surf & Chill</h2>
                                     <p className="text-muted">Catch waves at Sri Lanka’s top surf destination and enjoy the beach lifestyle. Season: April to October.</p>
-                                    <Button href="/#book_now" className="btn-warning border-0 fw-bold px-4 py-2 rounded">Explore</Button>
+                                    <Button href="/ArugambayTours" className="btn-warning border-0 fw-bold px-4 py-2 rounded">Explore</Button>
                                 </Col>
                             </Row>
                         </Card>
@@ -101,7 +93,7 @@ function SeasonalTours() {
                                 <Col md={6} className="px-2 py-4">
                                     <h2 className="fw-bold text-uppercase mb-3">Yala - Kumana Bird Safari</h2>
                                     <p className="text-muted">Explore the untouched side of Yala. Kumana is a birdwatcher’s paradise and perfect for nature photography. Season: April to July.</p>
-                                    <Button href="/#book_now" className="btn-warning border-0 fw-bold px-4 py-2 rounded">Explore</Button>
+                                    <Button href="/KumanaTours" className="btn-warning border-0 fw-bold px-4 py-2 rounded">Explore</Button>
                                 </Col>
                             </Row>
                         </Card>
@@ -115,7 +107,7 @@ function SeasonalTours() {
                                 <Col md={6} className="px-2 py-4">
                                     <h2 className="fw-bold text-uppercase mb-3">Adam’s Peak Pilgrimage</h2>
                                     <p className="text-muted">Join a sacred journey to the top of Sri Lanka’s holy mountain. Best climbed between December and May for sunrise views and cultural experience.</p>
-                                    <Button href="/#book_now" className="btn-warning border-0 fw-bold px-4 py-2 rounded">Explore</Button>
+                                    <Button href="/AdamsPeakTours" className="btn-warning border-0 fw-bold px-4 py-2 rounded">Explore</Button>
                                 </Col>
                             </Row>
                         </Card>

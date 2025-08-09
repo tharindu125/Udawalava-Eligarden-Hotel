@@ -8,7 +8,6 @@ import DatePicker from 'react-datepicker';
 import Select from 'react-select';
 import 'react-datepicker/dist/react-datepicker.css';
 import emailjs from 'emailjs-com';
-// import { Helmet } from "react-helmet";
 
 function Contact() {
     const [formData, setFormData] = useState({
@@ -111,13 +110,6 @@ function Contact() {
 
   return (
     <>
-      {/* <Helmet>
-        <title>Contact | Udawalawe Elegarden Safari Resort</title>
-        <meta name="description" content="Udawalawe Elegarden Safari Resort - Your perfect getaway in Udawalaww, Sri Lanka. Experience luxury, comfort, and nature." />
-        <meta name="keywords" content="Udawalawe, Safari tours in Sri Lanka, Sri Lanka, luxury hotel, nature retreat, safari tours, accommodation, 
-          elephants, udawalawe safari Tours, Sri Lanka wildlife safari, Elephant safari Sri Lanka, Sri Lanka jeep safari, Best safari in Sri Lanka" />
-      </Helmet> */}
-
       <CustomNavbar />
       {/* Hero Section */}
       <div className="about-hero-section" style={{ position: 'relative', width: '100vw', height: '400px', background: `url(${slider1}) no-repeat center center/cover` }}>
@@ -163,15 +155,15 @@ function Contact() {
                     <div className="contact-info" data-aos="fade-up" data-aos-delay="200">
                       <h5 className='text-primary-emphasis'>Phone:</h5>
                       <div className='d-flex gap-5 mobile_no'>
-                        <p><FaPhone /> +94 76 560 3802</p>
-                        {/* <p><FaPhone /> +94 123 456 789</p> */}
+                        <p><FaPhone /> +94 123 456 789</p>
+                        <p><FaPhone /> +94 123 456 789</p>
                       </div>
                     </div>
 
                     {/* Email */}
                     <div className="contact-info" data-aos="fade-up" data-aos-delay="200">
                       <h5 className='text-primary-emphasis'>Email:</h5>
-                      <p><FaEnvelope />info@udawalaweelegardenhotelandsafari.com</p>
+                      <p><FaEnvelope /> info@udawalawaelegarden.com</p>
                     </div>
 
                     {/* Social Media Links */}

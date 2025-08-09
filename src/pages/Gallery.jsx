@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Masonry from "react-masonry-css";
 import { Button, Container, Modal } from "react-bootstrap";
-// import { Helmet } from "react-helmet";
 
 import CustomNavbar from "../components/CustomNavbar";
 
@@ -202,13 +201,6 @@ const Gallery = () => {
 
   return (
     <>
-      {/* <Helmet>
-        <title>Gallery | Udawalawe Elegarden Safari Resort</title>
-        <meta name="description" content="Udawalawe Elegarden Safari Resort - Your perfect getaway in Udawalaww, Sri Lanka. Experience luxury, comfort, and nature." />
-        <meta name="keywords" content="Udawalawe, Safari tours in Sri Lanka, Sri Lanka, luxury hotel, nature retreat, safari tours, accommodation, 
-          elephants, udawalawe safari Tours, Sri Lanka wildlife safari, Elephant safari Sri Lanka, Sri Lanka jeep safari, Best safari in Sri Lanka" />
-      </Helmet> */}
-
       <CustomNavbar />
 
       {/* Hero Section */}

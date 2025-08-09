@@ -8,9 +8,7 @@ import Select from 'react-select';
 import 'react-datepicker/dist/react-datepicker.css';
 import emailjs from 'emailjs-com';
 import { Modal } from 'react-bootstrap';
-// import { FaSearchPlus } from 'react-icons/fa';
-// import { Helmet } from "react-helmet";
-
+import { FaSearchPlus } from 'react-icons/fa';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -22,6 +20,7 @@ import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectCoverflow } from 'swiper/modules';
 
+// import welcomeImage from '../assets/slider2.jpg';
 import nearPlace1 from '../assets/slider1.jpg';
 import nearPlace2 from '../assets/Maduwanwela-Walawwa.jpg';
 import nearPlace3 from '../assets/Sankapala.jpg';
@@ -219,13 +218,6 @@ function Home() {
 
   return (
     <>
-      {/* <Helmet>
-        <title>Home | Udawalawe Elegarden Safari Resort</title>
-        <meta name="description" content="Udawalawe Elegarden Safari Resort - Your perfect getaway in Udawalaww, Sri Lanka. Experience luxury, comfort, and nature." />
-        <meta name="keywords" content="Udawalawe, Safari tours in Sri Lanka, Sri Lanka, luxury hotel, nature retreat, safari tours, accommodation, 
-          elephants, udawalawe safari Tours, Sri Lanka wildlife safari, Elephant safari Sri Lanka, Sri Lanka jeep safari, Best safari in Sri Lanka" />
-      </Helmet> */}
-
       <CustomNavbar />
       <div style={{width: '100vw'}}>
         <MainCarousel />
